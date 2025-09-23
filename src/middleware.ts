@@ -18,7 +18,7 @@ export function middleware(request: NextRequest) {
 
   // Замените 'your_username' и 'your_password' на свои значения
   const validUsername = 'admin'  // Ваш логин
-  const validPassword = 'dracula666'  // Ваш пароль
+  const validPassword = 'oracul54321'  // Ваш пароль
 
   if (username !== validUsername || password !== validPassword) {
     return new Response('Invalid credentials', { status: 401 })
