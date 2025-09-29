@@ -22,8 +22,8 @@ const Page = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            question: predictionDetailed.title,
-            description: predictionDetailed.description,
+            question: "Кто станет чемпионом РФПЛ в сезоне 2025-2026?",
+            description: "Анализируем шансы на чемпионство в российском футболе на основе текущих позиций команд, экспертных мнений, букмекерских коэффициентов и трансферной политики клубов.",
           }),
         });
 
@@ -50,6 +50,9 @@ const Page = () => {
 
         setPredictionData({
           ...predictionDetailed,
+          category: "Спорт • Футбол",
+          title: "Кто станет чемпионом РФПЛ в сезоне 2025-2026?",
+          description: "Анализируем шансы на чемпионство в российском футболе на основе текущих позиций команд, экспертных мнений, букмекерских коэффициентов и трансферной политики клубов.",
           models: updatedModels,
         });
       } catch (err) {
