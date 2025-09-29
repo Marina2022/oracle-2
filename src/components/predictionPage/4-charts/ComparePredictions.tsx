@@ -20,7 +20,7 @@ const ComparePredictions = ({models}: { models: ModelForDetailedPrediction[] }) 
               <div className="flex items-center gap-2">
                 <Badge
                   className={`border-transparent text-primary-foreground text-xs ${model.answerIsPositive ? "bg-primary" : "bg-destructive dark:bg-destructive/60"}`}>
-                  {model.answerIsPositive ? "ДА" : "НЕТ"}
+                  {model.answerIsPositive ? "Зенит" : "ЦСКА"}
                 </Badge>
                 <div className="text-xs text-muted-foreground">{model.confidence}%</div>
               </div>
