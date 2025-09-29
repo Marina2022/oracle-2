@@ -23,7 +23,7 @@ const Page = () => {
           },
           body: JSON.stringify({
             question: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
-            description: "Анализ от AI-моделей ChatGPT-4o mini | Claude | Gemini | YandexGPT",
+            description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
           }),
         });
 
@@ -154,7 +154,7 @@ const Page = () => {
           ...predictionDetailed,
           category: "Спорт • Футбол",
           title: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
-          description: "Анализ от AI-моделей ChatGPT-4o mini | Claude | Gemini | YandexGPT",
+          description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
           voting: [
             {
               label: "Зенит (станет #1)",
