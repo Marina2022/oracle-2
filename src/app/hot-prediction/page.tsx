@@ -159,12 +159,12 @@ const Page = () => {
             {
               label: "Зенит (станет #1)",
               percent: 67,
-              peopleNumber: 1247
+              peopleNumber: 1347
             },
             {
               label: "ЦСКА (станет #1)",
               percent: 33,
-              peopleNumber: 613
+              peopleNumber: 653
             }
           ],
           models: updatedModels,
