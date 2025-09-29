@@ -36,11 +36,12 @@ const Page = () => {
         // Replace the first model (ChatGPT-4) with AI-generated data
         const updatedModels = [...predictionDetailed.models];
         updatedModels[0] = {
-          modelTab: "ChatGPT-4o-mini",
-          modelTitle: "ChatGPT-4o-mini",
-          answerIsPositive: aiResponse.prediction.toLowerCase().includes('да') || aiResponse.prediction.toLowerCase().includes('зенит') || Math.random() > 0.5, // Simple heuristic
+          modelTab: "ChatGPT-4o",
+          modelTitle: "ChatGPT-4o",
+          answerIsPositive: aiResponse.prediction.toLowerCase().includes('зенит'), // True if Zenit
+          prediction: aiResponse.prediction,
           confidence: aiResponse.confidence,
-          historicPrecision: 75, // Placeholder
+          historicPrecision: 76, // As per example
           predictionsNumber: 50, // Placeholder
           sources: aiResponse.sources,
           reasonings: aiResponse.reasonings,
@@ -53,6 +54,18 @@ const Page = () => {
           category: "Спорт • Футбол",
           title: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
           description: "Анализ от AI-моделей ChatGPT-4o mini | Claude | Gemini | YandexGPT",
+          voting: [
+            {
+              label: "Зенит (станет #1)",
+              percent: 67,
+              peopleNumber: 1247
+            },
+            {
+              label: "ЦСКА (станет #1)",
+              percent: 33,
+              peopleNumber: 613
+            }
+          ],
           models: updatedModels,
         });
       } catch (err) {

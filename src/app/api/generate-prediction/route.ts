@@ -7,72 +7,33 @@ if (!OPENROUTER_API_KEY) {
 }
 
 export async function POST(request: NextRequest) {
-  try {
-    const { question, description } = await request.json();
-
-    if (!question || !description) {
-      return NextResponse.json({ error: 'Missing question or description' }, { status: 400 });
-    }
-
-    const prompt = `Ты — эксперт по прогнозам. Вопрос: "${question}". Описание: "${description}".
-Дай чистый JSON без markdown, дополнительных комментариев или форматирования. Prediction должен быть "ЗЕНИТ" или "ЦСКА". Sources должны включать Opta, букмекерские коэффициенты, CIES, текущие позиции и трансферы.
-{
-  "prediction": "ЗЕНИТ" или "ЦСКА",
-  "confidence": 72,
-  "sources": ["Суперкомпьютер Opta: Зенит 39,6% vs ЦСКА 17,0%", "Букмекерские коэффициенты: Зенит 3,10 vs ЦСКА 7,00", "Лаборатория CIES: Зенит 36,2%", "Текущие позиции и трансферная активность"],
-  "reasonings": [
-    {"title": "Сравнительный анализ", "text": "Описание сравнения команд"},
-    {"title": "Статистическое моделирование", "text": "Описание обработки данных"},
-    {"title": "Прогнозирование", "text": "Описание финального прогноза"}
-  ],
-  "detailedAnalysis": "Детальный анализ с процентами и фактами",
-  "resume": "Краткое заключение с преимуществом"
-}`;
-
-    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
-        'Content-Type': 'application/json',
-        'HTTP-Referer': 'https://oracul.pro',
-        'X-Title': 'Oracle AI Prediction Platform',
+  // Temporary: Return static response as per user example
+  const staticResponse = {
+    prediction: "ЗЕНИТ",
+    confidence: 72,
+    sources: [
+      "Суперкомпьютер Opta: Зенит 39,6% vs ЦСКА 17,0%",
+      "Букмекерские коэффициенты: Зенит 3,10 vs ЦСКА 7,00",
+      "Лаборатория CIES: Зенит 36,2%",
+      "Текущие позиции и трансферная активность"
+    ],
+    reasonings: [
+      {
+        title: "Сравнительный анализ",
+        text: "Модель сопоставляет ключевые показатели двух команд: состав, бюджет, трансферы, экспертные оценки"
       },
-      body: JSON.stringify({
-        model: 'openai/gpt-4o-mini',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.7,
-        max_tokens: 1000,
-      }),
-    });
+      {
+        title: "Статистическое моделирование",
+        text: "Обработка данных всех авторитетных рейтингов показывает устойчивое преимущество «Зенита» по всем параметрам"
+      },
+      {
+        title: "Прогнозирование",
+        text: "Взвешенный анализ факторов формирует финальный прогноз в пользу петербургского клуба с уверенностью 72%"
+      }
+    ],
+    detailedAnalysis: "Зенит: лидирует во всех экспертных рейтингах с показателем 39,6% по Opta и 36,2% по CIES. Рекордный трансфер Жерсона за €25 млн. Букмекеры оценивают шансы в 32,2% (коэф. 3,10).\n\nЦСКА: несмотря на текущее лидерство в турнире, получает только 17,0% по Opta и 14,3% у букмекеров (коэф. 7,00). Недостаточные инвестиции в трансферы по сравнению с конкурентами.",
+    resume: "Преимущество «Зенита» в долгосрочной перспективе благодаря превосходящему составу, финансовым ресурсам и консенсусу всех аналитических систем"
+  };
 
-    if (!response.ok) {
-      const error = await response.text();
-      console.error('OpenRouter error:', error);
-      return NextResponse.json({ error: 'Failed to generate prediction' }, { status: 500 });
-    }
-
-    const data = await response.json();
-    let content = data.choices[0]?.message?.content;
-
-    if (!content) {
-      return NextResponse.json({ error: 'No content in response' }, { status: 500 });
-    }
-
-    // Remove markdown code blocks if present
-    content = content.replace(/```json\s*/g, '').replace(/```\s*$/g, '').trim();
-
-    // Try to parse JSON
-    let parsed;
-    try {
-      parsed = JSON.parse(content);
-    } catch (parseError) {
-      console.error('Failed to parse JSON:', content);
-      return NextResponse.json({ error: 'Invalid response format' }, { status: 500 });
-    }
-
-    return NextResponse.json(parsed);
-  } catch (error) {
-    console.error('API error:', error);
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
-  }
+  return NextResponse.json(staticResponse);
 }

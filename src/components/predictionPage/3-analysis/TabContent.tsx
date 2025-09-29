@@ -18,7 +18,7 @@ const TabContent = ({model}: { model: ModelForDetailedPrediction }) => {
           <div>
             <h3 className="font-medium text-sm sm:text-base">{model.modelTitle}</h3>
             <div className="flex items-center gap-2 mt-1">
-              <Badge className="px-2 py-0.5 font-medium">{model.answerIsPositive ? "ДА" : "НЕТ"}</Badge>
+              <Badge className="px-2 py-0.5 font-medium">{model.prediction || (model.answerIsPositive ? "ДА" : "НЕТ")}</Badge>
               <span className="text-xs sm:text-sm text-muted-foreground">Уверенность: {model.confidence}%</span>
             </div>
           </div>

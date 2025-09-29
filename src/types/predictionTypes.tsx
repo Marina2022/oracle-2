@@ -18,6 +18,7 @@ export type ModelForDetailedPrediction = {
   modelTab: string,
   modelTitle: string,
   answerIsPositive: boolean,
+  prediction?: string,
   confidence: number,
   historicPrecision: number,
   predictionsNumber: number,

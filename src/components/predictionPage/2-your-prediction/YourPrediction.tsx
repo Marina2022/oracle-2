@@ -38,14 +38,14 @@ const YourPrediction = ({prediction}:{prediction: PredictionDetailed }) => {
             setYourPrediction(true)
           }}>
             <TrendingUp/>
-            <span className="text-sm sm:text-base">Да (станет #1)</span>
+            <span className="text-sm sm:text-base">Зенит</span>
           </Button>
           <Button className={secondBtnClass} onClick={() => {
             if (yourPrediction !==null) return
             setYourPrediction(false)
           }}>
             <TrendingDown/>
-            <span className="text-sm sm:text-base">НЕТ (не станет #1)</span>
+            <span className="text-sm sm:text-base">ЦСКА</span>
           </Button>
         </div>
         {
