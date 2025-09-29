@@ -13,7 +13,7 @@ const Analysis = ({prediction}: { prediction: PredictionDetailed }) => {
     <Card className="border p-4 sm:p-6 glassmorphism">
       <h2 className="flex items-center gap-2 mb-4 sm:mb-6 text-base sm:text-lg">
         <Brain className="h-4 w-4 sm:h-5 sm:w-5 text-primary"/>
-        <span>Анализ от AI-моделей</span>
+        <span>Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini</span>
       </h2>
       <Tabs defaultValue={models[0].modelTab}>
         <TabsList
