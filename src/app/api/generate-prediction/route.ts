@@ -15,10 +15,10 @@ export async function POST(request: NextRequest) {
     }
 
     const prompt = `Ты — эксперт по прогнозам. Вопрос: "${question}". Описание: "${description}".
-Дай ответ в формате JSON без дополнительных комментариев. Prediction должен быть "ЗЕНИТ" или "ЦСКА". Sources должны включать Opta, букмекерские коэффициенты, CIES, текущие позиции и трансферы.
+Дай чистый JSON без markdown, дополнительных комментариев или форматирования. Prediction должен быть "ЗЕНИТ" или "ЦСКА". Sources должны включать Opta, букмекерские коэффициенты, CIES, текущие позиции и трансферы.
 {
   "prediction": "ЗЕНИТ" или "ЦСКА",
-  "confidence": число от 0 до 100,
+  "confidence": 72,
   "sources": ["Суперкомпьютер Opta: Зенит 39,6% vs ЦСКА 17,0%", "Букмекерские коэффициенты: Зенит 3,10 vs ЦСКА 7,00", "Лаборатория CIES: Зенит 36,2%", "Текущие позиции и трансферная активность"],
   "reasonings": [
     {"title": "Сравнительный анализ", "text": "Описание сравнения команд"},
@@ -52,11 +52,14 @@ export async function POST(request: NextRequest) {
     }
 
     const data = await response.json();
-    const content = data.choices[0]?.message?.content;
+    let content = data.choices[0]?.message?.content;
 
     if (!content) {
       return NextResponse.json({ error: 'No content in response' }, { status: 500 });
     }
+
+    // Remove markdown code blocks if present
+    content = content.replace(/```json\s*/g, '').replace(/```\s*$/g, '').trim();
 
     // Try to parse JSON
     let parsed;
