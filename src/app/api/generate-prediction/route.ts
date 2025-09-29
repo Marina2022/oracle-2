@@ -7,7 +7,7 @@ if (!OPENROUTER_API_KEY) {
 }
 
 export async function POST(request: NextRequest) {
-  // Temporary: Return static response as per user example
+  // Temporary: Return static response as per user example for ChatGPT
   const staticResponse = {
     prediction: "ЗЕНИТ",
     confidence: 72,
