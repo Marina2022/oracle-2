@@ -11,7 +11,7 @@ import {formatNumber} from "@/utils/common";
 
 const PredictionPieChart = ({voting}: { voting: Voting }) => {
 
-  const COLORS = ["var(--primary)", "var(--secondary)"]
+  const COLORS = ["var(--primary)", "#ef4444"] // Red for CSKA
 
   return (
     <Card className="p-4 sm:p-6 glassmorphism gap-2">
