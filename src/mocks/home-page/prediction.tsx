@@ -4,12 +4,12 @@ export const predictions = [
     title: "Матч РФПЛ 04.10.2025",
     category: "Спорт",
     content: "Динамо М - Локомотив М",
-    consensus: 71,
+    consensus: 65,
     timeline: "4 дня",
     participantsNumber: 1247,
     growing: true,
     models: [
-      {title: "ChatGPT", precision: 89},
+      {title: "GPT 4o", precision: 65},
       {title: "DeepSeek", precision: 70},
       {title: "Grok", precision: 55},
       {title: "Gemini", precision: 68}
