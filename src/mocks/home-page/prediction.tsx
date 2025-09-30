@@ -69,18 +69,18 @@ export const predictions = [
 
   {
     id: "e5h7c9d1f",
-    title: "Рост цен на нефть в 2025 году",
-    category: "Экономика",
-    content: "Ожидается $90 - $110 за баррель",
-    consensus: 81,
-    timeline: "8 месяцев",
-    participantsNumber: 1345,
+    title: "Рубин - Крылья Советов 04.10.2025",
+    category: "Спорт",
+    content: "Матч РФПЛ",
+    consensus: 60,
+    timeline: "4 дня",
+    participantsNumber: 800,
     growing: true,
     models: [
-      {title: "ChatGPT", precision: 83},
-      {title: "YandexGPT", precision: 79},
-      {title: "Claude", precision: 80},
-      {title: "Gemini", precision: 82}
+      {title: "GPT 4o", precision: 49},
+      {title: "DeepSeek", precision: 60},
+      {title: "Grok", precision: 60},
+      {title: "Gemini", precision: 70}
     ]
   },
 
