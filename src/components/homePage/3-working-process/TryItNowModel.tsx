@@ -5,7 +5,10 @@ import {TryItNowModelType} from "@/types/tryItNowModelType";
 const TryItNowModel = ({model}: { model: TryItNowModelType }) => {
   return (
     <li className="flex items-center justify-between p-3  bg-muted/90 dark:bg-muted/50 rounded-lg ">
-      <span>{model.title}</span>
+      <div className="flex items-center space-x-2">
+        <span className="text-sm text-muted-foreground">{model.title}:</span>
+        <span className="font-medium">{model.prediction}</span>
+      </div>
       <div className="flex items-center space-x-2">
         <div className="w-16 h-2 bg-muted rounded-full overflow-hidden">
           <div className="h-full bg-primary rounded-full transition-all duration-1000"

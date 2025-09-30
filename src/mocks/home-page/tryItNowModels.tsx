@@ -1,18 +1,22 @@
 export const tryItNowModels = [
   {
-    title: "ChatGPT",
-    precision: 67
-  },
-  {
-    title: "YandexGPT",
+    title: "ChatGPT-4o",
+    prediction: "Зенит",
     precision: 72
   },
   {
-    title: "Claude",
+    title: "DeepSeek",
+    prediction: "Зенит",
+    precision: 65
+  },
+  {
+    title: "Grok",
+    prediction: "Зенит",
     precision: 65
   },
   {
     title: "Gemini",
-    precision: 69
+    prediction: "ЦСКА",
+    precision: 65
   },
 ]
