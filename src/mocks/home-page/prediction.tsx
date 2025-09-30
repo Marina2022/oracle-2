@@ -1,9 +1,9 @@
 export const predictions = [
   {
     id: "a1f3b9c7d",
-    title: "Матч РФПЛ 04.10.2025",
+    title: "Динамо М - Локомотив М 04.10.2025",
     category: "Спорт",
-    content: "Динамо М - Локомотив М",
+    content: "Матч РФПЛ",
     consensus: 65,
     timeline: "4 дня",
     participantsNumber: 1247,
