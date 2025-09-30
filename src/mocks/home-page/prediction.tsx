@@ -5,7 +5,7 @@ export const predictions = [
     category: "Спорт",
     content: "Динамо М - Локомотив М",
     consensus: 71,
-    timeline: "23 дня",
+    timeline: "4 дня",
     participantsNumber: 1247,
     growing: true,
     models: [
