@@ -52,17 +52,17 @@ export const predictions = [
 
   {
     id: "d4g6b8c0e",
-    title: "Температура в Москве летом 2025",
-    category: "Погода",
-    content: "Выше среднего на 2-3°C",
-    consensus: 68,
-    timeline: "6 месяцев",
-    participantsNumber: 543,
+    title: "Сочи — Пари НН 05.10.2025",
+    category: "Спорт",
+    content: "Матч РФПЛ",
+    consensus: 57,
+    timeline: "5 дней",
+    participantsNumber: 500,
     growing: true,
     models: [
-      {title: "ChatGPT", precision: 72},
-      {title: "YandexGPT", precision: 69},
-      {title: "Claude", precision: 65},
+      {title: "GPT 4o", precision: 41},
+      {title: "DeepSeek", precision: 60},
+      {title: "Grok", precision: 58},
       {title: "Gemini", precision: 67}
     ]
   },
