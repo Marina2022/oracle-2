@@ -4,6 +4,7 @@ import {Card} from '@/components/ui/card';
 import React from 'react';
 import {tryItNowModels} from "@/mocks/home-page/tryItNowModels";
 import TryItNowModel from "@/components/homePage/3-working-process/TryItNowModel";
+import Link from "next/link";
 
 const TryItNow = () => {
   return (
@@ -16,13 +17,13 @@ const TryItNow = () => {
         <div className="space-y-4">
           <div className="p-4 border border-border rounded-lg">
             <div className="flex items-center justify-between mb-3">
-              <h4 className="font-medium">Выборы президента США 2028</h4>
+              <h4 className="font-medium">Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА</h4>
               <Badge className="bg-primary/20 text-primary">Активно</Badge>
             </div>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Участников:</span>
-                <span>7 ИИ моделей</span>
+                <span>4 ИИ моделей</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Консенсус:</span>
@@ -30,7 +31,9 @@ const TryItNow = () => {
               </div>
             </div>
           </div>
-          <Button className="w-full">Посмотреть полный анализ</Button>
+          <Button asChild className="w-full">
+            <Link href="/hot-prediction">Посмотреть полный анализ</Link>
+          </Button>
         </div>
 
         <div className="space-y-3">
