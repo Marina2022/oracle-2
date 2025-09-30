@@ -1,18 +1,18 @@
 export const predictions = [
   {
     id: "a1f3b9c7d",
-    title: "Курс доллара к рублю на конец 2025",
-    category: "Экономика",
-    content: "75-85 рублей за доллар",
-    consensus: 87,
+    title: "Матч РФПЛ Динамо М - Локомотив М 04.10",
+    category: "Спорт",
+    content: "Gpt 4o 89% DeepSeek 70% Grok 55% Gemini 68%",
+    consensus: 71,
     timeline: "23 дня",
     participantsNumber: 1247,
     growing: true,
     models: [
       {title: "ChatGPT", precision: 89},
-      {title: "YandexGPT", precision: 85},
-      {title: "Claude", precision: 87},
-      {title: "Gemini", precision: 88}
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 55},
+      {title: "Gemini", precision: 68}
     ]
   },
 
