@@ -18,18 +18,18 @@ export const predictions = [
 
   {
     id: "b2d4e6f8a",
-    title: "Чемпион РПЛ сезон 2024/25",
+    title: "ЦСКА - Спартак 05.10.2025",
     category: "Спорт",
-    content: "Зенит vs Спартак vs ЦСКА",
-    consensus: 73,
-    timeline: "4 месяца",
-    participantsNumber: 892,
+    content: "Матч РФПЛ",
+    consensus: 56,
+    timeline: "5 дней",
+    participantsNumber: 600,
     growing: false,
     models: [
-      {title: "ChatGPT", precision: 75},
-      {title: "YandexGPT", precision: 78},
-      {title: "Claude", precision: 69},
-      {title: "Gemini", precision: 71}
+      {title: "GPT 4o", precision: 33},
+      {title: "DeepSeek", precision: 60},
+      {title: "Grok", precision: 60},
+      {title: "Gemini", precision: 72}
     ]
   },
 
