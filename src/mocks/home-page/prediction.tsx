@@ -35,18 +35,18 @@ export const predictions = [
 
   {
     id: "c3f5a7b9d",
-    title: "Цена Bitcoin в декабре 20255",
-    category: "Криптовалюты",
-    content: "$120,000 - $150,000",
-    consensus: 92,
-    timeline: "11 месяцев",
-    participantsNumber: 2156,
+    title: "Оренбург - Ростов 05.10.2025",
+    category: "Спорт",
+    content: "Матч РФПЛ",
+    consensus: 59,
+    timeline: "5 дней",
+    participantsNumber: 500,
     growing: true,
     models: [
-      {title: "ChatGPT", precision: 94},
-      {title: "YandexGPT", precision: 88},
-      {title: "Claude", precision: 93},
-      {title: "Gemini", precision: 95}
+      {title: "GPT 4o", precision: 44},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 58},
+      {title: "Gemini", precision: 65}
     ]
   },
 
