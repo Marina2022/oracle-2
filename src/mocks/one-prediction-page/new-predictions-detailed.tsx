@@ -4,9 +4,9 @@ import {PredictionDetailed} from "@/types/predictionTypes";
 export const predictionsDetailed: PredictionDetailed[] = [
   {
     id: "bbb1a7a5b",
-    category: "Спорт • Футбол",
+    category: "Спорт",
     title: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
-    timeline: 1767225600,
+    timeline: 1767148800,
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
@@ -189,7 +189,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
 
   {
     id: "f6h8j0k2l",
-    category: "Спорт • Футбол",
+    category: "Спорт",
     title: "Динамо М - Локомотив М 04.10.2025",
     timeline: 1759536000,
     participantsNumber: 1247,
@@ -333,7 +333,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
   },
   {
     id: "g7i9k1m3n",
-    category: "Спорт • Футбол",
+    category: "Спорт",
     title: "ЦСКА - Спартак 05.10.2025",
     timeline: 1759622400,
     participantsNumber: 600,
@@ -436,7 +436,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
   // Оренбург - Ростов 05.10.2025
   {
     id: "h8j0k2l4m",
-    category: "Спорт • Футбол",
+    category: "Спорт",
     title: "Оренбург - Ростов 05.10.2025",
     timeline: 1759622400,
     participantsNumber: 500,

@@ -2,7 +2,7 @@ export const predictions = [
   {
     id: "bbb1a7a5b",
     title: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
-    category: "Спорт • Футбол",
+    category: "Спорт",
     content: "Чемпионат РФПЛ",
     consensus: 75,
     timeline: 1767225600,
