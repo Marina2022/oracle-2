@@ -44,10 +44,10 @@ const GPT4oIcon = ()=>{
 export const models = [
   {
     id: "1",
-    title: "ChatGPT",
-    description: "Самый популярный ИИ в мире",
-    precision: 92,
-    predictionNumber: 2847,
+    title: "Grok",
+    description: "Модель xAI для креативного анализа",
+    precision: 93,
+    predictionNumber: 2500,
     icon: <BotIcon />
   },
   {
@@ -67,10 +67,10 @@ export const models = [
   },
   {
     id: "4",
-    title: "GigaChat",
-    description: "Сбер ИИ для российского рынка",
-    predictionNumber: 1456,
-    precision: 87,
+    title: "DeepSeek",
+    description: "Китайская модель для глубокого обучения",
+    predictionNumber: 1800,
+    precision: 90,
     icon: <ZapIcon />
   },
   {
