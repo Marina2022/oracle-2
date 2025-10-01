@@ -3,13 +3,13 @@
 import React, { useState, useEffect } from 'react';
 import TopBar from '@/components/predictionPage/1-top-bar/TopBar';
 import YourPrediction from "@/components/predictionPage/2-your-prediction/YourPrediction";
-import {predictionDetailed} from "@/mocks/one-prediction-page/prediction-detailed";
+import { predictionsDetailed } from "@/mocks/one-prediction-page/new-predictions-detailed";
 import Analysis from "@/components/predictionPage/3-analysis/Analysis";
 import CommentsBlock from "@/components/predictionPage/3-analysis/comments/CommentsBlock";
 import ChartsAll from "@/components/predictionPage/4-charts/ChartsAll";
 
 const Page = () => {
-  const [predictionData, setPredictionData] = useState(predictionDetailed);
+  const [predictionData, setPredictionData] = useState(predictionsDetailed[0]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -25,8 +25,8 @@ const Page = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            question: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
-            description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
+            question: "Рубин - Крылья Советов 04.10.2025",
+            description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
           }),
         });
 
@@ -37,7 +37,7 @@ const Page = () => {
         const aiResponse = await response.json();
 
         // Replace the first model (ChatGPT-4) with AI-generated data
-        const updatedModels = [...predictionDetailed.models];
+        const updatedModels = [...predictionsDetailed[0].models];
         updatedModels[0] = {
           modelTab: "ChatGPT-4o",
           modelTitle: "ChatGPT-4o",
@@ -154,10 +154,10 @@ const Page = () => {
         };
 
         setPredictionData({
-          ...predictionDetailed,
-          category: "Спорт • Футбол",
-          title: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
-          description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
+          ...predictionsDetailed[0],
+          category: "Спорт",
+          title: "Рубин - Крылья Советов 04.10.2025",
+          description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
           voting: [
             {
               label: "Зенит (станет #1)",
