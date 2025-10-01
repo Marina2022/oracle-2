@@ -5,7 +5,7 @@ export type PredictionType =
     category: string,
     content: string,
     consensus: number,
-    timeline: string,
+    timeline: number,
     participantsNumber: number,
     growing: boolean,
     models: {
@@ -25,7 +25,7 @@ export type ModelForDetailedPrediction = {
   sources: string[],
   reasonings: { title: string, text: string }[],
   detailedAnalysis: string,
-  resume: string
+  resume: string,
 }
 
 export type CommentForDetailedPrediction = {
@@ -45,5 +45,12 @@ export type PredictionDetailed =
     description: string,
     models: ModelForDetailedPrediction[],
     voting: Voting,
-    comments: CommentForDetailedPrediction[]
+    comments: CommentForDetailedPrediction[],
+    timeline: number,
+    participantsNumber: number,
+    consensus?: ConsensusType
   }
+
+
+type ConsensusType = { title: string, value: number }[]
+

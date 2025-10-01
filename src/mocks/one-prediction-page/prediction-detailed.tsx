@@ -4,7 +4,13 @@ export const predictionDetailed: PredictionDetailed = {
   id: "a3b5c7a9b",
   category: "Спорт • Футбол",
   title: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
+  timeline: 1735603200,
+  participantsNumber: 1860,
   description: "Анализ от AI-моделей ChatGPT-4o mini | Claude | Gemini | YandexGPT",
+  consensus: [
+    {title: "Зенит", value: 75},
+    {title: "ЦСКА", value: 25},
+  ],
   models: [
     {
       modelTab: "ChatGPT-4o",

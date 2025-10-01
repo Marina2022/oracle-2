@@ -186,7 +186,7 @@ const Page = () => {
   if (loading) {
     return (
       <>
-        <TopBar/>
+        <TopBar prediction={null}/>
         <div className="pt-36 container pb-4 sm:pb-8 flex justify-center items-center min-h-[50vh]">
           <div className="text-center">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
@@ -200,7 +200,7 @@ const Page = () => {
   if (error) {
     return (
       <>
-        <TopBar/>
+        <TopBar prediction={null} />
         <div className="pt-36 container pb-4 sm:pb-8 flex justify-center items-center min-h-[50vh]">
           <div className="text-center">
             <p className="text-red-500 mb-4">{error}</p>
@@ -218,7 +218,7 @@ const Page = () => {
 
   return (
     <>
-      <TopBar/>
+      <TopBar prediction={predictionData}/>
       <div className="pt-36 container pb-4 sm:pb-8">
         <div className=" py-4 sm:py-8 space-y-4 sm:space-y-8">
           <YourPrediction prediction={predictionData} />

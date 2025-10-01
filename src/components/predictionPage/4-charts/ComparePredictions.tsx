@@ -1,11 +1,11 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
-import {ModelForDetailedPrediction} from "@/types/predictionTypes";
+import {PredictionDetailed} from "@/types/predictionTypes";
 import {ChartColumn} from "lucide-react";
 import {Badge} from '@/components/ui/badge';
 import {Progress} from "@/components/ui/progress";
 
-const ComparePredictions = ({models}: { models: ModelForDetailedPrediction[] }) => {
+const ComparePredictions = ({prediction}: { prediction: PredictionDetailed } ) => {
   return (
     <Card className="p-4 sm:p-6 glassmorphism gap-6">
       <div className="flex items-center gap-2 mb-4 text-sm sm:text-base">
@@ -14,7 +14,7 @@ const ComparePredictions = ({models}: { models: ModelForDetailedPrediction[] }) 
       </div>
       <ul className="space-y-4" role="region" aria-label="Диаграмма сравнения уверенности моделей">
         {
-          models.map((model, i) => <li key={i} className="space-y-2">
+          prediction.models.map((model, i) => <li key={i} className="space-y-2">
             <div className="flex items-center justify-between">
               <div className="text-sm font-medium">{model.modelTitle}</div>
               <div className="flex items-center gap-2">
@@ -32,14 +32,16 @@ const ComparePredictions = ({models}: { models: ModelForDetailedPrediction[] }) 
       <div className="mt-6 pt-4 border-t border-border">
         <div className="text-sm font-medium mb-3">Консенсус-алгоритм</div>
         <div className="grid grid-cols-2 gap-4">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-primary">75%</div>
-            <div className="text-xs text-muted-foreground">Зенит</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-destructive">25%</div>
-            <div className="text-xs text-muted-foreground">ЦСКА</div>
-          </div>
+
+          {
+            prediction.consensus?.map((item, i)=>(
+              <div className="text-center" key={i}>
+                <div className={`text-2xl font-bold ${i === 0 ? "text-primary" : "text-destructive"}`}>
+                  {item.value}%
+                </div>
+                <div className="text-xs text-muted-foreground">{item.title}</div>
+              </div>
+            ))    }
         </div>
       </div>
     </Card>

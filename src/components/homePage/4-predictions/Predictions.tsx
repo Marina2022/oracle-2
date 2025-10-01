@@ -1,6 +1,6 @@
 import React from 'react';
 import {Badge} from "@/components/ui/badge";
-import {predictions} from "@/mocks/home-page/prediction";
+import {predictions} from "@/mocks/home-page/predictions";
 import PredictionCard from "@/components/homePage/4-predictions/PredictionCard";
 import {Card} from "@/components/ui/card";
 import {Button} from "@/components/ui/button";

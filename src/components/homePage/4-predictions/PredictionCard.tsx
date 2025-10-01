@@ -7,7 +7,7 @@ import {Badge} from "@/components/ui/badge";
 import {ChevronRight, Clock, TrendingDownIcon, TrendingUpIcon, Users} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import {Progress} from "@/components/ui/progress";
-import {formatParticipants} from "@/utils/common";
+import {formatParticipants, timeUntil} from "@/utils/common";
 import {Separator} from "@/components/ui/separator";
 import Link from "next/link";
 import {useRouter} from "next/navigation";
@@ -61,7 +61,7 @@ const PredictionCard = ({prediction}: { prediction: PredictionType }) => {
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div className="flex items-center space-x-2">
             <Clock className="w-4 h-4 text-muted-foreground"/>
-            <span>{prediction.timeline}</span>
+            <span>{timeUntil(prediction.timeline)}</span>
           </div>
 
           <div className="grid grid-cols-2 gap-4 text-sm">

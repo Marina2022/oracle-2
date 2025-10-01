@@ -9,7 +9,7 @@ const ChartsAll = ({prediction}: { prediction: PredictionDetailed }) => {
   return (
     <div className="space-y-4 sm:space-y-6">
       <PredictionPieChart voting={prediction.voting}/>
-      <ComparePredictions models={prediction.models}/>
+      <ComparePredictions prediction={prediction}/>
       <BarChartBlock models={prediction.models}/>
     </div>
   );

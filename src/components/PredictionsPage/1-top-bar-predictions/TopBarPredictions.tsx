@@ -5,7 +5,7 @@ import {Button} from "@/components/ui/button";
 import {ArrowLeft, Eye} from "lucide-react";
 import {Badge} from "@/components/ui/badge";
 import {useRouter} from "next/navigation";
-import {predictions} from "@/mocks/home-page/prediction";
+import {predictions} from "@/mocks/home-page/predictions";
 
 const TopBarPredictions = () => {
   const router = useRouter()
