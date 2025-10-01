@@ -25,7 +25,7 @@ const Page = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            question: "Кто станет Чемпином РФПЛ в сезоне 2025-2026? Цска или Зенит?",
+            question: "Кто станет Чемпином РФПЛ в сезоне 2025-2026? Зенит или Цска?",
             description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
           }),
         });
@@ -156,7 +156,7 @@ const Page = () => {
         setPredictionData({
           ...predictionsDetailed[0],
           category: "Спорт",
-          title: "Кто станет Чемпином РФПЛ в сезоне 2025-2026? Цска или Зенит?",
+          title: "Кто станет Чемпином РФПЛ в сезоне 2025-2026? Зенит или Цска?",
           description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
           voting: [
             {
