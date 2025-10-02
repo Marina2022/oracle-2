@@ -89,7 +89,7 @@ const PredictionCard = ({prediction}: { prediction: PredictionType }) => {
       </div>
       <Separator className="mt-4"/>
       <Button asChild
-              className="bg-transparent mt-4 hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3 w-full justify-between text-sm">
+              className="bg-transparent mt-4 text-foreground hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3 w-full justify-between text-sm">
         <Link href={`/predictions/${prediction.id}`}>
           <span>Подробный анализ</span>
           <ChevronRight className="w-4 h-4"/>

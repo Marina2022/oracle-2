@@ -48,7 +48,7 @@ export type PredictionDetailed =
     comments: CommentForDetailedPrediction[],
     timeline: number,
     participantsNumber: number,
-    consensus?: ConsensusType
+    consensus: ConsensusType
   }
 
 
