@@ -3,7 +3,7 @@ import {PredictionDetailed} from "@/types/predictionTypes";
 export const predictionDetailed: PredictionDetailed = {
   id: "e5h7c9d1f",
   category: "Спорт",
-  title: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
+  title: "Кто станет Чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
   timeline: 1767148800,
   participantsNumber: 1860,
   description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
