@@ -205,8 +205,8 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 1247,
     description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Динамо М", value: 65},
-      {title: "Локомотив М", value: 35},
+      {title: "Динамо М", value: 35},
+      {title: "Локомотив М", value: 65},
     ],
     models: [
       {
@@ -359,8 +359,8 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 600,
     description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "ЦСКА", value: 56},
-      {title: "Спартак", value: 44},
+      {title: "ЦСКА", value: 65},
+      {title: "Спартак", value: 35},
     ],
     models: [
       {
@@ -509,8 +509,8 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 500,
     description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Оренбург", value: 59},
-      {title: "Ростов", value: 41},
+      {title: "Оренбург", value: 39},
+      {title: "Ростов", value: 61},
     ],
     models: [
       {
@@ -646,8 +646,8 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 500,
     description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Сочи", value: 57},
-      {title: "Пари НН", value: 43},
+      {title: "Сочи", value: 61},
+      {title: "Пари НН", value: 39},
     ],
     models: [
       {
