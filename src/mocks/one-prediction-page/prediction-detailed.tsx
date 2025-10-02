@@ -2,14 +2,14 @@ import {PredictionDetailed} from "@/types/predictionTypes";
 
 export const predictionDetailed: PredictionDetailed = {
   id: "e5h7c9d1f",
-  category: "Спорт • Футбол",
-  title: "Рубин - Крылья Советов 04.10.2025",
-  timeline: 1759622399,
-  participantsNumber: 800,
-  description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
+  category: "Спорт",
+  title: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
+  timeline: 1767148800,
+  participantsNumber: 1860,
+  description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
   consensus: [
-    {title: "Рубин", value: 60},
-    {title: "Крылья Советов", value: 40},
+    {title: "Зенит", value: 75},
+    {title: "ЦСКА", value: 25},
   ],
   models: [
     {
