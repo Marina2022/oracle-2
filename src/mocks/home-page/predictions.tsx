@@ -1,20 +1,20 @@
 export const predictions = [
-  // {
-  //   id: "bbb1a7a5b",
-  //   title: "Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
-  //   category: "Спорт",
-  //   content: "Чемпионат РФПЛ",
-  //   consensus: 75,
-  //   timeline: 1767225600 + 86340,
-  //   participantsNumber: 1860,
-  //   growing: true,
-  //   models: [
-  //     {title: "ChatGPT-4o", precision: 76},
-  //     {title: "DeepSeek", precision: 70},
-  //     {title: "Grok", precision: 70},
-  //     {title: "Gemini", precision: 85}
-  //   ]
-  // },
+  {
+    id: "bbb1a7a5b",
+    title: "Кто станет Чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
+    category: "Спорт",
+    content: "Чемпионат РФПЛ",
+    consensus: 75,
+    timeline: 1767225600 + 86340,
+    participantsNumber: 1860,
+    growing: true,
+    models: [
+      {title: "ChatGPT-4o", precision: 76},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 85}
+    ]
+  },
   {
     id: "f6h8j0k2l",
     title: "Динамо М - Локомотив М 04.10.2025",
@@ -25,7 +25,7 @@ export const predictions = [
     participantsNumber: 1247,
     growing: true,
     models: [
-      {title: "GPT 4o", precision: 65},
+      {title: "GPT 4o", precision: 55},
       {title: "DeepSeek", precision: 70},
       {title: "Grok", precision: 55},
       {title: "Gemini", precision: 68}
@@ -41,7 +41,7 @@ export const predictions = [
     participantsNumber: 600,
     growing: false,
     models: [
-      {title: "GPT 4o", precision: 33},
+      {title: "GPT 4o", precision: 66},
       {title: "DeepSeek", precision: 60},
       {title: "Grok", precision: 60},
       {title: "Gemini", precision: 72}
@@ -57,7 +57,7 @@ export const predictions = [
     participantsNumber: 500,
     growing: true,
     models: [
-      {title: "GPT 4o", precision: 44},
+      {title: "GPT 4o", precision: 49},
       {title: "DeepSeek", precision: 70},
       {title: "Grok", precision: 58},
       {title: "Gemini", precision: 65}
@@ -73,10 +73,10 @@ export const predictions = [
     participantsNumber: 500,
     growing: true,
     models: [
-      {title: "GPT 4o", precision: 41},
+      {title: "GPT 4o", precision: 44},
       {title: "DeepSeek", precision: 60},
-      {title: "Grok", precision: 58},
-      {title: "Gemini", precision: 67}
+      {title: "Grok", precision: 62},
+      {title: "Gemini", precision: 60}
     ]
   },
   {
@@ -89,10 +89,10 @@ export const predictions = [
     participantsNumber: 800,
     growing: true,
     models: [
-      {title: "GPT 4o", precision: 49},
+      {title: "GPT 4o", precision: 65},
       {title: "DeepSeek", precision: 60},
-      {title: "Grok", precision: 60},
-      {title: "Gemini", precision: 70}
+      {title: "Grok", precision: 48},
+      {title: "Gemini", precision: 65}
     ]
   },
 ];
