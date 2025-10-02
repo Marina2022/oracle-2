@@ -85,7 +85,7 @@ export const predictions = [
     category: "Спорт",
     content: "Матч РФПЛ",
     consensus: 60,
-    timeline: 1759622399 + 86340,
+    timeline: 1759536000 + 86340,
     participantsNumber: 800,
     growing: true,
     models: [
