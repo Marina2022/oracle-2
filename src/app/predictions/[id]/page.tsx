@@ -15,7 +15,7 @@ interface PredictionPageProps {
 }
 
 const Page = async ({params}: PredictionPageProps) => {
-  await new Promise(resolve => setTimeout(resolve, 5000));
+  await new Promise(resolve => setTimeout(resolve, 3000));
 
   const {id} = await params;
 
