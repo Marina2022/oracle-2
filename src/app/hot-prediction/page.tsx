@@ -15,8 +15,8 @@ const Page = () => {
 
   useEffect(() => {
     const generatePrediction = async () => {
-      // Add 5 second delay for loading animation
-      await new Promise(resolve => setTimeout(resolve, 5000));
+      // Add 3 second delay for loading animation
+      await new Promise(resolve => setTimeout(resolve, 3000));
 
       try {
         const response = await fetch('/api/generate-prediction', {
