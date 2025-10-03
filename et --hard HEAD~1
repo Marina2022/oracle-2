@@ -1,0 +1,243 @@
+[33mcommit 40723a056353806ec3ff1abce3bf67d46b84d330[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Marina2022 <marusiiiia@yandex.ru>
+Date:   Thu Oct 2 13:34:37 2025 +0200
+
+    mock time fix
+
+[33mcommit a30984d01b882427b8a302b8cacb01ec732578bf[m
+Author: Marina2022 <marusiiiia@yandex.ru>
+Date:   Thu Oct 2 12:22:40 2025 +0200
+
+    fixes: zenit, cska
+
+[33mcommit 2ad8615916e5406d847ca1b3d8d386d2fe2670a1[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Thu Oct 2 12:50:49 2025 +0300
+
+    Capitalize 'Сезоне' in title
+
+[33mcommit d4451675fafb16dcad34b10bc859cf195917b8e5[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Thu Oct 2 12:37:05 2025 +0300
+
+    Fix title capitalization: 'Чемпионом' and 'ЦСКА'
+
+[33mcommit 52e8d5de8bc4aa6b34c6c6ddee15d90065d1b9c5[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Thu Oct 2 12:29:21 2025 +0300
+
+    Update prediction to 'Who will be RPL champion 2025-2026? Zenit or CSKA'
+
+[33mcommit 8786861f93b6596d3a3c11c0c8041f118bc54311[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 20:52:07 2025 +0300
+
+    Update Grok detailedAnalysis for Rubin vs Krylya prediction
+
+[33mcommit c581508677fa1488db52bd6b74d4a6476d88ac81[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 20:42:21 2025 +0300
+
+    Update Gemini data for Rubin - Krylya Sovetov prediction
+
+[33mcommit d4565342063198a65c5c82c33d98a7ab47020c86[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 20:26:40 2025 +0300
+
+    Update Grok detailedAnalysis for Rubin - Krylya Sovetov prediction
+
+[33mcommit 494c706b45beb3997e7092efe3da602f52cbd26e[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 20:02:59 2025 +0300
+
+    Update Grok detailed analysis for Rubin vs Krylya Sovetov
+
+[33mcommit d2d1d68534fbeb3ebb506f7de56677c18c414c00[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 19:53:21 2025 +0300
+
+    Update Grok prediction for Rubin vs Krylya Sovetov
+
+[33mcommit 336617c75e4e89f1ef150a5bd4be27375c1141dc[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 19:44:18 2025 +0300
+
+    Swap order of teams in RFPL champion question
+
+[33mcommit 5539406d92615e4f1f5800129ad3500e5ce71072[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 19:40:47 2025 +0300
+
+    Change hot prediction to RFPL champion question
+
+[33mcommit 57e9122c665c65021747010ed1db106602706611[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 19:30:17 2025 +0300
+
+    Update DeepSeek prediction for Rubin vs Krylya Sovetov match
+
+[33mcommit ea4aaa6b6d63fc089b7cac0285f95461bb1e9b2e[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 19:20:44 2025 +0300
+
+    Update GPT 4o prediction for Rubin - Krylya Sovetov match
+
+[33mcommit 758f07097e3c56dfc59aa4059e1345ce1769638d[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 19:06:41 2025 +0300
+
+    Update Gemini prediction for Sochi - Pari NN match
+
+[33mcommit 2d906c23148c806f966831609aa0beb8db2967f8[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 18:41:41 2025 +0300
+
+    Update Grok prediction for Sochi - Pari NN match
+
+[33mcommit ecc9cfc1c8c55300679f49d4e6444cae6f0a0deb[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 18:22:34 2025 +0300
+
+    Update DeepSeek prediction for Sochi - Pari NN match
+
+[33mcommit 7b181a6b8e5e34d3f14907ee72dd13bf237a432d[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 18:18:44 2025 +0300
+
+    Update GPT 4o prediction for Sochi - Pari NN match
+
+[33mcommit f31a0c006a29ae825552fcf505f817a87d406f3e[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 18:09:38 2025 +0300
+
+    Update Gemini prediction for Orenburg - Rostov match
+
+[33mcommit ee08eb7ffd2141d381ec19ce5934c2513f8f03be[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 18:06:13 2025 +0300
+
+    Update Grok prediction for Orenburg - Rostov match
+
+[33mcommit 316c0b4dad46530e1066a2f25a0e34356976b9da[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 17:59:45 2025 +0300
+
+    Update DeepSeek prediction for Orenburg - Rostov match
+
+[33mcommit 2e5bbdc198e0179d9dff3f02df60239c8e58fb21[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 17:56:59 2025 +0300
+
+    Update GPT 4o prediction for Orenburg - Rostov match
+
+[33mcommit f1996bf5e545eb46545d592210d0a08674f806c3[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 17:30:52 2025 +0300
+
+    Update Gemini prediction for CSKA - Spartak match
+
+[33mcommit c1cf0820c6ec8ba1adac45cc7301833728c13b76[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 17:28:07 2025 +0300
+
+    Update Grok prediction for CSKA - Spartak match
+
+[33mcommit dda4488ed1ec75102e3c58027f3a9b617b34c3b6[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 17:21:40 2025 +0300
+
+    Update DeepSeek prediction for CSKA - Spartak match
+
+[33mcommit b6e26f5f1ac19977b7f6d710f0d92c5e97b94259[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 17:17:28 2025 +0300
+
+    Update GPT 4o prediction for CSKA - Spartak match
+
+[33mcommit f34ff2dc72980a1dc3f94f825d86b6dcd7e81ce4[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 17:03:14 2025 +0300
+
+    Update Gemini prediction for Dynamo M - Lokomotiv M match
+
+[33mcommit 9fd74fd35cbddf19efcb1febb0ee77efaa38de51[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 16:57:27 2025 +0300
+
+    Update Grok prediction for Dynamo M - Lokomotiv M match
+
+[33mcommit 35c0b89b1b8060142d7bec4d8b5b22f2a72b5714[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 16:51:38 2025 +0300
+
+    Update DeepSeek prediction for Dynamo M - Lokomotiv M match
+
+[33mcommit 10f35ca5e249dcd5d07145b0e4931f1e20085bab[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 16:48:37 2025 +0300
+
+    Update GPT 4o prediction for Dynamo M - Lokomotiv M match
+
+[33mcommit 470137f762a755a0751aa8352dffabfb93d4913e[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 16:18:28 2025 +0300
+
+    Add new comment for CSKA in predictions
+
+[33mcommit 8afb8290057da29b98af6f53836002068c64e55b[m[33m ([m[1;31mmy-origin/main[m[33m)[m
+Author: Marina2022 <marusiiiia@yandex.ru>
+Date:   Wed Oct 1 14:21:02 2025 +0200
+
+    fixes
+
+[33mcommit 2cbc833fe28191c5c73d5ed1706514d168a16590[m
+Author: Marina2022 <marusiiiia@yandex.ru>
+Date:   Wed Oct 1 13:57:50 2025 +0200
+
+    fixes
+
+[33mcommit 01bc9513909da472767c244f3739b6757fcc7cf8[m
+Author: Marina2022 <marusiiiia@yandex.ru>
+Date:   Wed Oct 1 13:20:37 2025 +0200
+
+    TS fix
+
+[33mcommit dfa621298a5ae409a5743c947436e0fd29514a69[m
+Author: Marina2022 <marusiiiia@yandex.ru>
+Date:   Wed Oct 1 13:15:38 2025 +0200
+
+    add pages for all prediction cards
+
+[33mcommit 831b87f4f005638c5c6c40dbb7097adc2e6b7610[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 12:31:12 2025 +0300
+
+    Replace ChatGPT with Grok and GigaChat with DeepSeek in models mock
+
+[33mcommit 68e651de89f348851e7dd4a3bde2978e93fde612[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Wed Oct 1 11:47:36 2025 +0300
+
+    Change 'Голосование сообщества' to 'Прогноз нейросетей' and add consensus algorithm section with 75% Zenit, 25% CSKA
+
+[33mcommit 5bcd9230f2e598925fc29b5642a0ade83d8b760a[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Tue Sep 30 20:19:00 2025 +0300
+
+    Update TryItNow models to show predictions: ChatGPT-4o Zenit 72%, DeepSeek Zenit 65%, Grok Zenit 65%, Gemini CSKA 65%
+
+[33mcommit b2133e18e13ddfd7ed9815142dffd497a51fb628[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Tue Sep 30 20:15:30 2025 +0300
+
+    Add 5 second delay to loading animation in hot-prediction page
+
+[33mcommit 7b1d34d2f1ce35a5d0b284b36a970229b05acff9[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Tue Sep 30 20:12:18 2025 +0300
+
+    Update TryItNow component: change prediction to RPL championship, participants to 4, add link to /hot-prediction
+
+[33mcommit 05257d43f62fba22793a31276f25f82a33aa8b0c[m
+Author: Vlad-Ai-Man <vladi.zaikin@gmail.com>
+Date:   Tue Sep 30 19:55:04 2025 +03
