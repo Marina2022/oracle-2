@@ -9,7 +9,7 @@ export const predictions = [
     participantsNumber: 1860,
     growing: true,
     models: [
-      {title: "ChatGPT-4o", precision: 46},
+      {title: "GPT-4o", precision: 46},
       {title: "DeepSeek", precision: 68},
       {title: "Grok", precision: 65},
       {title: "Gemini", precision: 65}
