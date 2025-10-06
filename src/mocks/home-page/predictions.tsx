@@ -1,4 +1,5 @@
 export const predictions = [
+  /*
   {
     id: "bbb1a7a5b",
     title: "Чехия — Хорватия 09.10.2025",
@@ -15,6 +16,7 @@ export const predictions = [
       {title: "Gemini", precision: 65}
     ]
   },
+  */
   {
     id: "f6h8j0k2l",
     title: "Динамо М - Локомотив М 04.10.2025",
