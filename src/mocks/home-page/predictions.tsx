@@ -1,18 +1,18 @@
 export const predictions = [
   {
     id: "bbb1a7a5b",
-    title: "Кто станет Чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА",
+    title: "Чехия — Хорватия 09.10.2025",
     category: "Спорт",
-    content: "Чемпионат РФПЛ",
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
     consensus: 75,
-    timeline: 1767225600 + 86340,
+    timeline: 1759968000 + 86340,
     participantsNumber: 1860,
     growing: true,
     models: [
-      {title: "ChatGPT-4o", precision: 76},
-      {title: "DeepSeek", precision: 70},
-      {title: "Grok", precision: 70},
-      {title: "Gemini", precision: 85}
+      {title: "ChatGPT-4o", precision: 46},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 65}
     ]
   },
   {
