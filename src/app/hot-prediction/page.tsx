@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import TopBar from '@/components/predictionPage/1-top-bar/TopBar';
 import YourPrediction from "@/components/predictionPage/2-your-prediction/YourPrediction";
 import Analysis from "@/components/predictionPage/3-analysis/Analysis";
@@ -8,6 +8,7 @@ import CommentsBlock from "@/components/predictionPage/3-analysis/comments/Comme
 import ChartsAll from "@/components/predictionPage/4-charts/ChartsAll";
 // import { predictionsDetailed } from "@/mocks/one-prediction-page/new-predictions-detailed";
 import {predictionDetailed} from "@/mocks/one-prediction-page/prediction-detailed";
+import {isTimestampPast} from "@/utils/common";
 
 const Page = () => {
   // const [predictionData, setPredictionData] = useState(predictionsDetailed[0]);
@@ -17,6 +18,12 @@ const Page = () => {
 
   useEffect(() => {
     const generatePrediction = async () => {
+
+      if (!isTimestampPast(predictionDetailed.timeline)) {
+        await new Promise(resolve => setTimeout(resolve, 3000));
+      } else {
+        await new Promise(resolve => setTimeout(resolve, 500));
+      }
       // Add 3 seconds delay for loading animation
       await new Promise(resolve => setTimeout(resolve, 3000));
 
@@ -194,7 +201,7 @@ const Page = () => {
         <div className="pt-36 container pb-4 sm:pb-8 flex justify-center items-center min-h-[50vh]">
           <div className="text-center">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-            <p>Генерируем прогноз с помощью AI...</p>
+            {/*<p>Генерируем прогноз с помощью AI...</p>*/}
           </div>
         </div>
       </>

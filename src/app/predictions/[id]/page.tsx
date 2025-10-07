@@ -6,6 +6,7 @@ import CommentsBlock from "@/components/predictionPage/3-analysis/comments/Comme
 import ChartsAll from "@/components/predictionPage/4-charts/ChartsAll";
 import {predictionsDetailed} from "@/mocks/one-prediction-page/new-predictions-detailed";
 import {PredictionDetailed} from "@/types/predictionTypes";
+import {isTimestampPast} from "@/utils/common";
 
 
 interface PredictionPageProps {
@@ -15,10 +16,8 @@ interface PredictionPageProps {
 }
 
 const Page = async ({params}: PredictionPageProps) => {
-  await new Promise(resolve => setTimeout(resolve, 3000));
 
   const {id} = await params;
-
   const prediction: PredictionDetailed | undefined = predictionsDetailed.find(
     (p) => p.id === id
   );
@@ -26,6 +25,14 @@ const Page = async ({params}: PredictionPageProps) => {
   if (!prediction) {
     return <div>Прогноз не найден</div>;
   }
+
+  if (!isTimestampPast(prediction.timeline)) {
+    await new Promise(resolve => setTimeout(resolve, 3000));
+  } else {
+    await new Promise(resolve => setTimeout(resolve, 500));
+  }
+
+
 
   return (
     <>

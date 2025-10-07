@@ -36,6 +36,7 @@ export type CommentForDetailedPrediction = {
 }
 
 export type Voting = { label: string, percent: number, peopleNumber: number }[]
+export type Result = { score: string, won: string, source: string } | null
 
 export type PredictionDetailed =
   {
@@ -48,7 +49,8 @@ export type PredictionDetailed =
     comments: CommentForDetailedPrediction[],
     timeline: number,
     participantsNumber: number,
-    consensus: ConsensusType
+    consensus: ConsensusType,
+    result: Result,
   }
 
 

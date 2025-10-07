@@ -10,7 +10,6 @@ import {PredictionDetailed} from "@/types/predictionTypes";
 
 const TopBar = ({prediction}: { prediction: PredictionDetailed | null }) => {
 
-  console.log('prediction = ', prediction)
 
   const router = useRouter()
 

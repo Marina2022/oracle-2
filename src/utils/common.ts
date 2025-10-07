@@ -71,4 +71,10 @@ function getRussianPlural(n: number, one: string, few: string, many: string): st
   return many;
 }
 
-// Пример использования
+
+
+export function isTimestampPast(timestamp: number):boolean {
+  // Текущее время в секундах
+  const now = Math.floor(Date.now() / 1000);
+  return now > timestamp;
+}

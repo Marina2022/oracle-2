@@ -104,7 +104,7 @@ export const predictions = [
     category: "Здоровье",
     content: "Прогноз: 120-150 тысяч человек",
     consensus: 77,
-    timeline: "3 месяца",
+    timeline: 1759968000 + 86340,
     participantsNumber: 945,
     growing: false,
     models: [
@@ -121,7 +121,7 @@ export const predictions = [
     category: "Кино",
     content: "Основные претенденты пока неизвестны",
     consensus: 62,
-    timeline: "7 месяцев",
+    timeline: 1759968000 + 86340,
     participantsNumber: 1123,
     growing: true,
     models: [
@@ -138,9 +138,29 @@ export const predictions = [
     category: "Экономика",
     content: "95-й бензин: 60-65 ₽/литр",
     consensus: 84,
-    timeline: "10 месяцев",
+    timeline: 1759968000 + 86340,
     participantsNumber: 1587,
     growing: true,
+    models: [
+      {title: "ChatGPT", precision: 86},
+      {title: "YandexGPT", precision: 82},
+      {title: "Claude", precision: 83},
+      {title: "Gemini", precision: 85}
+    ]
+  },
+
+  ,
+
+  {
+    id: "aaaaaah5j",
+    title: "Еще одна десятая карточка",
+    category: "Экономика",
+    content: "95-й бензин: 60-65 ₽/литр",
+    consensus: 84,
+    timeline: 1759968000 + 86340,
+    participantsNumber: 1587,
+    growing: true,
+
     models: [
       {title: "ChatGPT", precision: 86},
       {title: "YandexGPT", precision: 82},
