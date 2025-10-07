@@ -6,13 +6,13 @@ export const predictionsDetailed: PredictionDetailed[] = [
   {
     id: "bbb1a7a5b",
     category: "Спорт",
-    title: "Зенит — Цска",
+    title: "Чехия — Хорватия 09.10.2025",
     timeline: 1759968000,
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Зенит", value: 75},
-      {title: "Цска", value: 25},
+      {title: "Чехия", value: 75},
+      {title: "Хорватия", value: 25},
     ],
     models: [
       {

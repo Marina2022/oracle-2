@@ -1,5 +1,5 @@
 export const predictions = [
-  /*
+
   {
     id: "bbb1a7a5b",
     title: "Чехия — Хорватия 09.10.2025",
@@ -16,7 +16,7 @@ export const predictions = [
       {title: "Gemini", precision: 65}
     ]
   },
-  */
+
   {
     id: "f6h8j0k2l",
     title: "Динамо М - Локомотив М 04.10.2025",
@@ -97,4 +97,55 @@ export const predictions = [
       {title: "Gemini", precision: 65}
     ]
   },
+
+  {
+    id: "g7j9e1f3h",
+    title: "Количество заболевших гриппом зимой 2025",
+    category: "Здоровье",
+    content: "Прогноз: 120-150 тысяч человек",
+    consensus: 77,
+    timeline: "3 месяца",
+    participantsNumber: 945,
+    growing: false,
+    models: [
+      {title: "ChatGPT", precision: 78},
+      {title: "YandexGPT", precision: 75},
+      {title: "Claude", precision: 76},
+      {title: "Gemini", precision: 74}
+    ]
+  },
+
+  {
+    id: "h8k0f2g4i",
+    title: "Премия «Оскар» за лучший фильм 2025",
+    category: "Кино",
+    content: "Основные претенденты пока неизвестны",
+    consensus: 62,
+    timeline: "7 месяцев",
+    participantsNumber: 1123,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 64},
+      {title: "YandexGPT", precision: 61},
+      {title: "Claude", precision: 63},
+      {title: "Gemini", precision: 62}
+    ]
+  },
+
+  {
+    id: "i9l1g3h5j",
+    title: "Средняя цена на бензин в РФ в декабре 2025",
+    category: "Экономика",
+    content: "95-й бензин: 60-65 ₽/литр",
+    consensus: 84,
+    timeline: "10 месяцев",
+    participantsNumber: 1587,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 86},
+      {title: "YandexGPT", precision: 82},
+      {title: "Claude", precision: 83},
+      {title: "Gemini", precision: 85}
+    ]
+  }
 ];

@@ -3,19 +3,21 @@
 import React, { useState, useEffect } from 'react';
 import TopBar from '@/components/predictionPage/1-top-bar/TopBar';
 import YourPrediction from "@/components/predictionPage/2-your-prediction/YourPrediction";
-import { predictionsDetailed } from "@/mocks/one-prediction-page/new-predictions-detailed";
 import Analysis from "@/components/predictionPage/3-analysis/Analysis";
 import CommentsBlock from "@/components/predictionPage/3-analysis/comments/CommentsBlock";
 import ChartsAll from "@/components/predictionPage/4-charts/ChartsAll";
+// import { predictionsDetailed } from "@/mocks/one-prediction-page/new-predictions-detailed";
+import {predictionDetailed} from "@/mocks/one-prediction-page/prediction-detailed";
 
 const Page = () => {
-  const [predictionData, setPredictionData] = useState(predictionsDetailed[0]);
+  // const [predictionData, setPredictionData] = useState(predictionsDetailed[0]);
+  const [predictionData, setPredictionData] = useState(predictionDetailed);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const generatePrediction = async () => {
-      // Add 3 second delay for loading animation
+      // Add 3 seconds delay for loading animation
       await new Promise(resolve => setTimeout(resolve, 3000));
 
       try {
@@ -37,7 +39,8 @@ const Page = () => {
         const aiResponse = await response.json();
 
         // Replace the first model (ChatGPT-4) with AI-generated data
-        const updatedModels = [...predictionsDetailed[0].models];
+        // const updatedModels = [...predictionsDetailed[0].models];
+        const updatedModels = [...predictionDetailed.models];
         updatedModels[0] = {
           modelTab: "ChatGPT-4o",
           modelTitle: "ChatGPT-4o",
@@ -154,7 +157,8 @@ const Page = () => {
         };
 
         setPredictionData({
-          ...predictionsDetailed[0],
+          // ...predictionsDetailed[0],
+          ...predictionDetailed,
           category: "Спорт",
           title: "Кто станет Чемпионом РФПЛ в сезоне 2025-2026? Зенит или Цска?",
           description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
