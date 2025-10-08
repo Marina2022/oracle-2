@@ -20,7 +20,9 @@ const ComparePredictions = ({prediction}: { prediction: PredictionDetailed } ) =
               <div className="flex items-center gap-2">
                 <Badge
                   className={`border-transparent text-primary-foreground text-xs ${model.answerIsPositive ? "bg-primary" : "bg-destructive dark:bg-destructive/60"}`}>
-                  {model.answerIsPositive ? prediction.consensus[0].title : prediction.consensus[1].title}
+
+                  {/*{model.answerIsPositive ? prediction.consensus[0].title : prediction.consensus[1].title}*/}
+                  {model.prediction}
                 </Badge>
                 <div className="text-xs text-muted-foreground">{model.confidence}%</div>
               </div>
@@ -32,7 +34,6 @@ const ComparePredictions = ({prediction}: { prediction: PredictionDetailed } ) =
       <div className="mt-6 pt-4 border-t border-border">
         <div className="text-sm font-medium mb-3">Консенсус-алгоритм</div>
         <div className="grid grid-cols-2 gap-4">
-
           {
             prediction.consensus?.map((item, i)=>(
               <div className="text-center" key={i}>
