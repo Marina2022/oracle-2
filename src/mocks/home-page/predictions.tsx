@@ -102,16 +102,16 @@ export const predictions = [
     id: "g7j9e1f3h",
     title: "Шотландия — Греция 09.10.2025",
     category: "Спорт",
-    content: "Прогноз: 120-150 тысяч человек",
-    consensus: 77,
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 60,
     timeline: 1759968000 + 86340,
     participantsNumber: 945,
     growing: false,
     models: [
-      {title: "ChatGPT", precision: 78},
-      {title: "YandexGPT", precision: 75},
-      {title: "Claude", precision: 76},
-      {title: "Gemini", precision: 74}
+      {title: "GPT 4o", precision: 37},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 60},
+      {title: "Gemini", precision: 70}
     ]
   },
 
@@ -119,16 +119,16 @@ export const predictions = [
     id: "h8k0f2g4i",
     title: "Россия — Иран 10.10.2025",
     category: "Спорт",
-    content: "Основные претенденты пока неизвестны",
+    content: "Футбол, Товарищеские матчи",
     consensus: 62,
     timeline: 1759968000 + 86340,
     participantsNumber: 1123,
     growing: true,
     models: [
-      {title: "ChatGPT", precision: 64},
-      {title: "YandexGPT", precision: 61},
-      {title: "Claude", precision: 63},
-      {title: "Gemini", precision: 62}
+      {title: "GPT 4o", precision: 44},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 55},
+      {title: "Gemini", precision: 60}
     ]
   },
 
@@ -136,16 +136,16 @@ export const predictions = [
     id: "i9l1g3h5j",
     title: "Швеция — Швейцария 10.10.2025",
     category: "Спорт",
-    content: "95-й бензин: 60-65 ₽/литр",
-    consensus: 84,
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 60,
     timeline: 1759968000 + 86340,
     participantsNumber: 1587,
     growing: true,
     models: [
-      {title: "ChatGPT", precision: 86},
-      {title: "YandexGPT", precision: 82},
-      {title: "Claude", precision: 83},
-      {title: "Gemini", precision: 85}
+      {title: "GPT 4o", precision: 36},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 58},
+      {title: "Gemini", precision: 75}
     ]
   },
 
@@ -155,17 +155,17 @@ export const predictions = [
     id: "aaaaaah5j",
     title: "Северная Ирландия — Словакия 10.10.2025",
     category: "Спорт",
-    content: "95-й бензин: 60----65 ₽/литр",
-    consensus: 84,
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 56,
     timeline: 1759968000 + 86340,
     participantsNumber: 1587,
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 86},
-      {title: "YandexGPT", precision: 82},
-      {title: "Claude", precision: 83},
-      {title: "Gemini", precision: 85}
+      {title: "ChatGPT", precision: 37},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 52},
+      {title: "Gemini", precision: 70}
     ]
   }
 ];
