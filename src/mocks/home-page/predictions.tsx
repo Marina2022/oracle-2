@@ -147,9 +147,7 @@ export const predictions = [
       {title: "Grok", precision: 58},
       {title: "Gemini", precision: 75}
     ]
-  },
-
-  ,
+  }
 
   {
     id: "aaaaaah5j",
