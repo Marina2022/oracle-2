@@ -121,7 +121,7 @@ export const predictions = [
     category: "Спорт",
     content: "Футбол, Товарищеские матчи",
     consensus: 62,
-    timeline: 1759968000 + 86340,
+    timeline: 1760129999,
     participantsNumber: 1123,
     growing: true,
     models: [
@@ -138,7 +138,7 @@ export const predictions = [
     category: "Спорт",
     content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
     consensus: 60,
-    timeline: 1759968000 + 86340,
+    timeline: 1760129999,
     participantsNumber: 1587,
     growing: true,
     models: [
@@ -155,7 +155,7 @@ export const predictions = [
     category: "Спорт",
     content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
     consensus: 56,
-    timeline: 1759968000 + 86340,
+    timeline: 1760129999,
     participantsNumber: 1587,
     growing: true,
 

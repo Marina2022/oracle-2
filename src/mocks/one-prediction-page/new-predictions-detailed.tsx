@@ -1424,7 +1424,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
     },
     category: "Спорт",
     title: "Россия — Иран 10.10.2025",
-    timeline: 1759968000,
+    timeline: 1760129999,
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
@@ -1711,7 +1711,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
     },
     category: "Спорт",
     title: "Швеция — Швейцария 10.10.2025",
-    timeline: 1759968000,
+    timeline: 1760129999,
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
@@ -1980,7 +1980,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
     result: null,
     category: "Спорт",
     title: "Северная Ирландия — Словакия 10.10.2025",
-    timeline: 1759968000,
+    timeline: 1760129999,
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
