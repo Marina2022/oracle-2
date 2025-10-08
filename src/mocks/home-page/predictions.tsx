@@ -100,8 +100,8 @@ export const predictions = [
 
   {
     id: "g7j9e1f3h",
-    title: "Количество заболевших гриппом зимой 2025",
-    category: "Здоровье",
+    title: "Шотландия — Греция 09.10.2025",
+    category: "Спорт",
     content: "Прогноз: 120-150 тысяч человек",
     consensus: 77,
     timeline: 1759968000 + 86340,
@@ -117,8 +117,8 @@ export const predictions = [
 
   {
     id: "h8k0f2g4i",
-    title: "Премия «Оскар» за лучший фильм 2025",
-    category: "Кино",
+    title: "Россия — Иран 10.10.2025",
+    category: "Спорт",
     content: "Основные претенденты пока неизвестны",
     consensus: 62,
     timeline: 1759968000 + 86340,
@@ -134,8 +134,8 @@ export const predictions = [
 
   {
     id: "i9l1g3h5j",
-    title: "Средняя цена на бензин в РФ в декабре 2025",
-    category: "Экономика",
+    title: "Швеция — Швейцария 10.10.2025",
+    category: "Спорт",
     content: "95-й бензин: 60-65 ₽/литр",
     consensus: 84,
     timeline: 1759968000 + 86340,
@@ -153,9 +153,9 @@ export const predictions = [
 
   {
     id: "aaaaaah5j",
-    title: "Еще одна десятая карточка",
-    category: "Экономика",
-    content: "95-й бензин: 60-65 ₽/литр",
+    title: "Северная Ирландия — Словакия 10.10.2025",
+    category: "Спорт",
+    content: "95-й бензин: 60----65 ₽/литр",
     consensus: 84,
     timeline: 1759968000 + 86340,
     participantsNumber: 1587,
