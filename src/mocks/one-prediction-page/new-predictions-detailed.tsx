@@ -975,7 +975,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
     result: {
       score: "2 - 0",
       won: "Рубин",
-      source: "rubin-kazan.ru"
+      source: "championat.com"
     },
     category: "Спорт",
     title: "Рубин - Крылья Советов 04.10.2025",
