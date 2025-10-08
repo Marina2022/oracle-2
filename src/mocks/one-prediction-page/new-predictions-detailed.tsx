@@ -1148,7 +1148,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
     result: {
       score: "4 - 0",
       won: "Чехия",
-      source: "Какой-нибудь источник"
+      source: "championat.com"
     },
     category: "Спорт",
     title: "Шотландия — Греция 09.10.2025",
