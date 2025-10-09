@@ -1152,7 +1152,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
     },
     category: "Спорт",
     title: "Шотландия — Греция 09.10.2025",
-    timeline: 1759968000,
+    timeline: 1760043599,
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
