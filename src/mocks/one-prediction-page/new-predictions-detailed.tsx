@@ -1146,7 +1146,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
   {
     id: "g7j9e1f3h",
     result: {
-      score: "3 - 2",
+      score: "3 - 1",
       won: "Шотландия",
       source: "championat.com"
     },
