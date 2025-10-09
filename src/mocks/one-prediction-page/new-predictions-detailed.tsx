@@ -1146,8 +1146,8 @@ export const predictionsDetailed: PredictionDetailed[] = [
   {
     id: "g7j9e1f3h",
     result: {
-      score: "4 - 0",
-      won: "Чехия",
+      score: "3 - 2",
+      won: "Шотландия",
       source: "championat.com"
     },
     category: "Спорт",
@@ -1164,7 +1164,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
         modelTab: "GPT-4o",
         modelTitle: "GPT-4o",
         answerIsPositive: true,
-        prediction: "Шотландия или Ничья",
+        prediction: "Шотландия",
         confidence: 37,
         historicPrecision: 56,
         predictionsNumber: 45,
@@ -1205,7 +1205,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
           "2.  Стандарты Шотландии (угловые/подачи на высоких) vs компактность Греции в своей трети. (betting.betfair.com)\n" +
           "3.  Психологический фон после мартовской серии: у хозяев — мотивация реванша, у гостей — уверенность в рабочем плане «ниже блока + переходы». (Reuters)\n" +
           "4.  Погода/газон ускоряют мяч — плюс к быстрым розыгрышам низом и прострелам в коридоры.",
-        resume: "Даю ничью  с уверенностью 37 % на исход Х. Это жёсткий матч «вокруг одного мяча»: у Шотландии — площадка и текущая форма группы, у Греции — свежая память о 0:3 на том же стадионе и план в переходах. Общий баланс факторов держит игру у центра, без явного фаворита."
+        resume: "Несмотря на свежую память о поражении 0:3 от Греции в марте на Хэмпден Парке, Шотландия имеет явное преимущество в этом матче с уверенностью 37% на исход П1. Фактор домашнего поля и текущая форма группы — ключевые козыри хозяев: в последних 12 домашних матчах отбора на ЧМ шотландцы не проигрывали в 11 случаях (8 побед, 3 ничьи) и не покидали поле без забитых голов ни разу."
       },
       {
         modelTab: "DeepSeek",
@@ -1312,7 +1312,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
         modelTab: "Gemini",
         modelTitle: "Gemini",
         answerIsPositive: true,
-        prediction: "Шотландия или Ничья",
+        prediction: "Шотландия",
         confidence: 70,
         historicPrecision: 82,
         predictionsNumber: 30,
