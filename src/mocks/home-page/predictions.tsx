@@ -154,7 +154,7 @@ export const predictions = [
     title: "Северная Ирландия — Словакия 10.10.2025",
     category: "Спорт",
     content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
-    consensus: 56,
+    consensus: 45,
     timeline: 1760129999,
     participantsNumber: 1587,
     growing: true,
@@ -173,62 +173,63 @@ export const predictions = [
   ,
   {
     id: "a3j9k1l2",
-    title: "Новая карточка-1",
+    title: "Сербия — Албания  11.10.2025",
     category: "Спорт",
-    content: "Матч РФПЛ",
-    consensus: 60,
-    timeline: 1759536000 + 86340,
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 63,
+    timeline: 1760216399,
     participantsNumber: 800,
     growing: true,
     models: [
-      {title: "GPT 4o", precision: 65},
-      {title: "DeepSeek", precision: 60},
-      {title: "Grok", precision: 48},
-      {title: "Gemini", precision: 65}
+      {title: "GPT 4o", precision: 46},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 72}
     ]
   },
 
   {
     id: "f7m2n8q5",
-    title: "Новая карточка-2",
+    title: "Ирак - Индонезия 11.10.2025",
     category: "Спорт",
-    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
-    consensus: 60,
-    timeline: 1759968000 + 86340,
+    content: "Футбол, Отборочный турнир чемпионата мира. АФК",
+    consensus: 68,
+    timeline: 1760216399,
     participantsNumber: 945,
     growing: false,
     models: [
-      {title: "GPT 4o", precision: 37},
-      {title: "DeepSeek", precision: 65},
-      {title: "Grok", precision: 60},
-      {title: "Gemini", precision: 70}
+      {title: "GPT 4o", precision: 52},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 78}
     ]
   },
 
   {
     id: "r4t6b0v1",
-    title: "Новая карточка-3",
+    title: "США - Эквадор 11.10.2025",
     category: "Спорт",
     content: "Футбол, Товарищеские матчи",
-    consensus: 62,
-    timeline: 1760129999,
+    consensus: 48,
+    timeline: 1760216399,
     participantsNumber: 1123,
     growing: true,
     models: [
-      {title: "GPT 4o", precision: 44},
-      {title: "DeepSeek", precision: 65},
+      {title: "GPT 4o", precision: 37},
+      {title: "DeepSeek", precision: 68},
       {title: "Grok", precision: 55},
-      {title: "Gemini", precision: 60}
+      {title: "Gemini", precision: 58}
     ]
   },
 
+  /*
   {
     id: "p9x3s5d7",
-    title: "Новая карточка-4",
+    title: "Дания — Греция 12.10.2025",
     category: "Спорт",
     content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
     consensus: 60,
-    timeline: 1760129999,
+    timeline: 1760302799,
     participantsNumber: 1587,
     growing: true,
     models: [
@@ -238,14 +239,16 @@ export const predictions = [
       {title: "Gemini", precision: 75}
     ]
   },
+  */
 
+  /*
   {
     id: "e2h8u6y4",
-    title: "Новая карточка-5",
+    title: "Румыния — Австрия 12.10.2025",
     category: "Спорт",
     content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
     consensus: 56,
-    timeline: 1760129999,
+    timeline: 1760302799,
     participantsNumber: 1587,
     growing: true,
 
@@ -256,4 +259,5 @@ export const predictions = [
       {title: "Gemini", precision: 70}
     ]
   }
+  */
 ];
