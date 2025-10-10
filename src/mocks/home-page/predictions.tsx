@@ -166,4 +166,94 @@ export const predictions = [
       {title: "Gemini", precision: 70}
     ]
   }
+
+
+// новые 5шт
+
+  ,
+  {
+    id: "a3j9k1l2",
+    title: "Новая карточка-1",
+    category: "Спорт",
+    content: "Матч РФПЛ",
+    consensus: 60,
+    timeline: 1759536000 + 86340,
+    participantsNumber: 800,
+    growing: true,
+    models: [
+      {title: "GPT 4o", precision: 65},
+      {title: "DeepSeek", precision: 60},
+      {title: "Grok", precision: 48},
+      {title: "Gemini", precision: 65}
+    ]
+  },
+
+  {
+    id: "f7m2n8q5",
+    title: "Новая карточка-2",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 60,
+    timeline: 1759968000 + 86340,
+    participantsNumber: 945,
+    growing: false,
+    models: [
+      {title: "GPT 4o", precision: 37},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 60},
+      {title: "Gemini", precision: 70}
+    ]
+  },
+
+  {
+    id: "r4t6b0v1",
+    title: "Новая карточка-3",
+    category: "Спорт",
+    content: "Футбол, Товарищеские матчи",
+    consensus: 62,
+    timeline: 1760129999,
+    participantsNumber: 1123,
+    growing: true,
+    models: [
+      {title: "GPT 4o", precision: 44},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 55},
+      {title: "Gemini", precision: 60}
+    ]
+  },
+
+  {
+    id: "p9x3s5d7",
+    title: "Новая карточка-4",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 60,
+    timeline: 1760129999,
+    participantsNumber: 1587,
+    growing: true,
+    models: [
+      {title: "GPT 4o", precision: 36},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 58},
+      {title: "Gemini", precision: 75}
+    ]
+  },
+
+  {
+    id: "e2h8u6y4",
+    title: "Новая карточка-5",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 56,
+    timeline: 1760129999,
+    participantsNumber: 1587,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 37},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 52},
+      {title: "Gemini", precision: 70}
+    ]
+  }
 ];

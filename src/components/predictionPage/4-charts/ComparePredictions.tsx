@@ -5,7 +5,7 @@ import {ChartColumn} from "lucide-react";
 import {Badge} from '@/components/ui/badge';
 import {Progress} from "@/components/ui/progress";
 
-const ComparePredictions = ({prediction}: { prediction: PredictionDetailed } ) => {
+const ComparePredictions = ({prediction}: { prediction: PredictionDetailed }) => {
   return (
     <Card className="p-4 sm:p-6 glassmorphism gap-6">
       <div className="flex items-center gap-2 mb-4 text-sm sm:text-base">
@@ -35,14 +35,15 @@ const ComparePredictions = ({prediction}: { prediction: PredictionDetailed } ) =
         <div className="text-sm font-medium mb-3">Консенсус-алгоритм</div>
         <div className="grid grid-cols-2 gap-4">
           {
-            prediction.consensus?.map((item, i)=>(
+            prediction.consensus?.map((item, i) => (
               <div className="text-center" key={i}>
                 <div className={`text-2xl font-bold ${i === 0 ? "text-primary" : "text-destructive"}`}>
                   {item.value}%
                 </div>
                 <div className="text-xs text-muted-foreground">{item.title}</div>
               </div>
-            ))    }
+            ))
+          }
         </div>
       </div>
     </Card>
