@@ -1418,9 +1418,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
   {
     id: "h8k0f2g4i",
     result: {
-      score: "4 - 0",
-      won: "Чехия",
-      source: "Какой-нибудь источник"
+      score: "2 - 1",
+      won: "Россия",
+      source: "championat.com"
     },
     category: "Спорт",
     title: "Россия — Иран 10.10.2025",
@@ -1705,9 +1705,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
   {
     id: "i9l1g3h5j",
     result: {
-      score: "4 - 0",
-      won: "Чехия",
-      source: "Какой-нибудь источник"
+      score: "0 - 2",
+      won: "Швейцария",
+      source: "championat.com"
     },
     category: "Спорт",
     title: "Швеция — Швейцария 10.10.2025",
@@ -1978,7 +1978,11 @@ export const predictionsDetailed: PredictionDetailed[] = [
   // Северная Ирландия — Словакия 10.10.2025
   {
     id: "aaaaaah5j",
-    result: null,
+    result: {
+      score: "2 - 0",
+      won: "Северная Ирландия",
+      source: "championat.com"
+    }, 
     category: "Спорт",
     title: "Северная Ирландия — Словакия 10.10.2025",
     timeline: 1760129999,
