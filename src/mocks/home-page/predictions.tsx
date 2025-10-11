@@ -222,13 +222,12 @@ export const predictions = [
     ]
   },
 
-  /*
   {
     id: "p9x3s5d7",
     title: "Дания — Греция 12.10.2025",
     category: "Спорт",
     content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
-    consensus: 60,
+    consensus: 80,
     timeline: 1760302799,
     participantsNumber: 1587,
     growing: true,
@@ -239,15 +238,13 @@ export const predictions = [
       {title: "Gemini", precision: 75}
     ]
   },
-  */
 
-  /*
   {
     id: "e2h8u6y4",
     title: "Румыния — Австрия 12.10.2025",
     category: "Спорт",
     content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
-    consensus: 56,
+    consensus: 65,
     timeline: 1760302799,
     participantsNumber: 1587,
     growing: true,
@@ -259,5 +256,4 @@ export const predictions = [
       {title: "Gemini", precision: 70}
     ]
   }
-  */
 ];
