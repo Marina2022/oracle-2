@@ -2262,7 +2262,11 @@ export const predictionsDetailed: PredictionDetailed[] = [
   // Новая карточка-1
   {
     id: "a3j9k1l2",
-    result: null,
+    result: {
+      score: "0 - 1",
+      won: "Албания",
+      source: "championat.com"
+    },  
     category: "Спорт",
     title: "Сербия — Албания  11.10.2025",
     timeline: 1760216399,
@@ -2588,7 +2592,11 @@ export const predictionsDetailed: PredictionDetailed[] = [
   // Новая карточка-2
   {
     id: "f7m2n8q5",
-    result: null,
+    result: {
+      score: "1 - 0",
+      won: "Ирак",
+      source: "championat.com"
+    },
     category: "Спорт",
     title: "Ирак - Индонезия 11.10.2025",
     timeline: 1760216399,
@@ -2999,7 +3007,11 @@ export const predictionsDetailed: PredictionDetailed[] = [
   // Новая карточка-3
   {
     id: "r4t6b0v1",
-    result: null,
+    result: {
+      score: "1 - 1",
+      won: "Ничья",
+      source: "championat.com"
+    },
     category: "Спорт",
     title: "США - Эквадор 11.10.2025",
     timeline: 1760216399,
