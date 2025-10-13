@@ -626,7 +626,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
     id: "h8j0k2l4m",
     result: {
       score: "0 - 1",
-      won: "Оренбург",
+      won: "Ростов",
       source: "soccer365.ru"
     },
     category: "Спорт",
