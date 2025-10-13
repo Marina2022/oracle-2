@@ -256,4 +256,101 @@ export const predictions = [
       {title: "Gemini", precision: 70}
     ]
   }
+
+// новые 5шт
+  ,
+  {
+    id: "k9m3p7w1",
+    title: "Катар — ОАЭ 14.10.2025",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. АФК",
+    consensus: 38,
+    timeline: 1760475599,
+    participantsNumber: 800,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 61},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 81}
+    ]
+  },
+
+  {
+    id: "r5t2n8q4",
+    title: "Турция — Грузия 14.10.2025",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 88,
+    timeline: 1760475599,
+    participantsNumber: 587,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 57},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 64}
+    ]
+  },
+
+  {
+    id: "v7x4c1b9",
+    title: "Саудовская Аравия — Ирак 14.10.2025",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. АФК",
+    consensus: 85,
+    timeline: 1760475599,
+    participantsNumber: 580,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 54},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 64}
+    ]
+  },
+
+  /*
+  {
+    id: "a3j6s9d2",
+    title: "США — Австралия 15.10.2025",
+    category: "Спорт",
+    content: "Футбол, Товарищеские матчи",
+    consensus: 65,
+    timeline: 1760562599,
+    participantsNumber: 900,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 37},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 52},
+      {title: "Gemini", precision: 70}
+    ]
+  },
+  */
+
+  /*
+  {
+    id: "f8h5k2l6",
+    title: "Мексика — Эквадор 15.10.2025",
+    category: "Спорт",
+    content: "Футбол, Товарищеские матчи",
+    consensus: 65,
+    timeline: 1760562599,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 37},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 52},
+      {title: "Gemini", precision: 70}
+    ]
+  }
+  */
+
 ];
