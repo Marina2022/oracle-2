@@ -313,7 +313,7 @@ export const predictions = [
     ]
   },
 
-  /*
+  
   {
     id: "a3j6s9d2",
     title: "США — Австралия 15.10.2025",
@@ -325,32 +325,32 @@ export const predictions = [
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 37},
+      {title: "ChatGPT", precision: 51},
       {title: "DeepSeek", precision: 65},
-      {title: "Grok", precision: 52},
-      {title: "Gemini", precision: 70}
+      {title: "Grok", precision: 62},
+      {title: "Gemini", precision: 65}
     ]
   },
-  */
+  
 
-  /*
+  
   {
     id: "f8h5k2l6",
     title: "Мексика — Эквадор 15.10.2025",
     category: "Спорт",
     content: "Футбол, Товарищеские матчи",
-    consensus: 65,
-    timeline: 1760562599,
+    consensus: 68,
+    timeline: 1760572740,
     participantsNumber: 1000,
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 37},
-      {title: "DeepSeek", precision: 65},
-      {title: "Grok", precision: 52},
-      {title: "Gemini", precision: 70}
+      {title: "ChatGPT", precision: 69},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 60},
+      {title: "Gemini", precision: 64}
     ]
   }
-  */
+  
 
 ];
