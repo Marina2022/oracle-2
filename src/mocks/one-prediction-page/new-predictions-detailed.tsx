@@ -4071,7 +4071,11 @@ export const predictionsDetailed: PredictionDetailed[] = [
   // Новая карточка-6
   {
     id: "k9m3p7w1",
-    result: null,
+    result: {
+      score: "2 - 1",
+      won: "Катар",
+      source: "championat.com"
+    },
     category: "Спорт",
     title: "Катар — ОАЭ",
     timeline: 1760475599,
@@ -4466,7 +4470,11 @@ export const predictionsDetailed: PredictionDetailed[] = [
   // Новая карточка-7
   {
     id: "r5t2n8q4",
-    result: null,
+    result: {
+      score: "4 - 1",
+      won: "Турция",
+      source: "championat.com"
+    },
     category: "Спорт",
     title: "Турция — Грузия",
     timeline: 1760475599,
@@ -4759,7 +4767,11 @@ export const predictionsDetailed: PredictionDetailed[] = [
   // Новая карточка-8
   {
     id: "v7x4c1b9",
-    result: null,
+    result: {
+      score: "0 - 0",
+      won: "Ничья",
+      source: "championat.com"
+    },
     category: "Спорт",
     title: "Саудовская Аравия — Ирак",
     timeline: 1760475599,
