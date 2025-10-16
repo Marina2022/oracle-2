@@ -339,7 +339,7 @@ export const predictions = [
     title: "Мексика — Эквадор 15.10.2025",
     category: "Спорт",
     content: "Футбол, Товарищеские матчи",
-    consensus: 68,
+    consensus: 48,
     timeline: 1760572740,
     participantsNumber: 1000,
     growing: true,
