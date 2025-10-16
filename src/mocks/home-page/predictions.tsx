@@ -350,7 +350,106 @@ export const predictions = [
       {title: "Grok", precision: 60},
       {title: "Gemini", precision: 64}
     ]
-  }
+  },
+
+  //Новые 5 карточек 
+
+
+ {
+    id: "jbxvs6ya",
+    title: "Пари НН — Акрон 18.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 70,
+    timeline: 1760831940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 69},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 64},
+      {title: "Gemini", precision: 75}
+    ]
+  },
+  
   
 
+  {
+    id: "jeljtpbl",
+    title: "Крылья Советов — Оренбург 18.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 80,
+    timeline: 1760831940,
+    participantsNumber: 870,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 52},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 58},
+      {title: "Gemini", precision: 68}
+    ]
+  },
+
+/*
+  {
+    id: "76qjd9zs",
+    title: "Спартак — Ростов 18.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 48,
+    timeline: 1760831940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 69},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 60},
+      {title: "Gemini", precision: 64}
+    ]
+  },
+  */
+
+/*
+  {
+    id: "76qjd9zs",
+    title: "Динамо Махачкала — Краснодар 18.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 48,
+    timeline: 1760831940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 69},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 60},
+      {title: "Gemini", precision: 64}
+    ]
+  },
+*/
+
+  /*
+  {
+    id: "8wqsxatc",
+    title: "Локомотив — ЦСКА 18.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 48,
+    timeline: 1760831940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 69},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 60},
+      {title: "Gemini", precision: 64}
+    ]
+  }
+*/
 ];
