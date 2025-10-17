@@ -393,63 +393,124 @@ export const predictions = [
     ]
   },
 
-/*
+
   {
     id: "76qjd9zs",
     title: "Спартак — Ростов 18.10.2025",
     category: "Спорт",
     content: "Футбол, Чемпионат России",
-    consensus: 48,
+    consensus: 80,
     timeline: 1760831940,
     participantsNumber: 1000,
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 69},
-      {title: "DeepSeek", precision: 70},
-      {title: "Grok", precision: 60},
-      {title: "Gemini", precision: 64}
+      {title: "ChatGPT", precision: 53},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 85},
+      {title: "Gemini", precision: 80}
     ]
   },
-  */
 
-/*
+
+
   {
-    id: "76qjd9zs",
+    id: "6kub4061",
     title: "Динамо Махачкала — Краснодар 18.10.2025",
     category: "Спорт",
     content: "Футбол, Чемпионат России",
-    consensus: 48,
+    consensus: 80,
     timeline: 1760831940,
     participantsNumber: 1000,
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 69},
-      {title: "DeepSeek", precision: 70},
-      {title: "Grok", precision: 60},
-      {title: "Gemini", precision: 64}
+      {title: "ChatGPT", precision: 55},
+      {title: "DeepSeek", precision: 64},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 78}
     ]
   },
-*/
 
-  /*
+
+  
   {
     id: "8wqsxatc",
     title: "Локомотив — ЦСКА 18.10.2025",
     category: "Спорт",
     content: "Футбол, Чемпионат России",
-    consensus: 48,
+    consensus: 70,
     timeline: 1760831940,
     participantsNumber: 1000,
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 69},
-      {title: "DeepSeek", precision: 70},
-      {title: "Grok", precision: 60},
-      {title: "Gemini", precision: 64}
+      {title: "ChatGPT", precision: 51},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 82},
+      {title: "Gemini", precision: 70}
+    ]
+  },
+
+
+//новые 3 карточки
+  {
+    id: "x7r4n9qe",
+    title: "Ноттингем Форест — Челси 18.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 72,
+    timeline: 1760831940,
+    participantsNumber: 900,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 55},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 85}
+    ]
+  },
+
+
+
+  {
+    id: "m5jh2ykw",
+    title: "Майнц 05 — Байер 18.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Германии",
+    consensus: 80,
+    timeline: 1760831940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 59},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 88}
+    ]
+  },
+
+
+
+  {
+    id: "t1p9s6da",
+    title: "Торино — Наполи 18.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 70,
+    timeline: 1760831940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 51},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 82},
+      {title: "Gemini", precision: 75}
+
     ]
   }
-*/
+
 ];
