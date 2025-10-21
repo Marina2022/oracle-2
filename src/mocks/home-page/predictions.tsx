@@ -511,6 +511,107 @@ export const predictions = [
       {title: "Gemini", precision: 75}
 
     ]
+  },
+
+//Новые 5 карточек
+  
+  {
+    id: "k8w4n2rz",
+    title: "Рубин - Ахмат 22.10.2025",
+    category: "Спорт",
+    content: "Футбол, Кубок России, Группа A",
+    consensus: 80,
+    timeline: 1761174000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 51},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 82},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+  {
+    id: "f9c1t7qx",
+    title: "Айнтрахт — Ливерпуль 22.10.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 88,
+    timeline: 1761174000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 51},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 82},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+  {
+    id: "v3b8m5lp",
+    title: "Монако - Тоттенхэм 22.10.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 70,
+    timeline: 1761174000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 72},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+   {
+    id: "s2j6y9hk",
+    title: "Спортинг — Марсель 22.10.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 70,
+    timeline: 1761174000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 78},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 82},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+   {
+    id: "r5p3d4za",
+    title: "Балтика — Локомотив 23.10.2025",
+    category: "Спорт",
+    content: "Футбол, Кубок России, Группа D",
+    consensus: 70,
+    timeline: 1761260400,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 85},
+      {title: "Gemini", precision: 68}
+
+    ]
   }
 
 ];
