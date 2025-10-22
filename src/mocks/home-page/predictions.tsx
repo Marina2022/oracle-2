@@ -612,6 +612,87 @@ export const predictions = [
       {title: "Gemini", precision: 68}
 
     ]
+  },
+
+//новые 5шт
+  {
+    id: "k2m8f6xr",
+    title: "Брага — Црвена Звезда 23.10.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 70,
+    timeline: 1761260400,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 85},
+      {title: "Gemini", precision: 68}
+
+    ]
+  },
+
+
+  {
+    id: "p7z4t9qb",
+    title: "Мальмё — Динамо Загреб 23.10.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 60,
+    timeline: 1761260400,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 85},
+      {title: "Gemini", precision: 68}
+
+    ]
+  },
+
+
+  {
+    id: "d6r5n8ya",
+    title: "Ноттингем форрест - Порту 23.10.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 85,
+    timeline: 1761260400,
+    participantsNumber: 870,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 81},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 80}
+
+    ]
+  },
+
+
+  {
+    id: "x3w9v2kj",
+    title: "Янг Бойз — Лудогорец 23.10.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 90,
+    timeline: 1761260400,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 85},
+      {title: "Gemini", precision: 68}
+
+    ]
   }
+
 
 ];
