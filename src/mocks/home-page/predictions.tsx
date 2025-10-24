@@ -692,6 +692,131 @@ export const predictions = [
       {title: "Gemini", precision: 68}
 
     ]
+  },
+
+//новые 6шт
+  {
+    id: "m8q5r7hn",
+    title: "Ростов - Динамо Махачкала 25.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 90,
+    timeline: 1761423564,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 76},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 76},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+
+  {
+    id: "p2t6k9wf",
+    title: "Аугсбург — РБ Лейпциг 25.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Германии",
+    consensus: 88,
+    timeline: 1761423564,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 77},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 84}
+
+    ]
+  },
+
+
+
+  {
+    id: "g4v8n1xz",
+    title: "Наполи — Интер 25.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 90,
+    timeline: 1761423564,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 85},
+      {title: "Gemini", precision: 68}
+
+    ]
+  },
+
+
+
+  {
+    id: "b7j3m5yc",
+    title: "Манчестер Юнайтед - Брайтон 25.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 70,
+    timeline: 1761423564,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 54},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+
+  {
+    id: "d9s2h6vq",
+    title: "Монако — Тулуза 25.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Франции",
+    consensus: 70,
+    timeline: 1761423564,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 55},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+
+  {
+    id: "f1w4p8kt",
+    title: "Ланс - Марсель 25.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Франции",
+    consensus: 50,
+    timeline: 1761423564,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 55},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 78}
+
+    ]
   }
 
 
