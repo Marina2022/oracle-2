@@ -13374,7 +13374,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
         historicPrecision: 63,
         predictionsNumber: 45,
         sources: [
-          "Официальная Ла Лига / KNVB-стайл бюллетени федерации Испани. ",
+          "Официальная Ла Лига / KNVB-стайл бюллетени федерации Испании. ",
           "Официальные сайты Реала и Барселоны. ",
           "Статистические платформы.",
           "Матч-центры.",
