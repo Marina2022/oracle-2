@@ -817,6 +817,106 @@ export const predictions = [
       {title: "Gemini", precision: 78}
 
     ]
+  },
+
+//Новые 5ш
+  {
+    id: "h3n9z7qm",
+    title: "Твенте — Аякс 26.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Нидерландов",
+    consensus: 50,
+    timeline: 1761436800,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 78}
+
+    ]
+  },
+
+
+  {
+    id: "v6k2t8xp",
+    title: "Пари Нижний Новгород — Балтика 26.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 70,
+    timeline: 1761423564,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 51},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 78}
+
+    ]
+  },
+
+
+  {
+    id: "y4r7s5wc",
+    title: "Фейеноорд — ПСВ 26.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Нидерландов",
+    consensus: 60,
+    timeline: 1761423564,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 69},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 74}
+
+    ]
+  },
+
+
+  {
+    id: "j9m1d6bn",
+    title: "Реал Мадрид — Барселона 26.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 90,
+    timeline: 1761423564,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 67},
+      {title: "DeepSeek", precision: 69},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 80}
+
+    ]
+  },
+
+
+  {
+    id: "q8x3v2hf",
+    title: "Лацио — Ювентус 26.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 70,
+    timeline: 1761423564,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 53},
+      {title: "DeepSeek", precision: 69},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
   }
 
 
