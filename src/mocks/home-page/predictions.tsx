@@ -953,10 +953,10 @@ export const predictions = [
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 53},
-      {title: "DeepSeek", precision: 69},
+      {title: "ChatGPT", precision: 55},
+      {title: "DeepSeek", precision: 67},
       {title: "Grok", precision: 78},
-      {title: "Gemini", precision: 70}
+      {title: "Gemini", precision: 72}
 
     ]
   },
@@ -1016,10 +1016,10 @@ export const predictions = [
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 53},
-      {title: "DeepSeek", precision: 69},
+      {title: "ChatGPT", precision: 52},
+      {title: "DeepSeek", precision: 64},
       {title: "Grok", precision: 78},
-      {title: "Gemini", precision: 70}
+      {title: "Gemini", precision: 72}
 
     ]
   }
