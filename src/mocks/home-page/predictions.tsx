@@ -917,6 +917,111 @@ export const predictions = [
       {title: "Gemini", precision: 70}
 
     ]
+  },
+
+
+//Новые 5 шт
+  {
+    id: "u7l6p3sw",
+    title: "Ницца — Лилль 29.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Франции",
+    consensus: 70,
+    timeline: 1761788400,
+    participantsNumber: 960,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 51},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+
+  {
+    id: "m2s8c5nk",
+    title: "Вулверхэмптон Уондерерс — Челси 29.10.2025",
+    category: "Спорт",
+    content: "Футбол, Кубок английской лиги",
+    consensus: 70,
+    timeline: 1761788400,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 53},
+      {title: "DeepSeek", precision: 69},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+
+  {
+    id: "v9r2b6qy",
+    title: "Ньюкасл - Тоттенхэм 29.10.2025",
+    category: "Спорт",
+    content: "Футбол, Кубок английской лиги",
+    consensus: 80,
+    timeline: 1761788400,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 55},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 72}
+
+    ]
+  },
+
+
+
+  {
+    id: "x5t3d7lj",
+    title: "Париж - Лион 29.10.2025",
+    category: "Спорт",
+    content: "Футбол, Франция. Лига 1",
+    consensus: 80,
+    timeline: 1761788400,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 55},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+
+  {
+    id: "z4f8w2mp",
+    title: "Пиза — Лацио 30.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 70,
+    timeline: 1761908219,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 53},
+      {title: "DeepSeek", precision: 69},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
   }
 
 
