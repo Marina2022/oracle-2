@@ -989,7 +989,7 @@ export const predictions = [
     title: "Париж - Лион 29.10.2025",
     category: "Спорт",
     content: "Футбол, Франция. Лига 1",
-    consensus: 80,
+    consensus: 50,
     timeline: 1761788400,
     participantsNumber: 1000,
     growing: true,
@@ -1011,7 +1011,7 @@ export const predictions = [
     category: "Спорт",
     content: "Футбол, Чемпионат Италии",
     consensus: 70,
-    timeline: 1761908219,
+    timeline: 1761771600,
     participantsNumber: 1000,
     growing: true,
 
@@ -1022,7 +1022,134 @@ export const predictions = [
       {title: "Gemini", precision: 72}
 
     ]
+  },
+
+
+
+  {
+    id: "j7c2x9hf",
+    title: "Аугсбург — Боруссия Дортмунд 31.10.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Германии",
+    consensus: 80,
+    timeline: 1761933600,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 63},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+//Новые 5 шт
+  {
+    id: "b4w8k3tm",
+    title: "Удинезе — Аталанта 1.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 70,
+    timeline: 1762020000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 62},
+      {title: "DeepSeek", precision: 69},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+
+  {
+    id: "n2v7d5qs",
+    title: "РБ Лейпциг — Штутгарт 1.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Германии",
+    consensus: 80,
+    timeline: 1762020000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 69},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+
+   {
+    id: "m9l3f8rp",
+    title: "Рубин — Динамо 1.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 70,
+    timeline: 1762020000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 62},
+      {title: "DeepSeek", precision: 69},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+
+   {
+    id: "r5t6w1xn",
+    title: "Ноттингем Форест - Манчестер Юнайтед 1.11.2025",
+    category: "Спорт",
+    content: "Футбол. Чемпионат Англии",
+    consensus: 70,
+    timeline: 1762020000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 77},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 72}
+
+    ]
+  },
+
+
+
+   {
+    id: "y8z1q4gb",
+    title: "Наполи — Комо 1.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 85,
+    timeline: 1762020000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 62},
+      {title: "DeepSeek", precision: 69},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
   }
+
 
 
 ];
