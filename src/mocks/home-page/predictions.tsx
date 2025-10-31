@@ -1148,6 +1148,90 @@ export const predictions = [
       {title: "Gemini", precision: 70}
 
     ]
+  },
+
+
+//Новые 4 шт
+  {
+    id: "d2h5c8rn",
+    title: "Зенит — Локомотив 1.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 60,
+    timeline: 1762020000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 82},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 78}
+
+    ]
+  },
+
+
+
+  {
+    id: "v4m7p1qs",
+    title: "Тоттенхэм- Челси 1.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 60,
+    timeline: 1762020000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 61},
+      {title: "DeepSeek", precision: 66},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+
+  {
+    id: "n6q9z3kb",
+    title: "Монако — Париж 1.11.2025",
+    category: "Спорт",
+    content: "Футбол, Франция — Лига 1",
+    consensus: 80,
+    timeline: 1762020000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 63},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 80}
+
+    ]
+  },
+
+
+
+  {
+    id: "t1w2x7lf",
+    title: "Ливерпуль — Астон Вилла 1.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 75,
+    timeline: 1762020000,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 62},
+      {title: "DeepSeek", precision: 66},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 75}
+
+    ]
   }
 
 
