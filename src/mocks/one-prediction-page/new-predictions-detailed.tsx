@@ -16,8 +16,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Хорватия", value: 75},
-      {title: "Чехия", value: 25},
+      {title: "Хорватия", value: 15},
+      {title: "Чехия", value: 15},
+      {title: "Ничья", value: 75},
     ],
     models: [
       {
@@ -297,8 +298,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 1247,
     description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Динамо М", value: 35},
+      {title: "Динамо М", value: 15},
       {title: "Локомотив М", value: 65},
+      {title: "Ничья", value: 20},
     ],
     models: [
       {
@@ -464,7 +466,8 @@ export const predictionsDetailed: PredictionDetailed[] = [
     description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
     consensus: [
       {title: "ЦСКА", value: 65},
-      {title: "Спартак", value: 35},
+      {title: "Спартак", value: 10},
+      {title: "Ничью", value: 25},
     ],
     models: [
       {
@@ -635,8 +638,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 500,
     description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Оренбург", value: 39},
-      {title: "Ростов", value: 61},
+      {title: "Оренбург", value: 5},
+      {title: "Ростов", value: 80},
+      {title: "Ничья", value: 15},
     ],
     models: [
       {
@@ -803,8 +807,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 500,
     description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Сочи", value: 61},
-      {title: "Пари НН", value: 39},
+      {title: "Сочи", value: 60},
+      {title: "Пари НН", value: 30},
+      {title: "Ничья", value: 10},
     ],
     models: [
       {
@@ -983,8 +988,10 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 800,
     description: "Анализ от AI-моделей GPT 4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Рубин", value: 60},
-      {title: "Крылья Советов", value: 40},
+      {title: "Рубин", value: 80},
+      {title: "Крылья Советов", value: 10},
+      {title: "Ничья", value: 10},
+
     ],
     models: [
       {
@@ -1157,7 +1164,8 @@ export const predictionsDetailed: PredictionDetailed[] = [
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
       {title: "Шотландия", value: 60},
-      {title: "Греция", value: 40},
+      {title: "Греция", value: 10},
+      {title: "Ничья", value: 30},
     ],
     models: [
       {
@@ -1428,8 +1436,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Россия", value: 62},
-      {title: "Иран", value: 38},
+      {title: "Россия", value: 80},
+      {title: "Иран", value: 10},
+      {title: "Ничья", value: 10},
     ],
     models: [
       {
@@ -1989,16 +1998,16 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Северная Ирландия", value: 35},
-      {title: "Словакия", value: 20},
-      {title: "Ничья", value: 45},
+      {title: "Северная Ирландия", value: 60},
+      {title: "Словакия", value: 10},
+      {title: "Ничья", value: 30},
     ],
     models: [
       {
         modelTab: "GPT-4o",
         modelTitle: "GPT-4o",
         answerIsPositive: true,
-        prediction: "Северная Ирландия или Ничья",
+        prediction: "Северная Ирландия",
         confidence: 37,
         historicPrecision: 56,
         predictionsNumber: 45,
@@ -2048,13 +2057,13 @@ export const predictionsDetailed: PredictionDetailed[] = [
           "пара центрбеков хозяев (воздушная мощь против стандарта/второго темпа словаков),\n" +
           "наличие чистого «бегуна» в группе атаки Словакии для вертикального выхода,\n" +
           "свежесть фулбэков Сев. Ирландии (частые спринты при ответных «транзишенах»).",
-        resume: "Фиксирую ничью  с уверенностью 37 % на исход Х. Домашний стадион и мотивация окна держат хозяев конкурентоспособными, но лидерство Словакии в группе и их прагматичный выездной профиль не дают развернуться «домашнему перевесу»."
+        resume: "Домашний стадион и мотивация окна держат хозяев конкурентоспособными, но лидерство Словакии в группе и их прагматичный выездной профиль не дают развернуться «домашнему перевесу»."
       },
       {
         modelTab: "DeepSeek",
         modelTitle: "DeepSeek",
         answerIsPositive: true,
-        prediction: "Северная Ирландия или Ничья",
+        prediction: "Северная Ирландия",
         confidence: 65,
         historicPrecision: 72,
         predictionsNumber: 40,
@@ -2603,8 +2612,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Ирак", value: 68},
-      {title: "Индонезия", value: 32},
+      {title: "Ирак", value: 80},
+      {title: "Индонезия", value: 10},
+      {title: "Ничья", value: 10},
     ],
     models: [
       {
@@ -3018,9 +3028,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 1860,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "США", value: 38},
-      {title: "Эквадор", value: 14},
-      {title: "Ничья", value: 48},
+      {title: "США", value: 30},
+      {title: "Эквадор", value: 10},
+      {title: "Ничья", value: 60},
     ],
     models: [
       {
@@ -3363,7 +3373,8 @@ export const predictionsDetailed: PredictionDetailed[] = [
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
       {title: "Дания", value: 80},
-      {title: "Греция", value: 20},
+      {title: "Греция", value: 10},
+      {title: "Ничья", value: 10},
     ],
     models: [
       {
@@ -4481,8 +4492,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 587,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Турция", value: 88},
-      {title: "Грузия", value: 12},
+      {title: "Турция", value: 80},
+      {title: "Грузия", value: 10},
+      {title: "Ничья", value: 10},
     ],
     models: [
       {
@@ -4778,8 +4790,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 580,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Саудовская Аравия", value: 85},
-      {title: "Ирак", value: 15},
+      {title: "Саудовская Аравия", value: 80},
+      {title: "Ирак", value: 10},
+      {title: "Ничья", value: 10},
     ],
     models: [
       {
@@ -5360,9 +5373,9 @@ export const predictionsDetailed: PredictionDetailed[] = [
     participantsNumber: 1000,
     description: "Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini",
     consensus: [
-      {title: "Мексика", value: 38},
-      {title: "Эквадор", value: 14},
-      {title: "Ничья", value: 48},
+      {title: "Мексика", value: 25},
+      {title: "Эквадор", value: 25},
+      {title: "Ничья", value: 50},
     ],
     models: [
       {
