@@ -15536,7 +15536,11 @@ export const predictionsDetailed: PredictionDetailed[] = [
   // Новая карточка-38
   {
     id: "j7c2x9hf",
-     result: null,
+    result: {
+      score: "0 - 1",
+      won: "Боруссия Дортмунд",
+      source: "championat.com"
+    },
     category: "Спорт",
     title: "Аугсбург — Боруссия Дортмунд",
     timeline: 1761933600,
