@@ -1391,7 +1391,7 @@ export const predictions = [
       {title: "ChatGPT", precision: 60},
       {title: "DeepSeek", precision: 74},
       {title: "Grok", precision: 74},
-      {title: "Gemini", precision: 78}
+      {title: "Gemini", precision: 80}
 
     ]
   }

@@ -20871,7 +20871,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
         modelTitle: "Gemini",
         answerIsPositive: true,
         prediction: "ПАОК",
-        confidence: 78,
+        confidence: 80,
         historicPrecision: 91,
         predictionsNumber: 30,
         sources: [
