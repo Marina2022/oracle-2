@@ -1232,6 +1232,168 @@ export const predictions = [
       {title: "Gemini", precision: 75}
 
     ]
+  },
+
+
+  //Новые 8шт
+
+  {
+    id: "q4n8w7zh",
+    title: "Спартак — Локомотив 6.11.2025",
+    category: "Спорт",
+    content: "Футбол, Кубок России",
+    consensus: 65,
+    timeline: 1762417940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 61},
+      {title: "DeepSeek", precision: 66},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+  {
+    id: "b6p1x2rf",
+    title: "Ницца — Фрайбург 6.11.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 65,
+    timeline: 1762417940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 61},
+      {title: "DeepSeek", precision: 66},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "e9s7k5mt",
+    title: "Утрехт — Порту 6.11.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 80,
+    timeline: 1762417940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 61},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "m5z2y8vc",
+    title: "Црвена Звезда — Лилль 6.11.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 75,
+    timeline: 1762417940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 58},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+  {
+    id: "w2u6f3dq",
+    title: "Бетис — Лион 6.11.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 70,
+    timeline: 1762417940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 58},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "p8c1l6xs",
+    title: "Виктория Пльзень — Фенербахче 6.11.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 70,
+    timeline: 1762417940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 58},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "v3d7t9gn",
+    title: "Глазго Рейнджерс - Рома 6.11.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 70,
+    timeline: 1762417940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "z1x4a7kp",
+    title: "ПАОК — Янг Бойз 6.11.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 80,
+    timeline: 1762417940,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 74},
+      {title: "Grok", precision: 74},
+      {title: "Gemini", precision: 78}
+
+    ]
   }
 
 
