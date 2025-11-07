@@ -1394,6 +1394,128 @@ export const predictions = [
       {title: "Gemini", precision: 80}
 
     ]
+  },
+
+
+  //Новые 6шт
+
+  {
+    id: "m7c6n2qd",
+    title: "Тоттенхэм Хотспур — Манчестер Юнайтед 8.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 50,
+    timeline: 1762614250,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 74},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "r2h9j5ls",
+    title: "Динамо Махачкала — ЦСКА 8.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 60,
+    timeline: 1762614250,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 75},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "k8w1f4zn",
+    title: "Нижний Новгород - Рубин 8.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 70,
+    timeline: 1762614250,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 65},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "s5p3v6xt",
+    title: "Севилья — Осасуна 8.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 55,
+    timeline: 1762614250,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 65},
+      {title: "DeepSeek", precision: 66},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "b4d8x9wy",
+    title: "Сочи — Ростов 8.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 90,
+    timeline: 1762614250,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 72}
+
+    ]
+  },
+
+
+  {
+    id: "j3t7q2fp",
+    title: "Монако - Ланс 8.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Франции",
+    consensus: 55,
+    timeline: 1762614250,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 58},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 72}
+
+    ]
   }
 
 
