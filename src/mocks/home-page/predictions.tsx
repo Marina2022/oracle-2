@@ -1516,6 +1516,147 @@ export const predictions = [
       {title: "Gemini", precision: 72}
 
     ]
+  },
+
+
+  //Новые 7шт
+  {
+    id: "v7m2q5hz",
+    title: "Болонья — Наполи 9.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 55,
+    timeline: 1762691695,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 72}
+
+    ]
+  },
+
+
+  {
+    id: "k9r4w1xf",
+    title: "Ахмат — Спартак 9.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 70,
+    timeline: 1762691695,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "b6t8z3ys",
+    title: "АЗ — ПСВ 9.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Нидерландов",
+    consensus: 70,
+    timeline: 1762691695,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "n2x7jfml",
+    title: "Страсбур — Лилль 9.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Франции",
+    consensus: 50,
+    timeline: 1762691695,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 58},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 78}
+
+    ]
+  },
+
+
+  {
+    id: "p5chq09v",
+    title: "Манчестер Сити — Ливерпуль 9.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 60,
+    timeline: 1762691695,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 58},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "s8gvay1k",
+    title: "Балтика - Краснодар 9.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 55,
+    timeline: 1762691695,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 75},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "d4nubz7r",
+    title: "Лион — Пари Сен-Жермен 9.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Франции",
+    consensus: 90,
+    timeline: 1762691695,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 75},
+      {title: "Gemini", precision: 75}
+
+    ]
   }
 
 
