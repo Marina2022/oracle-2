@@ -23333,7 +23333,7 @@ export const predictionsDetailed: PredictionDetailed[] = [
         peopleNumber: 1347
       },
       {
-        label: "Наполи",
+        label: "Спартак",
         percent: 33,
         peopleNumber: 653
       }
