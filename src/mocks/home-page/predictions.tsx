@@ -1302,13 +1302,13 @@ export const predictions = [
     title: "Црвена Звезда — Лилль 6.11.2025",
     category: "Спорт",
     content: "Футбол, Лига Европы УЕФА",
-    consensus: 75,
+    consensus: 55,
     timeline: 1762417940,
     participantsNumber: 1000,
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 58},
+      {title: "ChatGPT", precision: 70},
       {title: "DeepSeek", precision: 68},
       {title: "Grok", precision: 78},
       {title: "Gemini", precision: 75}
@@ -1411,7 +1411,7 @@ export const predictions = [
 
     models: [
       {title: "ChatGPT", precision: 70},
-      {title: "DeepSeek", precision: 74},
+      {title: "DeepSeek", precision: 80},
       {title: "Grok", precision: 78},
       {title: "Gemini", precision: 70}
 
@@ -1444,7 +1444,7 @@ export const predictions = [
     title: "Нижний Новгород - Рубин 8.11.2025",
     category: "Спорт",
     content: "Футбол, Чемпионат России",
-    consensus: 70,
+    consensus: 50,
     timeline: 1762614250,
     participantsNumber: 1000,
     growing: true,
@@ -1453,7 +1453,7 @@ export const predictions = [
       {title: "ChatGPT", precision: 65},
       {title: "DeepSeek", precision: 68},
       {title: "Grok", precision: 72},
-      {title: "Gemini", precision: 70}
+      {title: "Gemini", precision: 75}
 
     ]
   },
@@ -1513,7 +1513,7 @@ export const predictions = [
       {title: "ChatGPT", precision: 58},
       {title: "DeepSeek", precision: 67},
       {title: "Grok", precision: 78},
-      {title: "Gemini", precision: 72}
+      {title: "Gemini", precision: 80}
 
     ]
   },
@@ -1632,7 +1632,7 @@ export const predictions = [
 
     models: [
       {title: "ChatGPT", precision: 70},
-      {title: "DeepSeek", precision: 65},
+      {title: "DeepSeek", precision: 80},
       {title: "Grok", precision: 75},
       {title: "Gemini", precision: 70}
 
@@ -1654,6 +1654,148 @@ export const predictions = [
       {title: "ChatGPT", precision: 70},
       {title: "DeepSeek", precision: 65},
       {title: "Grok", precision: 75},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+
+  //Новые 7шт
+  {
+    id: "q7p2b8lx",
+    title: "Россия — Перу 12.11.2025",
+    category: "Спорт",
+    content: "Футбол, Товарищеские матчи",
+    consensus: 70,
+    timeline: 1762966083,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 58},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 65}
+
+    ]
+  },
+
+
+  {
+    id: "z6n5c4us",
+    title: "Нигерия — Габон 13.11.2025",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. КАФ, Квалификация",
+    consensus: 75,
+    timeline: 1763052483,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 65}
+
+    ]
+  },
+
+
+  {
+    id: "f1v3k9tm",
+    title: "Словакия — Северная Ирландия 14.11.2025",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 70,
+    timeline: 1763138883,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 68}
+
+    ]
+  },
+
+
+  {
+    id: "s8x2j7wr",
+    title: "Россия — Чили 15.11.2025",
+    category: "Спорт",
+    content: "Футбол, Товарищеские матчи",
+    consensus: 60,
+    timeline: 1763225283,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 75},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+  {
+    id: "w2g5n1kt",
+    title: "Босния и Герцоговина - Румыния 15.11.2025",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 50,
+    timeline: 1763225283,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 55},
+      {title: "Gemini", precision: 65}
+
+    ]
+  },
+
+
+  {
+    id: "c4y8z3vp",
+    title: "Греция — Шотландия 15.11.2025",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 50,
+    timeline: 1763225283,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 65},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 68},
+      {title: "Gemini", precision: 65}
+
+    ]
+  },
+
+
+  {
+    id: "m5h6d2nl",
+    title: "Словения — Косово 15.11.2025",
+    category: "Спорт",
+    content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
+    consensus: 90,
+    timeline: 1763225283,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 60},
+      {title: "Grok", precision: 70},
       {title: "Gemini", precision: 75}
 
     ]
