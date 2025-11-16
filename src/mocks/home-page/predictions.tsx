@@ -1667,13 +1667,13 @@ export const predictions = [
     title: "Россия — Перу 12.11.2025",
     category: "Спорт",
     content: "Футбол, Товарищеские матчи",
-    consensus: 70,
+    consensus: 60,
     timeline: 1762966083,
     participantsNumber: 1000,
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 58},
+      {title: "ChatGPT", precision: 78},
       {title: "DeepSeek", precision: 67},
       {title: "Grok", precision: 65},
       {title: "Gemini", precision: 65}
@@ -1727,7 +1727,7 @@ export const predictions = [
     title: "Россия — Чили 15.11.2025",
     category: "Спорт",
     content: "Футбол, Товарищеские матчи",
-    consensus: 60,
+    consensus: 50,
     timeline: 1763225283,
     participantsNumber: 1000,
     growing: true,
@@ -1773,10 +1773,10 @@ export const predictions = [
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 65},
+      {title: "ChatGPT", precision: 80},
       {title: "DeepSeek", precision: 65},
       {title: "Grok", precision: 68},
-      {title: "Gemini", precision: 65}
+      {title: "Gemini", precision: 77}
 
     ]
   },
@@ -1787,13 +1787,13 @@ export const predictions = [
     title: "Словения — Косово 15.11.2025",
     category: "Спорт",
     content: "Футбол, Отборочный турнир чемпионата мира. УЕФА, Квалификация",
-    consensus: 90,
+    consensus: 60,
     timeline: 1763225283,
     participantsNumber: 1000,
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 60},
+      {title: "ChatGPT", precision: 80},
       {title: "DeepSeek", precision: 60},
       {title: "Grok", precision: 70},
       {title: "Gemini", precision: 75}
