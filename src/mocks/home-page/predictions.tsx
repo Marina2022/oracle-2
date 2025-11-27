@@ -1832,7 +1832,7 @@ export const predictions = [
     category: "Спорт",
     content: "Футбол, Чемпионат России",
     consensus: 90,
-    timeline: 1764425154,
+    timeline: 1764445632,
     participantsNumber: 1000,
     growing: true,
 
@@ -1843,7 +1843,7 @@ export const predictions = [
       {title: "Gemini", precision: 82}
 
     ]
-  },
+  }
 
 
 
