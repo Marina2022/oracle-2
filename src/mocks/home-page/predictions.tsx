@@ -1799,7 +1799,52 @@ export const predictions = [
       {title: "Gemini", precision: 75}
 
     ]
-  }
+  },
+
+
+
+  //Новые 5шт
+
+  {
+    id: "k8m2z7qh",
+    title: "Динамо — Зенит 27.11.2025",
+    category: "Спорт",
+    content: "Футбол, Кубок России",
+    consensus: 60,
+    timeline: 1764273954,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 62},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 65}
+
+    ]
+  },
+
+
+
+  {
+    id: "p4v9c2tx",
+    title: "ЦСКА — Оренбург 29.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 90,
+    timeline: 1764425154,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 71},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 82}
+
+    ]
+  },
+
 
 
 
