@@ -1803,7 +1803,7 @@ export const predictions = [
 
 
 
-  //Новые 5шт
+  //Новые 6шт
 
   {
     id: "k8m2z7qh",
@@ -1840,6 +1840,86 @@ export const predictions = [
       {title: "ChatGPT", precision: 71},
       {title: "DeepSeek", precision: 72},
       {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 82}
+
+    ]
+  },
+
+//Новые 4шт
+  {
+    id: "s1g7n5wb",
+    title: "Балтика — Спартак 29.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 50,
+    timeline: 1764445632,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 64},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 75},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "d6r3y8kl",
+    title: "Краснодар — Крылья Советов 30.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 90,
+    timeline: 1764523520,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 72},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 80}
+
+    ]
+  },
+
+
+  {
+    id: "t9h4f1zp",
+    title: "Ростов — Локомотив 30.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 70,
+    timeline: 1764523520,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 64},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+  {
+    id: "w2c8j6rm",
+    title: "Зенит — Рубин 30.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 90,
+    timeline: 1764523520,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 73},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 82},
       {title: "Gemini", precision: 82}
 
     ]
