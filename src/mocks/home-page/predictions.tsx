@@ -1923,7 +1923,128 @@ export const predictions = [
       {title: "Gemini", precision: 82}
 
     ]
-  }
+  },
+
+
+  //Новые 5шт
+  {
+    id: "r5x7b3jm",
+    title: "Барселона — Алавес 29.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 90,
+    timeline: 1764435555,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 73},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 82},
+      {title: "Gemini", precision: 82}
+
+    ]
+  },
+
+
+   {
+    id: "k7m3z9qh",
+    title: "Атлетико — Реал Овьедо 29.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 90,
+    timeline: 1764435555,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 73},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 82},
+      {title: "Gemini", precision: 82}
+
+    ]
+  },
+
+
+   {
+    id: "p4v8c2tx",
+    title: "Севилья — Бетис 30.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 70,
+    timeline: 1764521955,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 73},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 80},
+      {title: "Gemini", precision: 82}
+
+    ]
+  },
+
+
+   {
+    id: "s1g6n5wb",
+    title: "Ювентус — Кальяри 29.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 70,
+    timeline: 1764435555,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 76},
+      {title: "Gemini", precision: 82}
+
+    ]
+  },
+
+
+   {
+    id: "d6r2y8kl",
+    title: "Милан — Лацио 29.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 70,
+    timeline: 1764435555,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 76},
+      {title: "Gemini", precision: 82}
+
+    ]
+  },
+
+
+  {
+    id: "t9h4f3zp",
+    title: "Байер — Боруссия Дортмунд 29.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 80,
+    timeline: 1764435555,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 77},
+      {title: "Gemini", precision: 82}
+
+    ]
+  },
 
 
 
