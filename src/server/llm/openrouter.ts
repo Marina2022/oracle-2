@@ -1,65 +1,62 @@
 // src/server/llm/openrouter.ts
 
+// Общий лёгкий клиент для OpenRouter, без any и с типами
+
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 if (!OPENROUTER_API_KEY) {
   throw new Error('OPENROUTER_API_KEY is not set');
 }
 
-export type SupportedModelId =
-  | 'openai/gpt-4o-mini'
-  | 'qwen/qwen3-235b-a22b:free'
-  | 'x-ai/grok-4.1-fast:free'
-  | 'google/gemini-2.0-flash-exp:free';
+export type OpenRouterRole = 'system' | 'user' | 'assistant' | 'tool';
 
-export const MODEL_DISPLAY: Record<
-  SupportedModelId,
-  { modelTab: string; modelTitle: string }
-> = {
-  'openai/gpt-4o-mini': {
-    modelTab: 'GPT-4o',
-    modelTitle: 'GPT-4o (ChatGPT)',
-  },
-  'qwen/qwen3-235b-a22b:free': {
-    modelTab: 'DeepSeek',
-    modelTitle: 'DeepSeek',
-  },
-  'x-ai/grok-4.1-fast:free': {
-    modelTab: 'Grok',
-    modelTitle: 'Grok',
-  },
-  'google/gemini-2.0-flash-exp:free': {
-    modelTab: 'Gemini',
-    modelTitle: 'Gemini',
-  },
-};
+export interface OpenRouterMessage {
+  role: OpenRouterRole;
+  content: string;
+}
 
-// Общий вызов OpenRouter, который возвращает JSON
-export async function callModelJson<T>(params: {
-  model: SupportedModelId;
-  systemPrompt: string;
-  userPrompt: string;
-}): Promise<T> {
-  const { model, systemPrompt, userPrompt } = params;
+export interface OpenRouterChoiceMessage {
+  role: 'assistant' | 'tool' | 'user' | 'system';
+  content?: string;
+}
+
+export interface OpenRouterChoice {
+  index: number;
+  message: OpenRouterChoiceMessage;
+}
+
+export interface OpenRouterChatCompletionResponse {
+  id: string;
+  choices: OpenRouterChoice[];
+}
+
+/**
+ * Универсальный вызов OpenRouter в chat-режиме.
+ * Возвращает сырой ответ, дальше уже вызывающий код сам парсит content.
+ */
+export async function callModelJson(params: {
+  model: string;
+  messages: OpenRouterMessage[];
+  responseFormat?: { type: 'json_object' };
+}): Promise<OpenRouterChatCompletionResponse> {
+  const { model, messages, responseFormat } = params;
+
+  const body: Record<string, unknown> = {
+    model,
+    messages,
+  };
+
+  if (responseFormat) {
+    body.response_format = responseFormat;
+  }
 
   const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
       'Content-Type': 'application/json',
-      // Необязательно, но полезно для OpenRouter:
-      'HTTP-Referer': 'https://oracul.app',
-      'X-Title': 'Oracul Predictions',
+      Authorization: `Bearer ${OPENROUTER_API_KEY}`,
     },
-    body: JSON.stringify({
-      model,
-      response_format: { type: 'json_object' },
-      temperature: 0.4,
-      messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: userPrompt },
-      ],
-    }),
+    body: JSON.stringify(body),
   });
 
   if (!response.ok) {
@@ -68,26 +65,6 @@ export async function callModelJson<T>(params: {
     throw new Error(`OpenRouter request failed: ${response.status}`);
   }
 
-  const data: any = await response.json();
-  let content: string | undefined = data?.choices?.[0]?.message?.content;
-
-  if (!content) {
-    throw new Error('Empty response content from OpenRouter');
-  }
-
-  // Иногда модели возвращают ```json ...```
-  let cleaned = content.trim();
-  if (cleaned.startsWith('```')) {
-    cleaned = cleaned.replace(/^```json/i, '');
-    cleaned = cleaned.replace(/^```/, '');
-    cleaned = cleaned.replace(/```$/, '');
-    cleaned = cleaned.trim();
-  }
-
-  try {
-    return JSON.parse(cleaned) as T;
-  } catch (e) {
-    console.error('Failed to parse JSON from model:', cleaned);
-    throw new Error('Invalid JSON from OpenRouter model');
-  }
+  const data = (await response.json()) as OpenRouterChatCompletionResponse;
+  return data;
 }
