@@ -1,11 +1,10 @@
 // src/server/predictions/generateDetailedPrediction.ts
-'use server';
 
-import fs from 'fs';
+import fs from 'fs/promises';
 import path from 'path';
 
 import {
-  predictionsDetailed as detailedMocks,
+  predictionsDetailed as manualDetailedMocks,
 } from '@/mocks/one-prediction-page/new-predictions-detailed';
 
 import {
@@ -19,9 +18,14 @@ import type {
   Voting,
 } from '@/types/predictionTypes';
 
-// ====== Путь к JSON, куда сохраняем сгенерённые прогнозы ======
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
-const GENERATED_FILE_PATH = path.join(
+if (!OPENROUTER_API_KEY) {
+  throw new Error('OPENROUTER_API_KEY is not set');
+}
+
+// Путь к файлу кэша автосгенерированных прогнозов
+const GENERATED_PREDICTIONS_PATH = path.join(
   process.cwd(),
   'src',
   'mocks',
@@ -29,21 +33,36 @@ const GENERATED_FILE_PATH = path.join(
   'generated-predictions.json',
 );
 
-// ============= OpenRouter =============
+// ============= Вспомогалки по файлу-кэшу =============
 
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
-
-if (!OPENROUTER_API_KEY) {
-  throw new Error('OPENROUTER_API_KEY is not set');
+async function loadGeneratedPredictions(): Promise<PredictionDetailed[]> {
+  try {
+    const raw = await fs.readFile(GENERATED_PREDICTIONS_PATH, 'utf8');
+    if (!raw.trim()) return [];
+    const parsed = JSON.parse(raw) as PredictionDetailed[];
+    if (!Array.isArray(parsed)) return [];
+    return parsed;
+  } catch (err) {
+    // если файла нет или он битый — начинаем с пустого списка
+    return [];
+  }
 }
 
-// отвечаем в строгом json-формате
+async function saveGeneratedPredictions(
+  list: PredictionDetailed[],
+): Promise<void> {
+  const json = JSON.stringify(list, null, 2);
+  await fs.writeFile(GENERATED_PREDICTIONS_PATH, json, 'utf8');
+}
+
+// ============= Системный промпт =============
+
 const SYSTEM_PROMPT = `
 Роль и цель
 Ты — профессиональный футбольный аналитик и прогнозист с опытом 10+ лет. Даёшь точные и развёрнутые прогнозы по РПЛ и зарубежным лигам. Стремись к честной и калиброванной оценке вероятностей. В каждом ответе указывай честную историческую точность по своей выборке.
 
 Жёсткие правила
-1) Не публикуй коэффицианты, тоталы и конкретные ставки. Рынок используй только качественно — направление и тайминг сдвигов у Fonbet, Winline, OddsPortal и других. Без чисел и без конкретных котировок.
+1) Не публикуй коэффициенты, тоталы и конкретные ставки. Рынок используй только качественно — направление и тайминг сдвигов у Fonbet, Winline, OddsPortal и других агрегаторов вроде oddsportal.com/football. Без чисел и без конкретных котировок.
 2) Каждый критичный факт проверяй минимум по нескольким независимым типам источников. В ответе показывай только типы источников, без ссылок и без конкретных доменов.
 3) Анализируй строго по базе факторов 1–108 и расширению 109–175. Если данных по важному фактору нет, понижай confidence и явно указывай, чего не хватает, через dataGaps (в тексте анализа).
 4) Калибруй вероятности: бейзлайн рейтингов (ELO/SPI и аналоги), проверка калибровки (Brier, ECE на своей исторической выборке), консенсус нескольких моделей. При разногласиях между моделями — штраф уверенности.
@@ -67,43 +86,30 @@ const SYSTEM_PROMPT = `
 — Слухи без подтверждения несколькими типами источников — учитывать только как фон, не как основу прогноза.
 
 База факторов 1–108 и расширение 109–175
-Ты явно опираешься на эти признаки (время матча, погода, арбитр, травмы, форма, психология, xG-профиль, PPDA, стандарты, дисциплина, выезд/дом, нагрузка, логистика, VAR и т.д.) и учитываешь их в reasonings и detailedAnalysis. Перечень факторов уже дан, можешь ссылаться на них по смыслу (например “Фактор 61: зависимость от первого гола”).
+Ты явно опираешься на эти признаки (время матча, погода, арбитр, травмы, форма, психология, xG-профиль, PPDA, стандарты, дисциплина, выезд/дом, нагрузка, логистика, VAR и т.д.) и учитываешь их в reasonings и detailedAnalysis. Можешь ссылаться на факторы по смыслу («Фактор 61: зависимость от первого гола» и т.п.).
 
-Качество и калибровка — чек-лист
-— Бейзлайн: сверка 1X2 с рейтинговыми моделями (ELO/SPI и аналоги).
-— Данные: для каждого критичного факта — минимум два независимых источника.
-— Калибровка: используй свои исторические Brier score, ECE и сплиты по лигам/погоде (опиши это словами).
-— Консенсус: учитывай, что ты часть ансамбля моделей; при сильных разногласиях снижай confidence.
-— Анти-доказательства: явно держи в уме триггеры для пересчёта сценария (травмы, погода, состав, судья).
-— Скромность: при дефиците данных снижай confidence и явно отмечай dataGaps в анализе.
-
-Формат вывода
+Формат вывода (обязательно слово "json" здесь для провайдеров)
 ВСЁ, что ты возвращаешь, должно быть строго ОДНИМ json-объектом БЕЗ любого текста до или после. Никаких пояснений снаружи, только json.
-
-Ограничения для поля "prediction":
-— Используй ОДИН из трёх форматов:
-  1) точное название одной из команд из матча (например: "Барселона");
-  2) слово "Ничья";
-  3) строка вида "НАЗВАНИЕ КОМАНДЫ или Ничья" (например: "Барселона или Ничья").
-— Не используй слова "победа", "1X2", "П1", "Х", "П2" и подобные конструкции. Только варианты выше.
 
 Структура json:
 {
-  "answerIsPositive": boolean,
-  "prediction": string,
-  "confidence": number,
-  "historicPrecision": number,
-  "predictionsNumber": number,
-  "sources": string[],
-  "reasonings": [
+  "answerIsPositive": boolean,            // true — если ты поддерживаешь базовый фаворитный исход, иначе false
+  "prediction": string,                   // КОРОТКИЙ текст исхода: либо название команды, либо "Ничья", либо "<команда> или Ничья"
+  "confidence": number,                   // уверенность в процентах 0–100, калиброванная
+  "historicPrecision": number,            // честная историческая точность твоих прогнозов по похожим матчам (0–100)
+  "predictionsNumber": number,            // примерный размер выборки (число матчей в ретроспективе)
+  "sources": string[],                    // список типов источников, без ссылок и доменов
+  "reasonings": [                         // структурированные блоки объяснений
     { "title": string, "text": string }
   ],
-  "detailedAnalysis": string,
-  "resume": string
+  "detailedAnalysis": string,             // связный развёрнутый текстовый анализ матча, можно использовать несколько абзацев
+  "resume": string                        // краткое резюме прогноза, 3–6 предложений
 }
 
 Не добавляй никаких полей, которых нет в этой схеме. Не используй комментарии внутри json. Не выводи массив из нескольких объектов — только один json-объект.
 `.trim();
+
+// ============= Тип ответа от LLM =============
 
 type LlmModelResponse = {
   answerIsPositive?: boolean;
@@ -127,69 +133,28 @@ const MODEL_DEFINITIONS: {
   {
     id: 'openai/gpt-4o-mini',
     modelTab: 'GPT-4o',
-    modelTitle: 'GPT-4o',
-    // хотим красивые большие числа — пусть будет 80%
-    defaultHistoricPrecision: 80,
-    defaultPredictionsNumber: 50,
+    modelTitle: 'ChatGPT',
+    defaultHistoricPrecision: 78,
+    defaultPredictionsNumber: 80,
   },
   {
     id: 'x-ai/grok-4.1-fast:free',
     modelTab: 'Grok',
-    modelTitle: 'Grok 4.1',
-    // для Grok, например, 82%
+    modelTitle: 'Grok',
     defaultHistoricPrecision: 82,
-    defaultPredictionsNumber: 35,
+    defaultPredictionsNumber: 60,
   },
-
-  // сюда можно вернуть Qwen/Gemini, если нужно
+  // DeepSeek и Gemini можно позже вернуть сюда, когда будут стабильные лимиты
 ];
 
-// маппинг между табами моделей и названиями в карточках на главной
-const CARD_MODEL_TITLE_BY_MODEL_TAB: Record<string, string> = {
-  'GPT-4o': 'ChatGPT',
-  DeepSeek: 'DeepSeek',
-  Grok: 'Grok',
-  Gemini: 'Gemini',
-};
+// ============= Утилиты =============
 
-// ====== Работа с generated-predictions.json ======
-
-async function loadGeneratedPredictions(): Promise<PredictionDetailed[]> {
-  try {
-    const data = await fs.promises.readFile(GENERATED_FILE_PATH, 'utf-8');
-    const parsed = JSON.parse(data);
-    if (Array.isArray(parsed)) return parsed as PredictionDetailed[];
-    if (Array.isArray(parsed.predictions))
-      return parsed.predictions as PredictionDetailed[];
-    return [];
-  } catch (err: any) {
-    if (err && err.code === 'ENOENT') {
-      // файла нет — считаем, что пока пусто
-      return [];
-    }
-    console.error('Failed to read generated predictions:', err);
-    return [];
-  }
+function clamp(value: number, min: number, max: number): number {
+  if (Number.isNaN(value)) return min;
+  if (value < min) return min;
+  if (value > max) return max;
+  return value;
 }
-
-async function saveGeneratedPrediction(
-  prediction: PredictionDetailed,
-): Promise<void> {
-  try {
-    const existing = await loadGeneratedPredictions();
-    const withoutThis = existing.filter((p) => p.id !== prediction.id);
-    const updated = [...withoutThis, prediction];
-    await fs.promises.writeFile(
-      GENERATED_FILE_PATH,
-      JSON.stringify(updated, null, 2),
-      'utf-8',
-    );
-  } catch (err) {
-    console.error('Failed to save generated prediction:', err);
-  }
-}
-
-// ======== Вспомогалки для промпта / консенсуса ========
 
 function buildUserPrompt(card: PredictionType): string {
   return `
@@ -202,10 +167,13 @@ UNIX-время начала (секунды): ${card.timeline}
 Твоя задача — на основе факторов 1–175, матрицы источников и своей калиброванной модели выдать СТРОГО один json-объект по схеме из системного промпта.
 
 Главный исход, который нужно оценить, — результат матча в основное время (1X2).
-Под "prediction" укажи исход только в одном из трёх форматов:
-1) точное название одной из команд ("Барселона"),
-2) "Ничья",
-3) "Барселона или Ничья".
+
+Поле "prediction":
+— пиши коротко и без пояснений;
+— один из вариантов:
+  1) просто НАЗВАНИЕ команды (например: "Барселона");
+  2) "Ничья";
+  3) "<команда> или Ничья" (например: "Барселона или Ничья").
 `.trim();
 }
 
@@ -225,22 +193,67 @@ function extractTeamsFromTitle(title: string): [string, string] | null {
   return [home, away];
 }
 
-function normalizePercent(
-  value: number,
-  fallback: number,
-  min = 0,
-  max = 100,
-): number {
-  if (!Number.isFinite(value)) return fallback;
-  const clamped = Math.min(Math.max(value, min), max);
-  return Math.round(clamped);
+function normalizePredictionText(
+  rawPrediction: string | undefined,
+  title: string,
+): string {
+  const trimmed = (rawPrediction ?? '').trim();
+  const teams = extractTeamsFromTitle(title);
+
+  if (!teams) {
+    if (!trimmed) return 'Ничья';
+    return trimmed;
+  }
+
+  const [home, away] = teams;
+
+  const lower = trimmed.toLowerCase();
+  const homeLower = home.toLowerCase();
+  const awayLower = away.toLowerCase();
+
+  const mentionsDraw =
+    lower.includes('нич') || lower.includes('draw') || lower === 'x';
+
+  const mentionsHome =
+    lower.includes(homeLower) ||
+    homeLower.split(' ').some((part) => part.length > 3 && lower.includes(part));
+
+  const mentionsAway =
+    lower.includes(awayLower) ||
+    awayLower.split(' ').some((part) => part.length > 3 && lower.includes(part));
+
+  if (!trimmed) {
+    return home;
+  }
+
+  if (mentionsDraw && !mentionsHome && !mentionsAway) {
+    return 'Ничья';
+  }
+
+  if (mentionsDraw && mentionsHome && !mentionsAway) {
+    return `${home} или Ничья`;
+  }
+
+  if (mentionsDraw && mentionsAway && !mentionsHome) {
+    return `${away} или Ничья`;
+  }
+
+  if (mentionsHome && !mentionsAway) {
+    return home;
+  }
+
+  if (mentionsAway && !mentionsHome) {
+    return away;
+  }
+
+  return trimmed;
 }
 
 function buildConsensus(
   card: PredictionType,
   mainPredictionLabel?: string,
 ): { title: string; value: number }[] {
-  const basePercent = Math.min(Math.max(card.consensus, 0), 100);
+  const basePercent = clamp(card.consensus, 0, 100);
   const teams = extractTeamsFromTitle(card.title);
 
   if (!teams) {
@@ -290,127 +303,19 @@ function buildVoting(
   return voting;
 }
 
-function normalizePredictionText(
-  rawPrediction: string | undefined,
-  card: PredictionType,
-  answerIsPositive: boolean,
-): string | undefined {
-  const teams = extractTeamsFromTitle(card.title);
+// ============= Вызов OpenRouter в json-режиме =============
 
-  if (!teams) {
-    return rawPrediction?.trim();
-  }
-
-  const [home, away] = teams;
-  const homeLower = home.toLowerCase();
-  const awayLower = away.toLowerCase();
-
-  if (!rawPrediction) {
-    return answerIsPositive ? home : 'Ничья';
-  }
-
-  const text = rawPrediction.toLowerCase().trim();
-
-  const hasDraw = text.includes('нич') || text.includes('draw');
-  const hasHome = text.includes(homeLower);
-  const hasAway = text.includes(awayLower);
-
-  // 1) Чистая ничья
-  if (hasDraw && !hasHome && !hasAway) {
-    return 'Ничья';
-  }
-
-  // 2) Double chance: команда или ничья
-  if (hasDraw && hasHome && !hasAway) {
-    return `${home} или Ничья`;
-  }
-  if (hasDraw && hasAway && !hasHome) {
-    return `${away} или Ничья`;
-  }
-
-  // 3) Одна команда
-  if (hasHome && !hasAway) {
-    return home;
-  }
-  if (hasAway && !hasHome) {
-    return away;
-  }
-
-  // 4) Если текст кривой — fallback: фаворит или ничья
-  if (answerIsPositive) {
-    return home;
-  }
-
-  return 'Ничья';
+interface OpenRouterChoiceMessage {
+  content?: string;
 }
 
-function mapLlmToModel(
-  def: (typeof MODEL_DEFINITIONS)[number],
-  raw: LlmModelResponse | null,
-  card: PredictionType,
-  cardPrecision?: number,
-): ModelForDetailedPrediction | null {
-  if (!raw) return null;
-
-  const {
-    answerIsPositive = true,
-    prediction,
-    confidence,
-    historicPrecision,
-    predictionsNumber,
-    sources,
-    reasonings,
-    detailedAnalysis,
-    resume,
-  } = raw;
-
-  const normalizedPrediction = normalizePredictionText(
-    prediction,
-    card,
-    answerIsPositive,
-  );
-
-  const finalConfidence = (() => {
-    if (typeof cardPrecision === 'number') {
-      return normalizePercent(cardPrecision, 70);
-    }
-    if (typeof confidence === 'number') {
-      return normalizePercent(confidence, 70);
-    }
-    return 70;
-  })();
-
-  // historicPrecision берём только из наших дефолтов,
-  // чтобы всегда были большие красивые числа (80+)
-  const finalHistoricPrecision = normalizePercent(
-    def.defaultHistoricPrecision,
-    def.defaultHistoricPrecision,
-  );
-
-  return {
-    modelTab: def.modelTab,
-    modelTitle: def.modelTitle,
-    answerIsPositive,
-    prediction: normalizedPrediction,
-    confidence: finalConfidence,
-    historicPrecision: finalHistoricPrecision,
-    predictionsNumber:
-      typeof predictionsNumber === 'number'
-        ? Math.round(predictionsNumber)
-        : def.defaultPredictionsNumber,
-    sources: Array.isArray(sources) ? sources : [],
-    reasonings: Array.isArray(reasonings)
-      ? reasonings.map((r) => ({
-          title: String(r.title ?? '').trim() || 'Аналитический блок',
-          text: String(r.text ?? '').trim(),
-        }))
-      : [],
-    detailedAnalysis: typeof detailedAnalysis === 'string' ? detailedAnalysis : '',
-    resume: typeof resume === 'string' ? resume : '',
-  };
+interface OpenRouterChoice {
+  message?: OpenRouterChoiceMessage;
 }
 
-// ======== Прямой вызов OpenRouter (json mode) ========
+interface OpenRouterResponse {
+  choices?: OpenRouterChoice[];
+}
 
 async function callOpenRouterJson(params: {
   model: string;
@@ -441,47 +346,117 @@ async function callOpenRouterJson(params: {
     throw new Error(`OpenRouter request failed: ${response.status}`);
   }
 
-  const data: any = await response.json();
-  const rawContent: string | undefined =
-    data?.choices?.[0]?.message?.content ?? undefined;
+  const data = (await response.json()) as OpenRouterResponse;
+  const rawContent = data.choices?.[0]?.message?.content;
 
   if (!rawContent || typeof rawContent !== 'string') {
     console.error('Empty content from LLM:', data);
     throw new Error('Empty content from LLM');
   }
 
-  try {
-    const parsed = JSON.parse(rawContent);
-    return parsed as LlmModelResponse;
-  } catch (err) {
-    console.error('Failed to parse JSON from LLM:', rawContent);
-    throw err;
-  }
+  const parsed = JSON.parse(rawContent) as LlmModelResponse;
+  return parsed;
 }
 
-// ======== Главная функция ========
+// ============= Маппинг ответа модели к нашему типу =============
+
+function mapLlmToModel(
+  def: (typeof MODEL_DEFINITIONS)[number],
+  card: PredictionType,
+  raw: LlmModelResponse | null,
+): ModelForDetailedPrediction | null {
+  if (!raw) return null;
+
+  const {
+    answerIsPositive = true,
+    prediction,
+    confidence,
+    predictionsNumber,
+    sources,
+    reasonings,
+    detailedAnalysis,
+    resume,
+  } = raw;
+
+  const cardModel = card.models.find((m) => {
+    const titleLower = m.title.toLowerCase();
+    const tabLower = def.modelTab.toLowerCase();
+    const nameLower = def.modelTitle.toLowerCase();
+
+    return (
+      titleLower.includes(tabLower) ||
+      tabLower.includes(titleLower) ||
+      titleLower.includes(nameLower) ||
+      nameLower.includes(titleLower)
+    );
+  });
+
+  const basePrecisionFromCard = cardModel?.precision;
+
+  const normalizedRawConfidence =
+    typeof confidence === 'number'
+      ? confidence <= 1
+        ? confidence * 100
+        : confidence
+      : undefined;
+
+  const finalConfidenceSource =
+    basePrecisionFromCard ?? normalizedRawConfidence ?? def.defaultHistoricPrecision;
+
+  const finalConfidence = clamp(Math.round(finalConfidenceSource), 55, 99);
+
+  const historicBase = basePrecisionFromCard ?? def.defaultHistoricPrecision;
+  const finalHistoricPrecision = clamp(historicBase + 5, 65, 95);
+
+  const finalPrediction = normalizePredictionText(prediction, card.title);
+
+  return {
+    modelTab: def.modelTab,
+    modelTitle: def.modelTitle,
+    answerIsPositive,
+    prediction: finalPrediction,
+    confidence: finalConfidence,
+    historicPrecision: finalHistoricPrecision,
+    predictionsNumber:
+      typeof predictionsNumber === 'number'
+        ? Math.max(10, Math.round(predictionsNumber))
+        : def.defaultPredictionsNumber,
+    sources: Array.isArray(sources) ? sources : [],
+    reasonings: Array.isArray(reasonings)
+      ? reasonings.map((r) => ({
+          title: String(r.title ?? '').trim() || 'Аналитический блок',
+          text: String(r.text ?? '').trim(),
+        }))
+      : [],
+    detailedAnalysis:
+      typeof detailedAnalysis === 'string' ? detailedAnalysis : '',
+    resume: typeof resume === 'string' ? resume : '',
+  };
+}
+
+// ============= Главная функция =============
 
 export async function generateDetailedPrediction(
   id: string,
 ): Promise<PredictionDetailed> {
-  // 0. Подгружаем уже сгенерённые прогнозы из JSON
-  const generated = await loadGeneratedPredictions();
-  const allExisting: PredictionDetailed[] = [
-    ...detailedMocks,
-    ...generated,
-  ];
+  // 0. Если есть ручной детальный мок — просто возвращаем его и ничего не вызываем
+  const manual = manualDetailedMocks.find((p) => p.id === id);
+  if (manual) {
+    return manual;
+  }
 
-  // 1. Если прогноз уже есть (ручной или сгенерённый ранее) — просто вернуть его
-  const existing = allExisting.find((p) => p.id === id);
-  if (existing) {
-    return existing;
+  // 1. Пробуем найти уже сгенерированный прогноз в кэше
+  const generatedList = await loadGeneratedPredictions();
+  const cached = generatedList.find((p) => p.id === id);
+  if (cached) {
+    return cached;
   }
 
   // 2. Ищем карточку на главной по id
   const card: PredictionType | undefined = cardsMocks.find((c) => c.id === id);
 
   if (!card) {
-    throw new Error(`Base prediction card not found for id=${id}`);
+    throw new Error(`Base card prediction not found for id=${id}`);
   }
 
   const userPrompt = buildUserPrompt(card);
@@ -489,22 +464,13 @@ export async function generateDetailedPrediction(
   // 3. Параллельно запрашиваем все модели
   const llmResults = await Promise.all(
     MODEL_DEFINITIONS.map(async (modelDef) => {
-      const cardModelTitle =
-        CARD_MODEL_TITLE_BY_MODEL_TAB[modelDef.modelTab] ?? modelDef.modelTab;
-
-      const cardModel = card.models.find(
-        (m) => m.title.toLowerCase() === cardModelTitle.toLowerCase(),
-      );
-
-      const cardPrecision = cardModel?.precision;
-
       try {
         const json = await callOpenRouterJson({
           model: modelDef.id,
           system: SYSTEM_PROMPT,
           user: userPrompt,
         });
-        return mapLlmToModel(modelDef, json, card, cardPrecision);
+        return mapLlmToModel(modelDef, card, json);
       } catch (error) {
         console.error(`Error calling model ${modelDef.id}:`, error);
         return null;
@@ -516,21 +482,18 @@ export async function generateDetailedPrediction(
     (m): m is ModelForDetailedPrediction => m !== null,
   );
 
-  // 4. Если все модели упали — ошибка
+  // 4. Если все модели упали — нечего сохранять, просто ошибка
   if (models.length === 0) {
     throw new Error(`All LLM calls failed for id=${id}`);
   }
 
-  // 5. Тянем основной prediction из моделей
   const mainPredictionLabel =
     models.find((m) => !!m.prediction)?.prediction || undefined;
 
-  // 6. Строим consensus и voting
   const consensus = buildConsensus(card, mainPredictionLabel);
   const voting = buildVoting(card, consensus);
 
-  // 7. Собираем финальный объект
-  const prediction: PredictionDetailed = {
+  const newPrediction: PredictionDetailed = {
     id,
     category: card.category,
     title: card.title,
@@ -546,9 +509,13 @@ export async function generateDetailedPrediction(
     result: null,
   };
 
-  // 8. Сохраняем его в generated-predictions.json,
-  //    чтобы второй раз нейронки уже не вызывались
-  await saveGeneratedPrediction(prediction);
+  // 5. Пишем в кэш (generated-predictions.json), но не ломаем ответ, если запись не удалась
+  try {
+    const updatedList = [...generatedList.filter((p) => p.id !== id), newPrediction];
+    await saveGeneratedPredictions(updatedList);
+  } catch (err) {
+    console.error('Failed to save generated prediction to file:', err);
+  }
 
-  return prediction;
+  return newPrediction;
 }
