@@ -13,6 +13,9 @@ import { generateDetailedPrediction } from '@/server/predictions/generateDetaile
 
 // ВАЖНО: никакого 'use client' в этом файле
 
+// флаг: берём из ENV, по умолчанию false
+const USE_LLM = process.env.NEXT_PUBLIC_USE_LLM === 'true';
+
 export default async function PredictionPage({
   params,
 }: {
@@ -22,14 +25,16 @@ export default async function PredictionPage({
 
   let prediction: PredictionDetailed | undefined;
 
-  // 1. Пробуем получить прогноз через LLM (OpenRouter)
-  try {
-    prediction = await generateDetailedPrediction(id);
-  } catch (e) {
-    console.error('Ошибка при генерации прогноза через LLM, fallback к mock:', e);
+  // 1. Если флаг включён — пробуем получить прогноз через LLM (OpenRouter)
+  if (USE_LLM) {
+    try {
+      prediction = await generateDetailedPrediction(id);
+    } catch (e) {
+      console.error('Ошибка при генерации прогноза через LLM, fallback к mock:', e);
+    }
   }
 
-  // 2. Если не получилось — падаем обратно на мок, как было раньше
+  // 2. Если флаг выключен ИЛИ LLM упал — берём из моков, как было раньше
   if (!prediction) {
     prediction = mockPredictions.find((p) => p.id === id);
   }

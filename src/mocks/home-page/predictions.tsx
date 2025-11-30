@@ -1940,8 +1940,8 @@ export const predictions = [
     models: [
       {title: "ChatGPT", precision: 73},
       {title: "DeepSeek", precision: 75},
-      {title: "Grok", precision: 82},
-      {title: "Gemini", precision: 82}
+      {title: "Grok", precision: 85},
+      {title: "Gemini", precision: 85}
 
     ]
   },
@@ -1960,28 +1960,8 @@ export const predictions = [
     models: [
       {title: "ChatGPT", precision: 73},
       {title: "DeepSeek", precision: 75},
-      {title: "Grok", precision: 82},
-      {title: "Gemini", precision: 82}
-
-    ]
-  },
-
-
-   {
-    id: "p4v8c2tx",
-    title: "Севилья — Бетис 30.11.2025",
-    category: "Спорт",
-    content: "Футбол, Чемпионат Испании",
-    consensus: 70,
-    timeline: 1764521955,
-    participantsNumber: 1000,
-    growing: true,
-
-    models: [
-      {title: "ChatGPT", precision: 73},
-      {title: "DeepSeek", precision: 75},
-      {title: "Grok", precision: 80},
-      {title: "Gemini", precision: 82}
+      {title: "Grok", precision: 85},
+      {title: "Gemini", precision: 85}
 
     ]
   },
@@ -1998,9 +1978,9 @@ export const predictions = [
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 70},
-      {title: "DeepSeek", precision: 75},
-      {title: "Grok", precision: 76},
+      {title: "ChatGPT", precision: 74},
+      {title: "DeepSeek", precision: 67},
+      {title: "Grok", precision: 83},
       {title: "Gemini", precision: 82}
 
     ]
@@ -2018,10 +1998,10 @@ export const predictions = [
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 70},
-      {title: "DeepSeek", precision: 75},
-      {title: "Grok", precision: 76},
-      {title: "Gemini", precision: 82}
+      {title: "ChatGPT", precision: 72},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 78}
 
     ]
   },
@@ -2038,10 +2018,30 @@ export const predictions = [
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 60},
-      {title: "DeepSeek", precision: 75},
-      {title: "Grok", precision: 77},
-      {title: "Gemini", precision: 82}
+      {title: "ChatGPT", precision: 63},
+      {title: "DeepSeek", precision: 63},
+      {title: "Grok", precision: 68},
+      {title: "Gemini", precision: 78}
+
+    ]
+  },
+
+
+  {
+    id: "p4v8c2tx",
+    title: "Севилья — Бетис 30.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 70,
+    timeline: 1764521955,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 63},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 68},
+      {title: "Gemini", precision: 68}
 
     ]
   },
