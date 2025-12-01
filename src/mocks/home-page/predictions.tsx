@@ -1136,7 +1136,7 @@ export const predictions = [
     title: "Наполи — Комо 1.11.2025",
     category: "Спорт",
     content: "Футбол, Чемпионат Италии",
-    consensus: 65,
+    consensus: 60,
     timeline: 1762020000,
     participantsNumber: 1000,
     growing: true,
@@ -1819,7 +1819,7 @@ export const predictions = [
       {title: "ChatGPT", precision: 62},
       {title: "DeepSeek", precision: 65},
       {title: "Grok", precision: 65},
-      {title: "Gemini", precision: 65}
+      {title: "Gemini", precision: 75}
 
     ]
   },
@@ -1860,73 +1860,12 @@ export const predictions = [
       {title: "ChatGPT", precision: 64},
       {title: "DeepSeek", precision: 65},
       {title: "Grok", precision: 75},
-      {title: "Gemini", precision: 70}
-
-    ]
-  },
-
-
-  {
-    id: "d6r3y8kl",
-    title: "Краснодар — Крылья Советов 30.11.2025",
-    category: "Спорт",
-    content: "Футбол, Чемпионат России",
-    consensus: 90,
-    timeline: 1764523520,
-    participantsNumber: 1000,
-    growing: true,
-
-    models: [
-      {title: "ChatGPT", precision: 72},
-      {title: "DeepSeek", precision: 72},
-      {title: "Grok", precision: 78},
       {title: "Gemini", precision: 80}
 
     ]
   },
 
 
-  {
-    id: "t9h4f1zp",
-    title: "Ростов — Локомотив 30.11.2025",
-    category: "Спорт",
-    content: "Футбол, Чемпионат России",
-    consensus: 70,
-    timeline: 1764523520,
-    participantsNumber: 1000,
-    growing: true,
-
-    models: [
-      {title: "ChatGPT", precision: 64},
-      {title: "DeepSeek", precision: 65},
-      {title: "Grok", precision: 72},
-      {title: "Gemini", precision: 75}
-
-    ]
-  },
-
-
-  {
-    id: "w2c8j6rm",
-    title: "Зенит — Рубин 30.11.2025",
-    category: "Спорт",
-    content: "Футбол, Чемпионат России",
-    consensus: 90,
-    timeline: 1764523520,
-    participantsNumber: 1000,
-    growing: true,
-
-    models: [
-      {title: "ChatGPT", precision: 73},
-      {title: "DeepSeek", precision: 75},
-      {title: "Grok", precision: 82},
-      {title: "Gemini", precision: 82}
-
-    ]
-  },
-
-
-  //Новые 5шт
   {
     id: "r5x7b3jm",
     title: "Барселона — Алавес 29.11.2025",
@@ -2028,6 +1967,66 @@ export const predictions = [
 
 
   {
+    id: "d6r3y8kl",
+    title: "Краснодар — Крылья Советов 30.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 90,
+    timeline: 1764523520,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 72},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 80}
+
+    ]
+  },
+
+
+  {
+    id: "t9h4f1zp",
+    title: "Ростов — Локомотив 30.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 70,
+    timeline: 1764523520,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 64},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+  {
+    id: "w2c8j6rm",
+    title: "Зенит — Рубин 30.11.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 90,
+    timeline: 1764523520,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 73},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 82},
+      {title: "Gemini", precision: 82}
+
+    ]
+  },
+
+  
+  {
     id: "p4v8c2tx",
     title: "Севилья — Бетис 30.11.2025",
     category: "Спорт",
@@ -2040,8 +2039,110 @@ export const predictions = [
     models: [
       {title: "ChatGPT", precision: 63},
       {title: "DeepSeek", precision: 65},
-      {title: "Grok", precision: 68},
+      {title: "Grok", precision: 80},
       {title: "Gemini", precision: 68}
+
+    ]
+  },
+
+
+//Новые 5 шт
+  {
+    id: "q7m4n8lx",
+    title: "Сочи — Динамо Махачкала 1.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 70,
+    timeline: 1764595101,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 62},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 68},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+  {
+    id: "z6p2c9us",
+    title: "Райо Вальекано — Валенсия 1.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 70,
+    timeline: 1764595101,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 62},
+      {title: "DeepSeek", precision: 63},
+      {title: "Grok", precision: 67},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+ 
+  {
+    id: "w2g6n1kt",
+    title: "Болонья — Кремонезе 1.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 80,
+    timeline: 1764521955,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 75},
+      {title: "Gemini", precision: 82}
+
+    ]
+  },
+
+
+  {
+    id: "s8x5j2wr",
+    title: "Барселона — Атлетико 2.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 60,
+    timeline: 1764681501,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 78}
+
+    ]
+  },
+
+
+  {
+    id: "c4y9z3vp",
+    title: "Фулхэм — Манчестер Сити 2.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 80,
+    timeline: 1764695901,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 68},
+      {title: "DeepSeek", precision: 66},
+      {title: "Grok", precision: 80},
+      {title: "Gemini", precision: 82}
 
     ]
   },
