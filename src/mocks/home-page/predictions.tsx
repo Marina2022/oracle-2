@@ -2149,5 +2149,47 @@ export const predictions = [
 
 
 
+  {
+    id: "n4t7z2kp",
+    title: "Ньюкасл Юнайтед — Тоттенхэм Хотспур 2.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 70,
+    timeline: 1764695901,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 62},
+      {title: "DeepSeek", precision: 66},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 80}
+
+    ]
+  },
+
+
+  {
+    id: "f9w3c6jm",
+    title: "Борнмут — Эвертон 2.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 60,
+    timeline: 1764695901,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 64},
+      {title: "DeepSeek", precision: 66},
+      {title: "Grok", precision: 68},
+      {title: "Gemini", precision: 80}
+
+    ]
+  },
+
+
+
+
 
 ];
