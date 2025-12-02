@@ -2093,7 +2093,7 @@ export const predictions = [
     title: "Болонья — Кремонезе 1.12.2025",
     category: "Спорт",
     content: "Футбол, Чемпионат Италии",
-    consensus: 80,
+    consensus: 60,
     timeline: 1764521955,
     participantsNumber: 1000,
     growing: true,
