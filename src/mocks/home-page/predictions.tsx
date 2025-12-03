@@ -2174,16 +2174,119 @@ export const predictions = [
     title: "Борнмут — Эвертон 2.12.2025",
     category: "Спорт",
     content: "Футбол, Чемпионат Англии",
-    consensus: 60,
+    consensus: 70,
     timeline: 1764695901,
     participantsNumber: 1000,
     growing: true,
 
     models: [
+      {title: "ChatGPT", precision: 65},
+      {title: "DeepSeek", precision: 58},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+//Новые 5шт
+
+   {
+    id: "r2h8v5qx",
+    title: "Бохум — Штутгарт 3.12.2025",
+    category: "Спорт",
+    content: "Футбол, Кубок Германии",
+    consensus: 60,
+    timeline: 1764768612,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 65},
+      {title: "DeepSeek", precision: 58},
+      {title: "Grok", precision: 78},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+
+   {
+    id: "k7m1y9sd",
+    title: "Гамбург - Хольштайн Киль 3.12.2025",
+    category: "Спорт",
+    content: "Футбол, Кубок Германии",
+    consensus: 70,
+    timeline: 1764768612,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
       {title: "ChatGPT", precision: 64},
-      {title: "DeepSeek", precision: 66},
-      {title: "Grok", precision: 68},
-      {title: "Gemini", precision: 80}
+      {title: "DeepSeek", precision: 60},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 65}
+
+    ]
+  },
+
+
+
+   {
+    id: "p5b6x3vl",
+    title: "Атлетик Бильбао — Реал Мадрид 3.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 80,
+    timeline: 1764768612,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 64},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 75},
+      {title: "Gemini", precision: 70}
+
+    ]
+  },
+
+
+   {
+    id: "s8g2n4tj",
+    title: "Вулверхэмптон Уондерерс — Ноттингем Форест 3.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 60,
+    timeline: 1764768612,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 65},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+   {
+    id: "d3q9w7hz",
+    title: "Лидс Юнайтед — Челси 3.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 70,
+    timeline: 1764768612,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 61},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 75}
 
     ]
   },
