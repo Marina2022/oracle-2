@@ -2293,6 +2293,108 @@ export const predictions = [
 
 
 
+  //Новые 5шт
+   {
+    id: "k7m2z9qh",
+    title: "Юве Стабия — Бари 4.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии. Серия Б",
+    consensus: 70,
+    timeline: 1764864082,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 60},
+      {title: "Grok", precision: 75},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+   {
+    id: "w2c7j6rm",
+    title: "Зеско Юнайтед - Нчанга Рейнджерс 4.12.2025",
+    category: "Спорт",
+    content: "Футбол, Премьер-лига (Замбия)",
+    consensus: 60,
+    timeline: 1764864082,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 52},
+      {title: "Grok", precision: 75},
+      {title: "Gemini", precision: 71}
+
+    ]
+  },
+
+
+   {
+    id: "b7x5q1nv",
+    title: " Кепос Камбуте - Интер Сан Карлос 4.12.2025",
+    category: "Спорт",
+    content: "Футбол, Ассенсо (Коста-Рика)",
+    consensus: 60,
+    timeline: 1764864082,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 58},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 71}
+
+    ]
+  },
+
+
+   {
+    id: "f3k8m2pw",
+    title: "Витесс - Де Графсхап 4.12.2025",
+    category: "Спорт",
+    content: "Футбол, Первый Дивизион (Нидерланды)",
+    consensus: 50,
+    timeline: 1764864082,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 75},
+      {title: "DeepSeek", precision: 58},
+      {title: "Grok", precision: 55},
+      {title: "Gemini", precision: 60}
+
+    ]
+  },
+
+
+   {
+    id: "r9t4s7hy",
+    title: "Манчестер Юнайтед — Вест Хэм Юнайтед 4.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 70,
+    timeline: 1764864082,
+    participantsNumber: 1000,
+    growing: true,
+
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 61},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 75}
+
+    ]
+  },
+
+
+
 
 
 ];
