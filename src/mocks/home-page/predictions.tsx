@@ -2379,16 +2379,16 @@ export const predictions = [
     title: "Манчестер Юнайтед — Вест Хэм Юнайтед 4.12.2025",
     category: "Спорт",
     content: "Футбол, Чемпионат Англии",
-    consensus: 70,
+    consensus: 60,
     timeline: 1764864082,
     participantsNumber: 1000,
     growing: true,
 
     models: [
-      {title: "ChatGPT", precision: 60},
-      {title: "DeepSeek", precision: 61},
-      {title: "Grok", precision: 65},
-      {title: "Gemini", precision: 75}
+      {title: "ChatGPT", precision: 70},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 78}
 
     ]
   },
