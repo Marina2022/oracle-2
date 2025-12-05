@@ -1,5 +1,81 @@
 export const predictions = [
 
+ //новые 5шт
+ {
+    id: "h4r9k2wn",
+    title: "Майнц 05 — Боруссия Мёнхенгладбах 5.12.2025",
+    category: "Спорт",
+    content: "Футбол,Чемпионат Германии",
+    consensus: 60,
+    timeline: 1764948874,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 52},
+      {title: "DeepSeek", precision: 52},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 74}
+    ]
+  },
+  
+  
+
+  {
+    id: "t7c3m8qz",
+    title: "Реал Овьедо — Мальорка 5.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 50,
+    timeline: 1764948874,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 72},
+      {title: "DeepSeek", precision: 58},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 72}
+    ]
+  }, 
+
+
+
+  {
+    id: "v2j6s5px",
+    title: "Брест — Монако 5.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Франции",
+    consensus: 60,
+    timeline: 1764948874,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 59},
+      {title: "DeepSeek", precision: 55},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 78}
+    ]
+  }, 
+
+
+
+  {
+    id: "g8n1y4bk",
+    title: "Ахмат — Оренбург 5.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 50,
+    timeline: 1764948874,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 54},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 72}
+    ]
+  }, 
+  
+  
   {
     id: "r9t4s7hy",
     title: "Манчестер Юнайтед — Вест Хэм Юнайтед 4.12.2025",
