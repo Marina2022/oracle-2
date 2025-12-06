@@ -1,6 +1,100 @@
 export const predictions = [
 
- //новые 5шт
+  //новые 5шт
+ {
+    id: "6eff2d9a",
+    title: "Астон Вилла — Арсенал 6.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 60,
+    timeline: 1765032492,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 58},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 68},
+      {title: "Gemini", precision: 64}
+    ]
+  },
+  
+  
+  {
+    id: "1b921c47",
+    title: "Борнмут — Челси 6.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 60,
+    timeline: 1765032492,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 56},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 74}
+    ]
+  },
+  
+  
+  {
+    id: "d24147cb",
+    title: "Лидс Юнайтед — Ливерпуль 6.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Англии",
+    consensus: 50,
+    timeline: 1765032492,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 56},
+      {title: "DeepSeek", precision: 58},
+      {title: "Grok", precision: 70},
+      {title: "Gemini", precision: 58}
+    ]
+  },
+
+
+  {
+    id: "2d743259",
+    title: "Бетис — Барселона 6.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 70,
+    timeline: 1765032492,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 57},
+      {title: "DeepSeek", precision: 58},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 76}
+    ]
+  },
+
+
+
+  {
+    id: "5s243259",
+    title: "Спартак — Динамо 6.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 50,
+    timeline: 1765032492,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 57},
+      {title: "DeepSeek", precision: 58},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 76}
+    ]
+  },
+
+
+
+
+  //новые 4шт
  {
     id: "h4r9k2wn",
     title: "Майнц 05 — Боруссия Мёнхенгладбах 5.12.2025",
@@ -17,7 +111,6 @@ export const predictions = [
       {title: "Gemini", precision: 74}
     ]
   },
-  
   
 
   {
