@@ -1,6 +1,81 @@
 export const predictions = [
 
-  //новые 5шт
+  //новые 4шт
+ {
+    id: "1b13c876",
+    title: "Боруссия Дортмунд — Хоффенхайм 7.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Германии",
+    consensus: 50,
+    timeline: 1765116851,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 68},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 71}
+    ]
+  },
+
+
+
+ {
+    id: "e9669dfe",
+    title: "Валенсия — Севилья 7.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Испании",
+    consensus: 50,
+    timeline: 1765116851,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 68},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 66}
+    ]
+  },
+
+
+ {
+    id: "3e393b0b",
+    title: "Наполи — Ювентус 7.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат Италии",
+    consensus: 60,
+    timeline: 1765116851,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 58},
+      {title: "DeepSeek", precision: 62},
+      {title: "Grok", precision: 58},
+      {title: "Gemini", precision: 66}
+    ]
+  },
+
+
+
+ {
+    id: "3b05t986",
+    title: "Краснодар — ЦСКА 7.12.2025",
+    category: "Спорт",
+    content: "Футбол, Чемпионат России",
+    consensus: 50,
+    timeline: 1765116851,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 58},
+      {title: "DeepSeek", precision: 66},
+      {title: "Grok", precision: 58},
+      {title: "Gemini", precision: 74}
+    ]
+  },
+ 
+ 
+ //Новые 5шт
  {
     id: "6eff2d9a",
     title: "Астон Вилла — Арсенал 6.12.2025",
