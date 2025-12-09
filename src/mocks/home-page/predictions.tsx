@@ -1,4 +1,80 @@
 export const predictions = [
+//Новые 4шт
+ {
+    id: "b68dcec8",
+    title: "ПСВ — Атлетико 9.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 63,
+    timeline: 1765287152,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 55},
+      {title: "Gemini", precision: 74}
+    ]
+  },
+
+
+
+   {
+    id: "4e88650b",
+    title: "Аталанта — Челси 9.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 63,
+    timeline: 	1765287152,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 73},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 71}
+    ]
+  },
+
+
+
+   {
+    id: "2fa64c3c",
+    title: "Монако — Галатасарай 9.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 73,
+    timeline: 	1765287152,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 73},
+      {title: "Grok", precision: 65},
+      {title: "Gemini", precision: 70}
+    ]
+  },
+
+
+
+   {
+    id: "5eaeb252",
+    title: "Интер - Ливерпуль 9.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 78,
+    timeline: 	1765287152,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 68},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 72},
+      {title: "Gemini", precision: 71}
+    ]
+  },
+
+
 
   //новые 4шт
  {
