@@ -1,6 +1,83 @@
 export const predictions = [
 //Новые 4шт
  {
+    id: "83c314c6",
+    title: "Реал Мадрид — Манчестер Сити 10.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 65,
+    timeline: 1765392317,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 62},
+      {title: "DeepSeek", precision: 65},
+      {title: "Grok", precision: 60},
+      {title: "Gemini", precision: 72}
+    ]
+  },
+
+
+
+  {
+    id: "bad4577b",
+    title: "Байер — Ньюкасл Юнайтед  10.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 70,
+    timeline: 1765392317,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 63},
+      {title: "DeepSeek", precision: 66},
+      {title: "Grok", precision: 62},
+      {title: "Gemini", precision: 74}
+    ]
+  },
+
+
+
+  {
+    id: "179699e0",
+    title: "Бенфика — Наполи 10.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 67,
+    timeline: 1765377917,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 60},
+      {title: "DeepSeek", precision: 68},
+      {title: "Grok", precision: 52},
+      {title: "Gemini", precision: 70}
+    ]
+  },
+
+
+
+  {
+    id: "de8cf7fe",
+    title: "Атлетик Бильбао — Пари Сен-Жермен 10.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига чемпионов УЕФА",
+    consensus: 63,
+    timeline: 1765377917,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 65},
+      {title: "DeepSeek", precision: 72},
+      {title: "Grok", precision: 62},
+      {title: "Gemini", precision: 76}
+    ]
+  },
+
+
+
+  //Новые 4шт
+ {
     id: "b68dcec8",
     title: "ПСВ — Атлетико 9.12.2025",
     category: "Спорт",
