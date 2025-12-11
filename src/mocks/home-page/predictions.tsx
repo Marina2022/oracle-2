@@ -1,6 +1,83 @@
 export const predictions = [
 //Новые 4шт
  {
+    id: "c0159b90",
+    title: "Ницца — Брага 11.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 65,
+    timeline: 1765470105,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 64},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 62},
+      {title: "Gemini", precision: 78}
+    ]
+  },
+
+
+
+  {
+    id: "d63cb744",
+    title: "Сельта — Болонья 11.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 72,
+    timeline: 1765470105,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 64},
+      {title: "DeepSeek", precision: 75},
+      {title: "Grok", precision: 62},
+      {title: "Gemini", precision: 71}
+    ]
+  },
+
+
+
+  {
+    id: "6a458ea4",
+    title: "Селтик — Рома 11.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 66,
+    timeline: 1765470105,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 64},
+      {title: "DeepSeek", precision: 64},
+      {title: "Grok", precision: 60},
+      {title: "Gemini", precision: 73}
+    ]
+  },
+
+
+
+  {
+    id: "5b08f6f6",
+    title: "Базель — Астон Вилла 11.12.2025",
+    category: "Спорт",
+    content: "Футбол, Лига Европы УЕФА",
+    consensus: 71,
+    timeline: 1765470105,
+    participantsNumber: 1000,
+    growing: true,
+    models: [
+      {title: "ChatGPT", precision: 63},
+      {title: "DeepSeek", precision: 70},
+      {title: "Grok", precision: 79},
+      {title: "Gemini", precision: 73}
+    ]
+  },
+
+
+
+  //Новые 4шт
+ {
     id: "83c314c6",
     title: "Реал Мадрид — Манчестер Сити 10.12.2025",
     category: "Спорт",
