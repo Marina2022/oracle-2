@@ -1,5 +1,82 @@
 export const predictions = [
 //Новые 4шт
+{
+  id: "c6f74f224",
+  title: "Челси — Эвертон 13.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 65,
+  timeline: 1765632713,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 60},
+    {title: "DeepSeek", precision: 66},
+    {title: "Grok", precision: 75},
+    {title: "Gemini", precision: 77}
+  ]
+},
+
+
+
+{
+  id: "43a1189f",
+  title: "Ливерпуль — Брайтон энд Хоув Альбион 13.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 65,
+  timeline: 1765632713,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 62},
+    {title: "DeepSeek", precision: 67},
+    {title: "Grok", precision: 72},
+    {title: "Gemini", precision: 68}
+  ]
+},
+
+
+
+{
+  id: "ecfc5142",
+  title: "Айнтрахт — Аугсбург 13.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Германии",
+  consensus: 65,
+  timeline: 1765632713,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 68},
+    {title: "DeepSeek", precision: 78},
+    {title: "Grok", precision: 60},
+    {title: "Gemini", precision: 72}
+  ]
+},
+
+
+
+{
+  id: "0c69d612",
+  title: "Ренн — Брест 13.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Франции",
+  consensus: 65,
+  timeline: 1765632713,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 60},
+    {title: "DeepSeek", precision: 65},
+    {title: "Grok", precision: 60},
+    {title: "Gemini", precision: 70}
+  ]
+},
+
+
+
+  //Новые 4шт
  {
     id: "c0159b90",
     title: "Ницца — Брага 11.12.2025",
