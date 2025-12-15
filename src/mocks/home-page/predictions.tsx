@@ -1,6 +1,84 @@
 export const predictions = [
 //Новые 4шт
 {
+  id: "8192a727",
+  title: "Манчестер Юнайтед — Борнмут 15.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 61,
+  timeline: 	1765813445,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 60},
+    {title: "DeepSeek", precision: 63},
+    {title: "Grok", precision: 55},
+    {title: "Gemini", precision: 64}
+  ]
+},
+
+
+
+{
+  id: "2caec83d",
+  title: "Райо Вальекано — Бетис 15.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Испании",
+  consensus: 70,
+  timeline: 	1765813445,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 60},
+    {title: "DeepSeek", precision: 66},
+    {title: "Grok", precision: 60},
+    {title: "Gemini", precision: 67}
+  ]
+},
+
+
+
+{
+  id: "83c9d5ef",
+  title: "Рома — Комо 15.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 61,
+  timeline: 	1765813445,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 61},
+    {title: "DeepSeek", precision: 60},
+    {title: "Grok", precision: 60},
+    {title: "Gemini", precision: 62}
+  ]
+},
+
+
+
+{
+  id: "3085645d",
+  title: "Насьонал — Тондела 15.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Португалии",
+  consensus: 60,
+  timeline: 	1765813445,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 60},
+    {title: "DeepSeek", precision: 60},
+    {title: "Grok", precision: 55},
+    {title: "Gemini", precision: 58}
+  ]
+},
+
+
+
+
+  //Новые 4шт
+{
   id: "c6f74f224",
   title: "Челси — Эвертон 13.12.2025",
   category: "Спорт",
