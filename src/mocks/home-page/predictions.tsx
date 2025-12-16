@@ -1,6 +1,83 @@
 export const predictions = [
 //Новые 4шт
 {
+  id: "53b18d2a",
+  title: "Кардифф Сити — Челси 16.12.2025",
+  category: "Спорт",
+  content: "Футбол, Кубок английской лиги, 1/4 финала",
+  consensus: 71,
+  timeline: 	1765899863,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 64},
+    {title: "DeepSeek", precision: 75},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 78}
+  ]
+},
+
+
+
+{
+  id: "e8888c69",
+  title: "Эльденсе — Реал Сосьедад 16.12.2025",
+  category: "Спорт",
+  content: "Футбол, Кубок Испании. 1/16 финала",
+  consensus: 62,
+  timeline: 	1765899863,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 61},
+    {title: "DeepSeek", precision: 68},
+    {title: "Grok", precision: 72},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+
+{
+  id: "0f54352a",
+  title: "Спортинг Хихон - Валенсия 16.12.2025",
+  category: "Спорт",
+  content: "Футбол, Кубок Испании 1/16 финала",
+  consensus: 60,
+  timeline: 	1765899863,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 60},
+    {title: "DeepSeek", precision: 68},
+    {title: "Grok", precision: 65},
+    {title: "Gemini", precision: 64}
+  ]
+},
+
+
+
+{
+  id: "714733a0",
+  title: "Эльденсе — Реал Сосьедад 16.12.2025",
+  category: "Спорт",
+  content: "Футбол, Кубок Испании 1/16 финала",
+  consensus: 72,
+  timeline: 	1765899863,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 60},
+    {title: "DeepSeek", precision: 65},
+    {title: "Grok", precision: 75},
+    {title: "Gemini", precision: 66}
+  ]
+},
+
+
+
+  //Новые 4шт
+{
   id: "8192a727",
   title: "Манчестер Юнайтед — Борнмут 15.12.2025",
   category: "Спорт",
