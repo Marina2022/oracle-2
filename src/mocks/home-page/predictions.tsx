@@ -1,6 +1,83 @@
 export const predictions = [
 //Новые 4шт
 {
+  id: "645d4a10",
+  title: "Боруссия Дортмунд — Боруссия Менхенгладбах 19.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Германии",
+  consensus: 64,
+  timeline: 	1766153596,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 63},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 62},
+    {title: "Gemini", precision: 72}
+  ]
+},
+
+
+
+{
+  id: "bc9b34b0",
+  title: "Валенсия — Мальорка 19.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Испании",
+  consensus: 60,
+  timeline: 		1766174356,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 58},
+    {title: "DeepSeek", precision: 60},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 68}
+  ]
+},
+
+
+
+{
+  id: "ae13f17e",
+  title: "Болонья — Интернационале 19.12.2025",
+  category: "Спорт",
+  content: "Футбол, Суперкубок Италии, Полуфинал",
+  consensus: 61,
+  timeline: 	1766153596,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 60},
+    {title: "DeepSeek", precision: 55},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 74}
+  ]
+},
+
+
+
+{
+  id: "818f1aa6",
+  title: "Генгам — Лаваль 19.12.2025",
+  category: "Спорт",
+  content: "Футбол, Кубок Франции 1/32 финала",
+  consensus: 68,
+  timeline: 	1766153596,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 61},
+    {title: "DeepSeek", precision: 65},
+    {title: "Grok", precision: 72},
+    {title: "Gemini", precision: 70}
+  ]
+},
+
+
+
+  //Новые 4шт
+{
   id: "53b18d2a",
   title: "Кардифф Сити — Челси 16.12.2025",
   category: "Спорт",
@@ -16,26 +93,6 @@ export const predictions = [
     {title: "Gemini", precision: 78}
   ]
 },
-
-
-
-{
-  id: "e8888c69",
-  title: "Эльденсе — Реал Сосьедад 16.12.2025",
-  category: "Спорт",
-  content: "Футбол, Кубок Испании. 1/16 финала",
-  consensus: 62,
-  timeline: 	1765899863,
-  participantsNumber: 1000,
-  growing: true,
-  models: [
-    {title: "ChatGPT", precision: 61},
-    {title: "DeepSeek", precision: 68},
-    {title: "Grok", precision: 72},
-    {title: "Gemini", precision: 71}
-  ]
-},
-
 
 
 {
