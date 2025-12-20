@@ -1,6 +1,84 @@
 export const predictions = [
 //Новые 4шт
 {
+  id: "d7eef720",
+  title: "Ньюкасл Юнайтед — Челси 20.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 65,
+  timeline: 1766247830,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 56},
+    {title: "DeepSeek", precision: 65},
+    {title: "Grok", precision: 65},
+    {title: "Gemini", precision: 66}
+  ]
+},
+
+
+
+{
+  id: "5e81834d",
+  title: "Тоттенхэм Хотспур — Ливерпуль 20.12.2025",
+  category: "Спорт",
+  content: "Футбол, Англия — Премьер-лига",
+  consensus: 65,
+  timeline: 1766247830,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 55},
+    {title: "DeepSeek", precision: 60},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 76}
+  ]
+},
+
+
+
+{
+  id: "4d6bfd7d",
+  title: "Штутгарт — Хоффенхайм 20.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Германии",
+  consensus: 60,
+  timeline: 1766247830,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 56},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 68}
+  ]
+},
+
+
+
+{
+  id: "d0707e3d",
+  title: "Ювентус — Рома 20.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 61,
+  timeline: 	1766247830,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 54},
+    {title: "DeepSeek", precision: 65},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 72}
+  ]
+},
+
+
+
+
+  //Новые 4шт
+{
   id: "645d4a10",
   title: "Боруссия Дортмунд — Боруссия Менхенгладбах 19.12.2025",
   category: "Спорт",
