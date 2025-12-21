@@ -1,6 +1,82 @@
 export const predictions = [
 //Новые 4шт
 {
+  id: "4138b4bf",
+  title: "Астон Вилла — Манчестер Юнайтед 21.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 68,
+  timeline: 1766329744,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 57},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 75},
+    {title: "Gemini", precision: 73}
+  ]
+},
+
+
+
+{
+  id: "9b056598",
+  title: "Вильярреал — Барселона 21.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Испании",
+  consensus: 68,
+  timeline: 1766329744,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 57},
+    {title: "DeepSeek", precision: 75},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 72}
+  ]
+},
+
+
+
+{
+  id: "98fab288",
+  title: "Жирона — Атлетико 21.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Испании",
+  consensus: 67,
+  timeline: 1766329744,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 59},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+{
+  id: "bcad1238",
+  title: "Дженоа — Аталанта 21.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 64,
+  timeline: 1766329744,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 57},
+    {title: "DeepSeek", precision: 60},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 70}
+  ]
+},
+
+
+
+  //Новые 4шт
+{
   id: "d7eef720",
   title: "Ньюкасл Юнайтед — Челси 20.12.2025",
   category: "Спорт",
