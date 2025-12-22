@@ -1,6 +1,64 @@
 export const predictions = [
 //Новые 4шт
 {
+  id: "f5bc38d7",
+  title: "Фулхэм — Ноттингем Форест 22.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 74,
+  timeline: 1766415055,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 56},
+    {title: "DeepSeek", precision: 65},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 68}
+  ]
+},
+
+
+
+{
+  id: "45fcd02a",
+  title: "Атлетик Бильбао — Эспаньол 22.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Испании",
+  consensus: 62,
+  timeline: 1766415055,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 53},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 65},
+    {title: "Gemini", precision: 69}
+  ]
+},
+
+
+
+{
+  id: "eea93e37",
+  title: "Наполи — Болонья 22.12.2025",
+  category: "Спорт",
+  content: "Футбол, Суперкубок Италии, Финал",
+  consensus: 71,
+  timeline: 1766415055,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 58},
+    {title: "DeepSeek", precision: 63},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 70}
+  ]
+},
+
+
+
+//Новые 4шт
+{
   id: "4138b4bf",
   title: "Астон Вилла — Манчестер Юнайтед 21.12.2025",
   category: "Спорт",
