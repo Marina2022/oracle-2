@@ -18,7 +18,7 @@ export function middleware(request: NextRequest) {
   const [username, password] = credentials.split(':')
 
   const validUsername = 'admin'        // TODO: потом вынесем в .env
-  const validPassword = 'oracul54321'  // TODO: потом вынесем в .env
+  const validPassword = 'oracul98765'  // TODO: потом вынесем в .env
 
   if (username !== validUsername || password !== validPassword) {
     return new Response('Invalid credentials', { status: 401 })
