@@ -1,6 +1,83 @@
 export const predictions = [
 //Новые 4шт
 {
+  id: "efee21e4",
+  title: "Манчестер Юнайтед — Ньюкасл Юнайтед 26.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 65,
+  timeline: 1766757600,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 54},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 65},
+    {title: "Gemini", precision: 70}
+  ]
+},
+
+
+
+{
+  id: "d9d5aa27",
+  title: "Оксфорд Юнайтед — Саутгемптон 26.12.2025",
+  category: "Спорт",
+  content: "Футбол, Англия Чемпионшип",
+  consensus: 66,
+  timeline: 1766757600,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 56},
+    {title: "DeepSeek", precision: 65},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+
+{
+  id: "7e9b0b92",
+  title: "Мидлсбро - Блэкберн 26.12.2025",
+  category: "Спорт",
+  content: "Футбол, Англия Чемпионшип",
+  consensus: 60,
+  timeline: 1766757600,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 57},
+    {title: "DeepSeek", precision: 60},
+    {title: "Grok", precision: 72},
+    {title: "Gemini", precision: 65}
+  ]
+},
+
+
+
+{
+  id: "60a930ac",
+  title: "Шеффилд Уэнсдей — Халл Сити 26.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионшип Англии",
+  consensus: 74,
+  timeline: 1766757600,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 57},
+    {title: "DeepSeek", precision: 80},
+    {title: "Grok", precision: 75},
+    {title: "Gemini", precision: 82}
+  ]
+},
+
+
+
+  //Новые 4шт
+{
   id: "f5bc38d7",
   title: "Фулхэм — Ноттингем Форест 22.12.2025",
   category: "Спорт",
