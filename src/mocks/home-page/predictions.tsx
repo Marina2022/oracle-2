@@ -1,6 +1,83 @@
 export const predictions = [
 //Новые 4шт
 {
+  id: "88b19100",
+  title: "Ноттингем Форест — Манчестер Сити 27.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 66,
+  timeline: 1766847349,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 56},
+    {title: "DeepSeek", precision: 68},
+    {title: "Grok", precision: 75},
+    {title: "Gemini", precision: 68}
+  ]
+},
+
+
+
+{
+  id: "9c4439d3",
+  title: "Челси — Астон Вилла 27.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 65,
+  timeline: 1766847349,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 70},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 68}
+  ]
+},
+
+
+
+{
+  id: "f45b2b95",
+  title: "Удинезе — Лацио 27.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 80,
+  timeline: 1766847349,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 66},
+    {title: "DeepSeek", precision: 75},
+    {title: "Grok", precision: 78},
+    {title: "Gemini", precision: 68}
+  ]
+},
+
+
+
+{
+  id: "fd62fa49",
+  title: "Пиза — Ювентус 27.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 72,
+  timeline: 1766847349,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 66},
+    {title: "DeepSeek", precision: 75},
+    {title: "Grok", precision: 75},
+    {title: "Gemini", precision: 75}
+  ]
+},
+
+
+
+  //Новые 4шт
+{
   id: "efee21e4",
   title: "Манчестер Юнайтед — Ньюкасл Юнайтед 26.12.2025",
   category: "Спорт",
