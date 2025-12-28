@@ -1,5 +1,44 @@
 export const predictions = [
-//Новые 4шт
+//Новые 2шт
+{
+  id: "b98bea5b",
+  title: "Кремонезе — Наполи 28.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 70,
+  timeline: 1766935471,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 64},
+    {title: "DeepSeek", precision: 68},
+    {title: "Grok", precision: 75},
+    {title: "Gemini", precision: 70}
+  ]
+},
+
+
+
+{
+  id: "937b9d0a",
+  title: "Аталанта — Интернационале 28.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 63,
+  timeline: 1766935471,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 62},
+    {title: "DeepSeek", precision: 72},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 73}
+  ]
+},
+
+
+
+  //Новые 4шт
 {
   id: "88b19100",
   title: "Ноттингем Форест — Манчестер Сити 27.12.2025",
