@@ -1,4 +1,100 @@
 export const predictions = [
+//Новые 5шт
+{
+  id: "e988cf2b",
+  title: "Рома — Дженоа 29.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 70,
+  timeline: 1767017116,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 64},
+    {title: "DeepSeek", precision: 62},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 78}
+  ]
+},
+
+
+
+{
+  id: "20b51c74",
+  title: "Ангола — Египет 29.12.2025",
+  category: "Спорт",
+  content: "Кубок Африканских Наций",
+  consensus: 68,
+  timeline: 1767017116,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 64},
+    {title: "DeepSeek", precision: 65},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 72}
+  ]
+},
+
+
+
+{
+  id: "53e0e2ad",
+  title: "Зимбабве - ЮАР 29.12.2025",
+  category: "Спорт",
+  content: "Кубок Африканских Наций",
+  consensus: 70,
+  timeline: 1767017116,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 64},
+    {title: "DeepSeek", precision: 60},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 69}
+  ]
+},
+
+
+
+{
+  id: "b180723e",
+  title: "Шеффилд Уэнсдей — Блэкберн Роверс 29.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионшип Англии",
+  consensus: 66,
+  timeline: 1767017116,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 62},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 78},
+    {title: "Gemini", precision: 78}
+  ]
+},
+
+
+
+{
+  id: "03fe63cd",
+  title: "Норвич Сити — Уотфорд 29.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионшип Англии",
+  consensus: 67,
+  timeline: 1767017116,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 67},
+    {title: "DeepSeek", precision: 64},
+    {title: "Grok", precision: 62},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+
 //Новые 2шт
 {
   id: "b98bea5b",
