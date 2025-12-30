@@ -1,5 +1,63 @@
 export const predictions = [
-//Новые 5шт
+ //Новые 2шт
+{
+  id: "cc1a7f33",
+  title: "Челси — Борнмут 30.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 71,
+  timeline: 1767116775,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 68},
+    {title: "DeepSeek", precision: 75},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+
+{
+  id: "4098ecd0",
+  title: "Бёрнли — Ньюкасл Юнайтед 30.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 70,
+  timeline: 1767116775,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 70},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+
+{
+  id: "5e56b4d3",
+  title: "Ноттингем Форест — Эвертон 30.12.2025",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 76,
+  timeline: 1767116775,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 63},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 77},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+
+  //Новые 5шт
 {
   id: "e988cf2b",
   title: "Рома — Дженоа 29.12.2025",
