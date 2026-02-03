@@ -1,5 +1,82 @@
 export const predictions = [
- //Новые 2шт
+ //Новые 4шт
+{
+  id: "09e11b5b",
+  title: "Байер — Санкт-Паули 03.02.2026",
+  category: "Спорт",
+  content: "Футбол, Кубок Германии, 1/4 финала",
+  consensus: 89,
+  timeline: 1770143314,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 68},
+    {title: "DeepSeek", precision: 75},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+
+{
+  id: "6de8ef53",
+  title: "Арсенал — Челси 03.02.2026",
+  category: "Спорт",
+  content: "Футбол, Кубок английской лиги, Полуфинал",
+  consensus: 80,
+  timeline: 1770143314,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 68},
+    {title: "DeepSeek", precision: 75},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+
+{
+  id: "ae8d9f29",
+  title: "Болонья — Милан 03.02.2026",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 78,
+  timeline: 1770143314,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 68},
+    {title: "DeepSeek", precision: 75},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+
+{
+  id: "ba0d57dc",
+  title: "Челси — Борнмут 03.02.2026",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 71,
+  timeline: 1770143314,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 68},
+    {title: "DeepSeek", precision: 75},
+    {title: "Grok", precision: 68},
+    {title: "Gemini", precision: 71}
+  ]
+},
+
+
+
+  //Новые 2шт
 {
   id: "cc1a7f33",
   title: "Челси — Борнмут 30.12.2025",
