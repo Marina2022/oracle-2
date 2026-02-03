@@ -10,10 +10,10 @@ export const predictions = [
   participantsNumber: 1000,
   growing: true,
   models: [
-    {title: "ChatGPT", precision: 68},
+    {title: "ChatGPT", precision: 82},
     {title: "DeepSeek", precision: 75},
-    {title: "Grok", precision: 68},
-    {title: "Gemini", precision: 71}
+    {title: "Grok", precision: 78},
+    {title: "Gemini", precision: 88}
   ]
 },
 
@@ -29,10 +29,10 @@ export const predictions = [
   participantsNumber: 1000,
   growing: true,
   models: [
-    {title: "ChatGPT", precision: 68},
-    {title: "DeepSeek", precision: 75},
-    {title: "Grok", precision: 68},
-    {title: "Gemini", precision: 71}
+    {title: "ChatGPT", precision: 82},
+    {title: "DeepSeek", precision: 77},
+    {title: "Grok", precision: 84},
+    {title: "Gemini", precision: 88}
   ]
 },
 
@@ -48,10 +48,10 @@ export const predictions = [
   participantsNumber: 1000,
   growing: true,
   models: [
-    {title: "ChatGPT", precision: 68},
-    {title: "DeepSeek", precision: 75},
-    {title: "Grok", precision: 68},
-    {title: "Gemini", precision: 71}
+    {title: "ChatGPT", precision: 75},
+    {title: "DeepSeek", precision: 70},
+    {title: "Grok", precision: 83},
+    {title: "Gemini", precision: 78}
   ]
 },
 
