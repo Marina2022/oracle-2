@@ -55,27 +55,6 @@ export const predictions = [
   ]
 },
 
-
-
-{
-  id: "ba0d57dc",
-  title: "Челси — Борнмут 03.02.2026",
-  category: "Спорт",
-  content: "Футбол, Чемпионат Англии",
-  consensus: 71,
-  timeline: 1770143314,
-  participantsNumber: 1000,
-  growing: true,
-  models: [
-    {title: "ChatGPT", precision: 68},
-    {title: "DeepSeek", precision: 75},
-    {title: "Grok", precision: 68},
-    {title: "Gemini", precision: 71}
-  ]
-},
-
-
-
   //Новые 2шт
 {
   id: "cc1a7f33",
