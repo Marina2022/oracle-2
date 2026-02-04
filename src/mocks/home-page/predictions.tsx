@@ -1,5 +1,62 @@
 export const predictions = [
- //Новые 4шт
+ //Новые 3шт
+{
+  id: "e3e81716",
+  title: "Манчестер Сити — Ньюкасл Юнайтед 04.02.2026",
+  category: "Спорт",
+  content: "Футбол, Кубок Германии, 1/4 финала",
+  consensus: 80,
+  timeline: 1770226794,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 80},
+    {title: "DeepSeek", precision: 85},
+    {title: "Grok", precision: 80},
+    {title: "Gemini", precision: 80}
+  ]
+},
+
+
+
+{
+  id: "309b16dd",
+  title: "Хольштайн — Штутгарт 04.02.2026",
+  category: "Спорт",
+  content: "Футбол, Кубок Германии, 1/4 финала",
+  consensus: 78,
+  timeline: 1770226794,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 82},
+    {title: "DeepSeek", precision: 79},
+    {title: "Grok", precision: 77},
+    {title: "Gemini", precision: 79}
+  ]
+},
+
+
+{
+  id: "86e68a75",
+  title: "Валенсия — Атлетик Бильбао 04.02.2026",
+  category: "Спорт",
+  content: "Футбол, Кубок Испании, 1/4 финала",
+  consensus: 80,
+  timeline: 1770226794,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 88},
+    {title: "DeepSeek", precision: 85},
+    {title: "Grok", precision: 80},
+    {title: "Gemini", precision: 82}
+  ]
+},
+ 
+ 
+ 
+  //Новые 4шт
 {
   id: "09e11b5b",
   title: "Байер — Санкт-Паули 03.02.2026",
