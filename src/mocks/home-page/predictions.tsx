@@ -1,5 +1,64 @@
 export const predictions = [
- //Новые 3шт
+  //Новые 3шт
+{
+  id: "6adfdc8a",
+  title: "Сандерленд — Ливерпуль 11.02.2026",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 80,
+  timeline: 1770832044,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 82},
+    {title: "DeepSeek", precision: 79},
+    {title: "Grok", precision: 75},
+    {title: "Gemini", precision: 82}
+  ]
+},
+
+
+
+{
+  id: "8c8c157e",
+  title: "Атлетик Бильбао — Реал Сосьедад 11.02.2026",
+  category: "Спорт",
+  content: "Футбол, Кубок Испании, Полуфинал",
+  consensus: 80,
+  timeline: 1770832044,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 77},
+    {title: "DeepSeek", precision: 80},
+    {title: "Grok", precision: 90},
+    {title: "Gemini", precision: 70}
+  ]
+},
+ 
+
+
+{
+  id: "3fc08220",
+  title: "Болонья — Лацио 11.02.2026",
+  category: "Спорт",
+  content: "Футбол, Кубок Италии, 1/4 финала",
+  consensus: 80,
+  timeline: 1770832044,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 80},
+    {title: "DeepSeek", precision: 80},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 80}
+  ]
+},
+ 
+ 
+ 
+ 
+  //Новые 3шт
 {
   id: "e3e81716",
   title: "Манчестер Сити — Ньюкасл Юнайтед 04.02.2026",
