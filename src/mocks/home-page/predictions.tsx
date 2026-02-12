@@ -1,4 +1,43 @@
 export const predictions = [
+ //Новые 3шт
+{
+  id: "09ffb478",
+  title: "Брентфорд — Арсенал 12.02.2026",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 80,
+  timeline: 1770922579,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 82},
+    {title: "DeepSeek", precision: 77},
+    {title: "Grok", precision: 78},
+    {title: "Gemini", precision: 78}
+  ]
+},
+
+
+
+{
+  id: "6f00b429",
+  title: "Атлетико — Барселона 12.02.2026",
+  category: "Спорт",
+  content: "Футбол, Кубок Испании, Полуфинал",
+  consensus: 80,
+  timeline: 1770922579,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 80},
+    {title: "DeepSeek", precision: 80},
+    {title: "Grok", precision: 78},
+    {title: "Gemini", precision: 80}
+  ]
+},
+
+
+
   //Новые 3шт
 {
   id: "6adfdc8a",
