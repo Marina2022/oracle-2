@@ -49,7 +49,7 @@ const PredictionBarChart = ({models}: { models: ModelForDetailedPrediction[] }) 
 
           <Tooltip
             cursor={{fill: 'var(--color-border)', opacity: 0.1}}
-            formatter={(value: number) => `${value}%`}
+            formatter={(value) => (value == null ? '' : `${value}%`)}
             content={<CustomBarChartTooltip/>}
           />
         </BarChart>
