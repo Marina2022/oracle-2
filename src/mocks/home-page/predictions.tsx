@@ -1,6 +1,65 @@
 export const predictions = [
  //Новые 3шт
 {
+  id: "afe1483d",
+  title: "Кремонезе — Фиорентина 15.03.2026",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 77,
+  timeline: 1773675223,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 78},
+    {title: "DeepSeek", precision: 75},
+    {title: "Grok", precision: 70},
+    {title: "Gemini", precision: 77}
+  ]
+},
+
+
+
+ {
+  id: "15d58831",
+  title: "Манчестер Юнайтед — Астон Вилла 15.03.2026",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 80,
+  timeline: 1773588823,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 78},
+    {title: "DeepSeek", precision: 78},
+    {title: "Grok", precision: 78},
+    {title: "Gemini", precision: 80}
+  ]
+},
+
+
+
+ {
+  id: "87ca8aa7",
+  title: "Лацио — Милан 15.03.2026",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Италии",
+  consensus: 82,
+  timeline: 1773588823,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 77},
+    {title: "DeepSeek", precision: 80},
+    {title: "Grok", precision: 78},
+    {title: "Gemini", precision: 80}
+  ]
+},
+
+
+
+
+
+ {
   id: "09ffb478",
   title: "Брентфорд — Арсенал 12.02.2026",
   category: "Спорт",
