@@ -2,11 +2,11 @@ export const predictions = [
  //Новые 3шт
 {
   id: "afe1483d",
-  title: "Кремонезе — Фиорентина 15.03.2026",
+  title: "Кремонезе — Фиорентина 16.03.2026",
   category: "Спорт",
   content: "Футбол, Чемпионат Италии",
   consensus: 77,
-  timeline: 1773675223,
+  timeline: 	1773682423,
   participantsNumber: 1000,
   growing: true,
   models: [
