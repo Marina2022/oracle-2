@@ -1,6 +1,65 @@
 export const predictions = [
  //Новые 3шт
 {
+  id: "409c64fa",
+  title: "Реал Мадрид — Атлетико 22.03.2026",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Испании",
+  consensus: 80,
+  timeline: 	1774197666,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 82},
+    {title: "DeepSeek", precision: 78},
+    {title: "Grok", precision: 78},
+    {title: "Gemini", precision: 80}
+  ]
+},
+
+
+
+ {
+  id: "51f4755f",
+  title: "Арсенал — Манчестер Сити 22.03.2026",
+  category: "Спорт",
+  content: "Футбол, Кубок английской лиги, Финал",
+  consensus: 80,
+  timeline: 	1774197666,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 70},
+    {title: "DeepSeek", precision: 78},
+    {title: "Grok", precision: 78},
+    {title: "Gemini", precision: 78}
+  ]
+},
+
+
+
+ {
+  id: "eee03625",
+  title: "Астон Вилла — Вест Хэм Юнайтед 22.03.2026",
+  category: "Спорт",
+  content: "Футбол, Чемпионат Англии",
+  consensus: 80,
+  timeline: 	1774197666,
+  participantsNumber: 1000,
+  growing: true,
+  models: [
+    {title: "ChatGPT", precision: 80},
+    {title: "DeepSeek", precision: 77},
+    {title: "Grok", precision: 78},
+    {title: "Gemini", precision: 78}
+  ]
+},
+
+
+
+
+  //Новые 3шт
+{
   id: "afe1483d",
   title: "Кремонезе — Фиорентина 16.03.2026",
   category: "Спорт",
