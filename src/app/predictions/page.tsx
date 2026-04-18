@@ -1,7 +1,7 @@
 import React from 'react';
 import TopBarPredictions from "@/components/PredictionsPage/1-top-bar-predictions/TopBarPredictions";
 import PredictionsPage from "@/components/pages/PredictionsPage/PredictionsPage";
-import {getMatches} from "@/features/predictionCard/actions/getMatches";
+import {getMatches} from "@/features/prediction/actions/getMatches";
 
 
 const Page = async () => {

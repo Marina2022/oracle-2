@@ -8,8 +8,9 @@ import {useRouter} from "next/navigation";
 import {PredictionDetailed} from "@/types/predictionTypes";
 
 
-const TopBar = ({prediction}: { prediction: PredictionDetailed | null }) => {
+const TopBar = ({prediction}: { prediction: PredictionType | null }) => {
 
+  console.log("prediction из TopBar = ", prediction);
 
   const router = useRouter()
 

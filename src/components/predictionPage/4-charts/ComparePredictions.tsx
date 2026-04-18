@@ -1,11 +1,11 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
-import {PredictionDetailed} from "@/types/predictionTypes";
 import {ChartColumn} from "lucide-react";
 import {Badge} from '@/components/ui/badge';
 import {Progress} from "@/components/ui/progress";
+import {PredictionType} from "@/features/prediction/types/PredictionType";
 
-const ComparePredictions = ({prediction}: { prediction: PredictionDetailed }) => {
+const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
   return (
     <Card className="p-4 sm:p-6 glassmorphism gap-6">
       <div className="flex items-center gap-2 mb-4 text-sm sm:text-base">
@@ -16,14 +16,25 @@ const ComparePredictions = ({prediction}: { prediction: PredictionDetailed }) =>
         {
           prediction.models.map((model, i) => <li key={i} className="space-y-2">
             <div className="flex items-center justify-between">
-              <div className="text-sm font-medium">{model.modelTitle}</div>
+              <div className="text-sm font-medium">{model.model_title}</div>
               <div className="flex items-center gap-2">
-                <Badge
-                  className={`border-transparent text-primary-foreground text-xs ${model.answerIsPositive ? "bg-primary" : "bg-destructive dark:bg-destructive/60"}`}>
+                <div className="w-[24px] overflow-hidden ">
+                  {/*<Badge*/}
+                  {/*  // className={`border-transparent text-primary-foreground text-xs ${model.answerIsPositive ? "bg-primary" : "bg-destructive dark:bg-destructive/60"}`}>*/}
+                  {/*  className={`border-transparent text-primary-foreground text-xs bg-primary max-w-[50px] w-24 `}>*/}
 
-                  {/*{model.answerIsPositive ? prediction.consensus[0].title : prediction.consensus[1].title}*/}
-                  {model.prediction}
-                </Badge>
+                  {/*  {model.prediction}++*/}
+                  {/*</Badge>*/}
+
+                  {/*<Badge className="!shrink min-w-0 max-w-[150px] overflow-hidden">*/}
+                  {/*<span className="truncate">*/}
+                  {/*  ++{model.prediction}*/}
+                  {/*</span>*/}
+                  {/*</Badge>*/}
+
+                  <div className="bg-primary w-[10px] h-4"></div>
+                </div>
+
                 <div className="text-xs text-muted-foreground">{model.confidence}%</div>
               </div>
             </div>
@@ -34,16 +45,16 @@ const ComparePredictions = ({prediction}: { prediction: PredictionDetailed }) =>
       <div className="mt-6 pt-4 border-t border-border">
         <div className="text-sm font-medium mb-3">Консенсус-алгоритм</div>
         <div className="grid grid-cols-2 gap-4">
-          {
-            prediction.consensus?.map((item, i) => (
-              <div className="text-center" key={i}>
-                <div className={`text-2xl font-bold ${i === 0 ? "text-primary" : "text-destructive"}`}>
-                  {item.value}%
-                </div>
-                <div className="text-xs text-muted-foreground">{item.title}</div>
-              </div>
-            ))
-          }
+          {/*{*/}
+          {/*  prediction.consensus?.map((item, i) => (*/}
+          {/*    <div className="text-center" key={i}>*/}
+          {/*      <div className={`text-2xl font-bold ${i === 0 ? "text-primary" : "text-destructive"}`}>*/}
+          {/*        {item.value}%*/}
+          {/*      </div>*/}
+          {/*      <div className="text-xs text-muted-foreground">{item.title}</div>*/}
+          {/*    </div>*/}
+          {/*  ))*/}
+          {/*}*/}
         </div>
       </div>
     </Card>

@@ -1,13 +1,13 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
 import {MessageCircle, Send} from "lucide-react";
-import {CommentForDetailedPrediction} from "@/types/predictionTypes";
 import {Textarea} from "@/components/ui/textarea";
 import {Button} from "@/components/ui/button";
 import PredictionComment from "@/components/predictionPage/3-analysis/comments/PredictionComment";
+import {PredictionCommentType} from "@/features/prediction/types/PredictionType";
 
 
-const CommentsBlock = ({comments}: { comments: CommentForDetailedPrediction[] }) => {
+const CommentsBlock = ({comments}: { comments: PredictionCommentType[] }) => {
 
   if (!comments || comments.length === 0) return null
 

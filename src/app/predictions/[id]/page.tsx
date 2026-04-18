@@ -3,14 +3,26 @@
 // import { predictionsDetailed as mockPredictions } from '@/mocks/one-prediction-page/new-predictions-detailed';
 
 // флаг: берём из ENV, по умолчанию false
+import {getMatches} from "@/features/prediction/actions/getMatches";
+import {getPrediction} from "@/features/prediction/actions/getPrediction";
+import PredictionPage from "@/components/pages/PredictionPage/PredictionPage";
+
 const USE_LLM = process.env.NEXT_PUBLIC_USE_LLM === 'true';
 
-export default async function PredictionPage({
-  params,
-}: {
+export default async function Page({
+                                               params,
+                                             }: {
   params: Promise<{ id: string }>;
 }) {
-  // const { id } = await params; // так Next 15 хочет работать с params
+  const {id} = await params;
+
+  const prediction = await getPrediction(id)
+
+  if (prediction?.error) {
+    const errorMsg = prediction?.error || 'Неизвестная ошибка'
+    throw new Error(errorMsg)
+  }
+
 
   // let prediction: PredictionDetailed | undefined;
 
@@ -25,7 +37,7 @@ export default async function PredictionPage({
 
   // 2. Если флаг выключен ИЛИ LLM упал — берём из моков, как было раньше
   // if (!prediction) {
-    // prediction = mockPredictions.find((p) => p.id === id);
+  // prediction = mockPredictions.find((p) => p.id === id);
   // }
 
   // if (!prediction) {
@@ -39,24 +51,7 @@ export default async function PredictionPage({
   //   await new Promise((resolve) => setTimeout(resolve, 500));
   // }
 
-  return (
-    <>
-      {/*<TopBar prediction={prediction} />*/}
-      {/*<div className="pt-36 container pb-4 sm:pb-8">*/}
-      {/*  <div className="py-4 sm:py-8 space-y-4 sm:space-y-8">*/}
-      {/*    <YourPrediction prediction={prediction} />*/}
-      {/*  </div>*/}
-      {/*  <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-8">*/}
-      {/*    <div className="lg:col-span-2 space-y-4 sm:space-y-6">*/}
-      {/*      <Analysis prediction={prediction} />*/}
-      {/*      <CommentsBlock comments={prediction.comments} />*/}
-      {/*    </div>*/}
-      {/*    <div>*/}
-      {/*      <ChartsAll prediction={prediction} />*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
-      hello
-    </>
-  );
+  return <PredictionPage prediction={prediction}/>
+
+
 }

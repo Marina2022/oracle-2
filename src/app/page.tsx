@@ -1,5 +1,5 @@
 import HomePage from "@/components/pages/HomePage/HomePage";
-import {getMatches} from "@/features/predictionCard/actions/getMatches";
+import {getMatches} from "@/features/prediction/actions/getMatches";
 
 
 export default async function Home() {

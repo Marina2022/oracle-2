@@ -4,7 +4,7 @@ import React from "react";
 import {Badge} from "@/components/ui/badge";
 import PredictionCard from "@/components/pages/HomePage/4-predictions/PredictionCard";
 
-import {PredictionCardType} from "@/features/predictionCard/types/PredictionCard";
+import {PredictionCardType} from "@/features/prediction/types/PredictionCard";
 
 type Props = {
   predictions: PredictionCardType[]

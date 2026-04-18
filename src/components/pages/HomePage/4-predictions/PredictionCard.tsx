@@ -13,7 +13,7 @@ import Link from "next/link";
 import {useRouter} from "next/navigation";
 import ShareButtons from "@/components/ui/Share";
 import {BASE_URL} from "../../../../../consts";
-import {PredictionCardType} from "@/features/predictionCard/types/PredictionCard";
+import {PredictionCardType} from "@/features/prediction/types/PredictionCard";
 import {formatDate} from "@/utils/formatDates";
 
 type Props = {

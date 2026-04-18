@@ -7,7 +7,7 @@ import Trust from "@/components/pages/HomePage/5-trust/Trust";
 import WhyTheyChoose from "@/components/pages/HomePage/6-whyTheyChoose/WhyTheyChoose";
 import PricePlan from "@/components/pages/HomePage/7-pricePlan/PricePlan";
 import Ready from "@/components/pages/HomePage/8-ready/Ready";
-import {PredictionCardType} from "@/features/predictionCard/types/PredictionCard";
+import {PredictionCardType} from "@/features/prediction/types/PredictionCard";
 
 type Props = {
   predictions: PredictionCardType[]
