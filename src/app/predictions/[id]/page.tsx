@@ -1,17 +1,6 @@
 // src/app/predictions/[id]/page.tsx
 
-import TopBar from '@/components/predictionPage/1-top-bar/TopBar';
-import YourPrediction from '@/components/predictionPage/2-your-prediction/YourPrediction';
-import Analysis from '@/components/predictionPage/3-analysis/Analysis';
-import CommentsBlock from '@/components/predictionPage/3-analysis/comments/CommentsBlock';
-import ChartsAll from '@/components/predictionPage/4-charts/ChartsAll';
-
 // import { predictionsDetailed as mockPredictions } from '@/mocks/one-prediction-page/new-predictions-detailed';
-import type { PredictionDetailed } from '@/types/predictionTypes';
-import { isTimestampPast } from '@/utils/common';
-import { generateDetailedPrediction } from '@/server/predictions/generateDetailedPrediction';
-
-// ВАЖНО: никакого 'use client' в этом файле
 
 // флаг: берём из ENV, по умолчанию false
 const USE_LLM = process.env.NEXT_PUBLIC_USE_LLM === 'true';
