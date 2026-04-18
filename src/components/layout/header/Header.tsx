@@ -3,7 +3,7 @@
 import Link from "next/link";
 import ToggleTheme from './ToggleTheme';
 import UserMenu from "@/components/layout/header/UserMenu";
-import Logo from "@/components/shared/Logo";
+import Logo from "@/components/ui/Logo";
 import ToggleLang from "@/components/layout/header/ToggleLang";
 import {Bell, Bot, ChartColumn, Crown, Eye, House, MessageSquare, Settings, Trophy, User, Users} from "lucide-react"
 import {useState} from "react";

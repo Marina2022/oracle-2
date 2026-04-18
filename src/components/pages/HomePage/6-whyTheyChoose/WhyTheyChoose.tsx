@@ -1,9 +1,9 @@
 import React from 'react';
 import {Badge} from "@/components/ui/badge";
 import {whyTheyChoose} from "@/mocks/home-page/whyTheyChoose";
-import WhyTheyChooseCard from "@/components/homePage/6-whyTheyChoose/WhyTheyChooseCard";
-import MoreCapabilities from "@/components/homePage/6-whyTheyChoose/MoreCapabilities";
-import OracleVsTraditional from "@/components/homePage/6-whyTheyChoose/OracleVsTraditional";
+import WhyTheyChooseCard from "@/components/pages/HomePage/6-whyTheyChoose/WhyTheyChooseCard";
+import MoreCapabilities from "@/components/pages/HomePage/6-whyTheyChoose/MoreCapabilities";
+import OracleVsTraditional from "@/components/pages/HomePage/6-whyTheyChoose/OracleVsTraditional";
 
 const WhyTheyChoose = () => {
   return (

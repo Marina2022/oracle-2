@@ -7,7 +7,11 @@ import {Badge} from "@/components/ui/badge";
 import {useRouter} from "next/navigation";
 import {predictions} from "@/mocks/home-page/predictions";
 
-const TopBarPredictions = () => {
+type Props = {
+  totalCount: number;
+}
+
+const TopBarPredictions = ({totalCount}: Props) => {
   const router = useRouter()
 
   const handleBack = () => {
@@ -29,7 +33,7 @@ const TopBarPredictions = () => {
 
           <Badge className="gap-2 text-xs flex">
             <Eye aria-hidden="true"/>
-            <span>{predictions.length} активных прогнозов</span>
+            <span>{totalCount} активных прогнозов</span>
           </Badge>
         </div>
       </div>

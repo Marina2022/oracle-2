@@ -2,7 +2,7 @@ import React from 'react';
 import {Card} from "@/components/ui/card";
 import {ReviewType} from "@/types/review";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar"
-import Rating from "@/components/shared/Rating";
+import Rating from "@/components/ui/Rating";
 import {Badge} from "@/components/ui/badge";
 import {Quote} from "lucide-react";
 import {getInitials} from "@/utils/common";

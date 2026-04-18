@@ -1,5 +1,5 @@
 import React from 'react';
-import FindOutYourFuture from "@/components/homePage/1-hero/FindOutYourFuture";
+import FindOutYourFuture from "@/components/pages/HomePage/1-hero/FindOutYourFuture";
 import RealTimePrediction from './RealTimePrediction';
 
 const Hero = () => {

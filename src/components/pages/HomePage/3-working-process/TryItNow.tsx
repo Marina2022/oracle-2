@@ -3,7 +3,7 @@ import {Button} from '@/components/ui/button';
 import {Card} from '@/components/ui/card';
 import React from 'react';
 import {tryItNowModels} from "@/mocks/home-page/tryItNowModels";
-import TryItNowModel from "@/components/homePage/3-working-process/TryItNowModel";
+import TryItNowModel from "@/components/pages/HomePage/3-working-process/TryItNowModel";
 import Link from "next/link";
 
 const TryItNow = () => {

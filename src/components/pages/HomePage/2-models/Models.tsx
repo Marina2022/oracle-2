@@ -1,7 +1,7 @@
 import {Badge} from '@/components/ui/badge';
 import React from 'react';
 import {models} from "@/mocks/home-page/models";
-import Model from "@/components/homePage/2-models/Model";
+import Model from "@/components/pages/HomePage/2-models/Model";
 import {Card} from "@/components/ui/card";
 
 const Models = () => {

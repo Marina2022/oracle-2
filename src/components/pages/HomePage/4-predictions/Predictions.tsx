@@ -1,20 +1,17 @@
 import React from 'react';
 import {Badge} from "@/components/ui/badge";
-import {predictions} from "@/mocks/home-page/predictions";
-import PredictionCard from "@/components/homePage/4-predictions/PredictionCard";
 import {Card} from "@/components/ui/card";
+import {PredictionCardType} from "@/features/predictionCard/types/PredictionCard";
+import PredictionCard from "@/components/pages/HomePage/4-predictions/PredictionCard";
 import {Button} from "@/components/ui/button";
-import Link from "next/link";
-import {ChevronRight} from 'lucide-react';
+import Link from 'next/link';
+import {ChevronRight} from "lucide-react";
 
-const Predictions = ({all = false}: { all?: boolean }) => {
+type Props = {
+  predictions: PredictionCardType[]
+}
 
-  let predictionsToShow
-  if (all) {
-    predictionsToShow = predictions
-  } else {
-    predictionsToShow = predictions.slice(0, 4)
-  }
+const Predictions = ({predictions}: Props) => {
 
   return (
     <section id="predictions" className="py-20 container">
@@ -27,7 +24,7 @@ const Predictions = ({all = false}: { all?: boolean }) => {
 
       <div className="grid lg:grid-cols-2 gap-8 mb-12">
         {
-          predictionsToShow.map((prediction, i) => <PredictionCard key={i} prediction={prediction}/>)
+          predictions.map((prediction, i) => <PredictionCard key={i} prediction={prediction}/>)
         }
       </div>
 
@@ -76,18 +73,14 @@ const Predictions = ({all = false}: { all?: boolean }) => {
         </li>
       </ul>
 
-      {
-        !all && (
-          <div className="text-center">
-            <Button asChild className="max-md:w-full max-w-[400px]">
-              <Link href="/predictions">
-                <span>Посмотреть все прогнозы</span>
-                <ChevronRight/>
-              </Link>
-            </Button>
-          </div>
-        )
-      }
+      <div className="text-center">
+        <Button asChild className="max-md:w-full max-w-[400px]">
+          <Link href="/predictions">
+            <span>Посмотреть все прогнозы</span>
+            <ChevronRight/>
+          </Link>
+        </Button>
+      </div>
     </section>
   );
 };

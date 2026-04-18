@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "@/components/shared/Logo";
+import Logo from "@/components/ui/Logo";
 import {Github, Linkedin, Mail, MapPin, Phone, Twitter} from 'lucide-react';
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
@@ -66,20 +66,20 @@ const Footer = () => {
             <h4 className="font-medium">Продукт</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/#working-process"
+                <Link href="/public#working-process"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors">Как это
                   работает</Link>
               </li>
               <li>
-                <Link href="/#models"
+                <Link href="/public#models"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors">ИИ Модели</Link>
               </li>
               <li>
-                <Link href="/#predictions"
+                <Link href="/public#predictions"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors">Прогнозы</Link>
               </li>
               <li>
-                <Link href="/#working-process"
+                <Link href="/public#working-process"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors">Цены</Link>
               </li>
               <li>

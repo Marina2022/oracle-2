@@ -3,7 +3,7 @@ import {Badge} from "@/components/ui/badge";
 import {Card} from "@/components/ui/card";
 import {Award, Target, TrendingUp, Users} from "lucide-react";
 import {reviews} from '@/mocks/home-page/reviews';
-import Review from "@/components/homePage/5-trust/Review";
+import Review from "@/components/pages/HomePage/5-trust/Review";
 
 const Trust = () => {
   return (

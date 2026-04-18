@@ -1,8 +1,8 @@
 import React from 'react';
 import {Badge} from "@/components/ui/badge";
 import {howItWorksSteps} from "@/mocks/home-page/howItWorksSteps";
-import WorkingProcessStep from "@/components/homePage/3-working-process/WorkingProcessStep";
-import TryItNow from "@/components/homePage/3-working-process/TryItNow";
+import WorkingProcessStep from "@/components/pages/HomePage/3-working-process/WorkingProcessStep";
+import TryItNow from "@/components/pages/HomePage/3-working-process/TryItNow";
 
 const WorkingProcess = () => {
   return (
