@@ -3,8 +3,13 @@ import {Badge} from "@/components/ui/badge";
 import {howItWorksSteps} from "@/mocks/home-page/howItWorksSteps";
 import WorkingProcessStep from "@/components/pages/HomePage/3-working-process/WorkingProcessStep";
 import TryItNow from "@/components/pages/HomePage/3-working-process/TryItNow";
+import {PredictionCardType} from "@/features/prediction/types/PredictionCard";
 
-const WorkingProcess = () => {
+type Props = {
+  prediction: PredictionCardType
+}
+
+const WorkingProcess = ({prediction}: Props) => {
   return (
     <section id="working-process"
              className="pb-20 lg:pt-20 bg-gradient-to-b from-background to-muted/10 dark:to-muted/20">
@@ -23,7 +28,7 @@ const WorkingProcess = () => {
             howItWorksSteps.map((step, i) => <WorkingProcessStep key={i} step={step} index={i}/>)
           }
         </ul>
-        <TryItNow/>
+        <TryItNow prediction={prediction} />
       </div>
     </section>
   );

@@ -58,7 +58,7 @@ const TabContent = ({model}: { model: PredictionModel }) => {
         </h4>
         <ul className="bg-muted/20 p-3 sm:p-4 rounded-lg space-y-3">
           {
-            model.reasonigs.factors.map((source, i) => {
+            model.reasonigs.factors && model.reasonigs.factors.map((source, i) => {
                 const colors = ["primary", "secondary", "accent"]
                 const currentColor = colors[i % colors.length]
 

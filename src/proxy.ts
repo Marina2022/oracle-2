@@ -1,0 +1,32 @@
+// src/middleware.ts
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
+
+export function proxy(request: NextRequest) {
+  const auth = request.headers.get('authorization')
+
+  if (!auth || !auth.startsWith('Basic ')) {
+    return new Response('Authentication required', {
+      status: 401,
+      headers: {
+        'WWW-Authenticate': 'Basic realm="Secure Area"',
+      },
+    })
+  }
+
+  const credentials = Buffer.from(auth.slice(6), 'base64').toString()
+  const [username, password] = credentials.split(':')
+
+  const validUsername = 'admin'        // TODO: потом вынесем в .env
+  const validPassword = 'oracul98765'  // TODO: потом вынесем в .env
+
+  if (username !== validUsername || password !== validPassword) {
+    return new Response('Invalid credentials', { status: 401 })
+  }
+
+  return NextResponse.next()
+}
+
+export const config = {
+  matcher: '/((?!api|_next/static|_next/image|favicon.ico).*)',
+}

@@ -2,18 +2,20 @@ import React from 'react';
 import {Card} from "@/components/ui/card";
 import {Brain} from "lucide-react";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs"
-import TabContent from "@/components/predictionPage/3-analysis/TabContent";
+import TabContent from "@/components/pages/PredictionPage/3-analysis/TabContent";
 import {PredictionType} from "@/features/prediction/types/PredictionType";
 
 const Analysis = ({prediction}: { prediction: PredictionType }) => {
 
-
+  const partOne = prediction.models.length > 1 ? "Анализ от AI-моделей" : "Анализ от AI-модели"
+  const modelString = prediction.models.map(m => m.model_title).join(" | ");
+  const description = `${partOne} ${modelString}`
 
   return (
     <Card className="border p-4 sm:p-6 glassmorphism">
       <h2 className="flex items-center gap-2 mb-4 sm:mb-6 text-base sm:text-lg">
         <Brain className="h-4 w-4 sm:h-5 sm:w-5 text-primary"/>
-        <span>Анализ от AI-моделей ChatGPT-4o | DeepSeek | Grok | Gemini</span>
+        <span>{description}</span>
       </h2>
       <Tabs defaultValue={prediction.models[0].model_title}>
         <TabsList

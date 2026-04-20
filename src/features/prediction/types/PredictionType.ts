@@ -8,8 +8,13 @@ export type PredictionType = {
   consensus: Consensus;
   models: PredictionModel[];
   participantsNumber: number;
-  voiting: Vote[];
+  voiting: PredictionVoting[];
   comments: PredictionCommentType[];
+  result?: {
+    score: string;
+    won: string;
+    source: string;
+  };
 };
 
 
@@ -21,6 +26,7 @@ type Consensus = {
   oracul_score: number;
   p_book: number;
 };
+
 
 export type PredictionModel = {
   model_title: string;
@@ -47,7 +53,7 @@ type DataSource = {
   name: string;
 };
 
-export type Vote = {
+export type PredictionVoting = {
   lable: string;
   percent: number;
   peopleNumber: number;

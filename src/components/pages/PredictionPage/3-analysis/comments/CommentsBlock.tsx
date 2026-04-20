@@ -3,7 +3,7 @@ import {Card} from "@/components/ui/card";
 import {MessageCircle, Send} from "lucide-react";
 import {Textarea} from "@/components/ui/textarea";
 import {Button} from "@/components/ui/button";
-import PredictionComment from "@/components/predictionPage/3-analysis/comments/PredictionComment";
+import PredictionComment from "@/components/pages/PredictionPage/3-analysis/comments/PredictionComment";
 import {PredictionCommentType} from "@/features/prediction/types/PredictionType";
 
 

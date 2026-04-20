@@ -1,10 +1,11 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
 import {CheckCircle} from "lucide-react";
-import {PredictionDetailed} from "@/types/predictionTypes";
-import {isTimestampPast} from "@/utils/common";
 
-const Result = ({prediction}: { prediction: PredictionDetailed }) => {
+import {isTimestampPast} from "@/utils/common";
+import {PredictionType} from "@/features/prediction/types/PredictionType";
+
+const Result = ({prediction}: { prediction: PredictionType }) => {
 
   // если result в API == null или дата (timeline) еще не наступила - не рисуем блок
   if (!prediction.result || !isTimestampPast(prediction.timeline) ) return null

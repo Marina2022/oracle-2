@@ -18,11 +18,11 @@ const HomePage = ({predictions}: Props) => {
     <main>
       <Hero />
       <Models />
-      <WorkingProcess />
+      <WorkingProcess prediction={predictions[0]} />
       <Predictions predictions={predictions} />
       <Trust />
       <WhyTheyChoose />
-      <PricePlan />
+      <PricePlan  />
       <Ready />
     </main>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import TopBarPredictions from "@/components/PredictionsPage/1-top-bar-predictions/TopBarPredictions";
+import TopBarPredictions from "@/components/pages/PredictionsPage/1-top-bar-predictions/TopBarPredictions";
 import PredictionsPage from "@/components/pages/PredictionsPage/PredictionsPage";
 import {getMatches} from "@/features/prediction/actions/getMatches";
 

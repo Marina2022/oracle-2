@@ -5,12 +5,10 @@ import {Button} from "@/components/ui/button";
 import {ArrowLeft, Clock, Users} from "lucide-react";
 import {Badge} from "@/components/ui/badge";
 import {useRouter} from "next/navigation";
-import {PredictionDetailed} from "@/types/predictionTypes";
+import {PredictionType} from "@/features/prediction/types/PredictionType";
 
 
 const TopBar = ({prediction}: { prediction: PredictionType | null }) => {
-
-  console.log("prediction из TopBar = ", prediction);
 
   const router = useRouter()
 

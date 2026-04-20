@@ -4,12 +4,12 @@ import React from 'react';
 import {Card} from "@/components/ui/card";
 import {Users} from "lucide-react";
 import {Cell, Pie, PieChart, ResponsiveContainer, Tooltip} from "recharts"
-import {Voting} from '@/types/predictionTypes';
-import CustomTooltip from "@/components/predictionPage/4-charts/pie-chart/CustomTooltip";
+import CustomTooltip from "@/components/pages/PredictionPage/4-charts/pie-chart/CustomTooltip";
 import {formatNumber} from "@/utils/common";
+import {PredictionVoting} from "@/features/prediction/types/PredictionType";
 
 
-const PredictionPieChart = ({voting}: { voting: Voting }) => {
+const PredictionPieChart = ({voting}: { voting: PredictionVoting[] }) => {
 
   const COLORS = ["var(--primary)", "#ef4444"] // Red for CSKA
 
@@ -41,11 +41,12 @@ const PredictionPieChart = ({voting}: { voting: Voting }) => {
                     x={x}
                     y={y}
                     fill={color}
+                    //fill="yellow"
                     textAnchor="middle"
                     dominantBaseline="central"
                     style={{fontSize: "14px", fontWeight: 500}}
                   >
-                    {item.label} {item.percent}%
+                    {item.lable} {item.percent}%
                   </text>
                 );
               }}
@@ -64,7 +65,7 @@ const PredictionPieChart = ({voting}: { voting: Voting }) => {
           voting.map((item, i) => <li key={i} className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full" style={{backgroundColor: COLORS[i]}}></div>
-              <div className="font-medium">{item.label}</div>
+              <div className="font-medium">{item.lable}</div>
             </div>
             <div className="text-right">
               <div className="font-bold">{formatNumber(item.peopleNumber)}</div>

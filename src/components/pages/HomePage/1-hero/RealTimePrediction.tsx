@@ -22,7 +22,7 @@ const RealTimePrediction = () => {
         <div
           className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-2xl"></div>
         <h3 className="text-lg font-semibold">Прогноз в реальном времени</h3>
-        <p className="font-medium">Биткоин достигнет $130,000 до конца 2025?</p>
+        <p className="font-medium">Биткоин достигнет $130,000 до конца 2026?</p>
         <div className="">
           <div className="flex justify-between items-center mb-3">
             <div className="text-sm">Консенсус AI</div>

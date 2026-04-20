@@ -1,10 +1,11 @@
 import React from 'react';
-import TopBar from "@/components/predictionPage/1-top-bar/TopBar";
-import YourPrediction from '@/components/predictionPage/2-your-prediction/YourPrediction';
-import Analysis from "@/components/predictionPage/3-analysis/Analysis";
-import CommentsBlock from '@/components/predictionPage/3-analysis/comments/CommentsBlock';
-import ChartsAll from "@/components/predictionPage/4-charts/ChartsAll";
+
+import Analysis from "@/components/pages/PredictionPage/3-analysis/Analysis";
+import CommentsBlock from '@/components/pages/PredictionPage/3-analysis/comments/CommentsBlock';
+import ChartsAll from "@/components/pages/PredictionPage/4-charts/ChartsAll";
 import {PredictionType} from "@/features/prediction/types/PredictionType";
+import YourPrediction from "@/components/pages/PredictionPage/2-your-prediction/YourPrediction";
+import TopBar from "@/components/pages/PredictionPage/1-top-bar/TopBar";
 
 type Props = {
   prediction: PredictionType;
@@ -19,7 +20,6 @@ const PredictionPage = ({prediction}: Props) => {
         <div className="py-4 sm:py-8 space-y-4 sm:space-y-8">
           <YourPrediction prediction={prediction}/>
         </div>
-
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-8">
           <div className="lg:col-span-2 space-y-4 sm:space-y-6">

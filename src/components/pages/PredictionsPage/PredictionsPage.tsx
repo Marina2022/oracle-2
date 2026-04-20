@@ -1,5 +1,5 @@
 import s from './PredictionsPage.module.scss';
-import TopBarPredictions from "@/components/PredictionsPage/1-top-bar-predictions/TopBarPredictions";
+import TopBarPredictions from "@/components/pages/PredictionsPage/1-top-bar-predictions/TopBarPredictions";
 import React from "react";
 import {Badge} from "@/components/ui/badge";
 import PredictionCard from "@/components/pages/HomePage/4-predictions/PredictionCard";

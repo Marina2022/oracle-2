@@ -18,22 +18,14 @@ const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
             <div className="flex items-center justify-between">
               <div className="text-sm font-medium">{model.model_title}</div>
               <div className="flex items-center gap-2">
-                <div className="w-[24px] overflow-hidden ">
-                  {/*<Badge*/}
-                  {/*  // className={`border-transparent text-primary-foreground text-xs ${model.answerIsPositive ? "bg-primary" : "bg-destructive dark:bg-destructive/60"}`}>*/}
-                  {/*  className={`border-transparent text-primary-foreground text-xs bg-primary max-w-[50px] w-24 `}>*/}
 
-                  {/*  {model.prediction}++*/}
-                  {/*</Badge>*/}
+                <Badge
+                  // className={`border-transparent text-primary-foreground text-xs ${model.answerIsPositive ? "bg-primary" : "bg-destructive dark:bg-destructive/60"}`}>
+                  className={`border-transparent text-primary-foreground text-xs bg-primary max-w-[250px] `}>
 
-                  {/*<Badge className="!shrink min-w-0 max-w-[150px] overflow-hidden">*/}
-                  {/*<span className="truncate">*/}
-                  {/*  ++{model.prediction}*/}
-                  {/*</span>*/}
-                  {/*</Badge>*/}
+                  {model.prediction}++
+                </Badge>
 
-                  <div className="bg-primary w-[10px] h-4"></div>
-                </div>
 
                 <div className="text-xs text-muted-foreground">{model.confidence}%</div>
               </div>
@@ -45,16 +37,37 @@ const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
       <div className="mt-6 pt-4 border-t border-border">
         <div className="text-sm font-medium mb-3">Консенсус-алгоритм</div>
         <div className="grid grid-cols-2 gap-4">
-          {/*{*/}
-          {/*  prediction.consensus?.map((item, i) => (*/}
-          {/*    <div className="text-center" key={i}>*/}
-          {/*      <div className={`text-2xl font-bold ${i === 0 ? "text-primary" : "text-destructive"}`}>*/}
-          {/*        {item.value}%*/}
-          {/*      </div>*/}
-          {/*      <div className="text-xs text-muted-foreground">{item.title}</div>*/}
-          {/*    </div>*/}
-          {/*  ))*/}
-          {/*}*/}
+
+          <div className="text-center">
+            <div className={`text-2xl font-bold text-primary`}>
+              {Math.round(prediction.consensus.p_home * 100)}%
+            </div>
+            <div className="text-xs text-muted-foreground">{prediction.home}</div>
+          </div>
+
+
+          <div className="text-center">
+            <div className={`text-2xl font-bold text-destructive`}>
+              {Math.round(prediction.consensus.p_away * 100)}%
+            </div>
+            <div className="text-xs text-muted-foreground">{prediction.away}</div>
+          </div>
+
+
+          <div className="text-center">
+            <div className={`text-2xl font-bold text-primary`}>
+              {Math.round(prediction.consensus.oracul_score * 100)}%
+            </div>
+            <div className="text-xs text-muted-foreground">Oracul Score</div>
+          </div>
+
+          <div className="text-center">
+            <div className={`text-2xl font-bold text-primary`}>
+              {Math.round(prediction.consensus.p_book * 100)}%
+            </div>
+            <div className="text-xs text-muted-foreground">Вероятность букмекера</div>
+          </div>
+
         </div>
       </div>
     </Card>

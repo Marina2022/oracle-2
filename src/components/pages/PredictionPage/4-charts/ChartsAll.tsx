@@ -1,8 +1,8 @@
 import React from 'react';
-import PredictionPieChart from "@/components/predictionPage/4-charts/pie-chart/PredictionPieChart";
-import ComparePredictions from "@/components/predictionPage/4-charts/ComparePredictions";
-import BarChartBlock from "@/components/predictionPage/4-charts/bar-chart/BarChartBlock";
-import Result from "@/components/predictionPage/4-charts/result/Result";
+import PredictionPieChart from "@/components/pages/PredictionPage/4-charts/pie-chart/PredictionPieChart";
+import ComparePredictions from "@/components/pages/PredictionPage/4-charts/ComparePredictions";
+import BarChartBlock from "@/components/pages/PredictionPage/4-charts/bar-chart/BarChartBlock";
+import Result from "@/components/pages/PredictionPage/4-charts/result/Result";
 import {PredictionType} from "@/features/prediction/types/PredictionType";
 
 

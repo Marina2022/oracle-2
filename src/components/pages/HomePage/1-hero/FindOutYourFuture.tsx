@@ -22,7 +22,7 @@ const FindOutYourFuture = () => {
       </div>
       <div className="flex flex-col sm:flex-row gap-4 mb-7">
         <Button asChild variant="default" className="px-8 py-6">
-          <Link href="/hot-prediction">
+          <Link href="/predictions/1">
             Начать прогнозировать
           </Link>
         </Button>

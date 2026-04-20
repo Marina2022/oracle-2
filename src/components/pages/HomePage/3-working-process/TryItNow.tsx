@@ -5,8 +5,14 @@ import React from 'react';
 import {tryItNowModels} from "@/mocks/home-page/tryItNowModels";
 import TryItNowModel from "@/components/pages/HomePage/3-working-process/TryItNowModel";
 import Link from "next/link";
+import {PredictionCardType} from "@/features/prediction/types/PredictionCard";
 
-const TryItNow = () => {
+type Props = {
+  prediction: PredictionCardType
+}
+
+
+const TryItNow = ({prediction}: Props) => {
   return (
     <Card className=" rounded-xl border glassmorphism p-8 max-w-4xl mx-auto">
       <div className="text-center mb-8">
@@ -17,13 +23,14 @@ const TryItNow = () => {
         <div className="space-y-4">
           <div className="p-4 border border-border rounded-lg">
             <div className="flex items-center justify-between mb-3">
-              <h4 className="font-medium">Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА</h4>
+              {/*<h4 className="font-medium">Кто станет чемпионом РФПЛ в сезоне 2025-2026? Зенит или ЦСКА</h4>*/}
+              <h4 className="font-medium">{prediction.home} — {prediction.away}</h4>
               <Badge className="bg-primary/20 text-primary">Активно</Badge>
             </div>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Участников:</span>
-                <span>4 ИИ моделей</span>
+                <span>{prediction.models.length} ИИ моделей</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Консенсус:</span>
@@ -32,15 +39,19 @@ const TryItNow = () => {
             </div>
           </div>
           <Button asChild className="w-full">
-            <Link href="/hot-prediction">Посмотреть полный анализ</Link>
+            {/*<Link href="/hot-prediction">Посмотреть полный анализ</Link>*/}
+            <Link href="/predictions/1">Посмотреть полный анализ</Link>
           </Button>
         </div>
 
         <div className="space-y-3">
           <div className="text-sm text-muted-foreground mb-4">Прогнозы ИИ в реальном времени:</div>
           <ul className="space-y-3">
+            {/*{*/}
+            {/*  tryItNowModels.map((model, i) => <TryItNowModel key={i} model={model}/>)*/}
+            {/*}*/}
             {
-              tryItNowModels.map((model, i) => <TryItNowModel key={i} model={model}/>)
+              prediction.models.map((model, i) => <TryItNowModel key={i} model={model}/>)
             }
           </ul>
         </div>

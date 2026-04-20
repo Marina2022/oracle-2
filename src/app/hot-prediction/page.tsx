@@ -1,14 +1,15 @@
 'use client'
 
 import React, {useEffect, useState} from 'react';
-import TopBar from '@/components/predictionPage/1-top-bar/TopBar';
-import YourPrediction from "@/components/predictionPage/2-your-prediction/YourPrediction";
-import Analysis from "@/components/predictionPage/3-analysis/Analysis";
-import CommentsBlock from "@/components/predictionPage/3-analysis/comments/CommentsBlock";
-import ChartsAll from "@/components/predictionPage/4-charts/ChartsAll";
+
+import Analysis from "@/components/pages/PredictionPage/3-analysis/Analysis";
+import CommentsBlock from "@/components/pages/PredictionPage/3-analysis/comments/CommentsBlock";
+import ChartsAll from "@/components/pages/PredictionPage/4-charts/ChartsAll";
 // import { predictionsDetailed } from "@/mocks/one-prediction-page/new-predictions-detailed";
 import {predictionDetailed} from "@/mocks/one-prediction-page/prediction-detailed";
 import {isTimestampPast} from "@/utils/common";
+import TopBar from "@/components/pages/PredictionPage/1-top-bar/TopBar";
+import YourPrediction from "@/components/pages/PredictionPage/2-your-prediction/YourPrediction";
 
 const Page = () => {
   // const [predictionData, setPredictionData] = useState(predictionsDetailed[0]);

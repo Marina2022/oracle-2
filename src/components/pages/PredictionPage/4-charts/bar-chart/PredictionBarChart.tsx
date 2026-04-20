@@ -1,20 +1,22 @@
 'use client'
 
 import React from 'react';
-import {ModelForDetailedPrediction} from "@/types/predictionTypes";
 import {Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis} from 'recharts';
-import CustomBarChartTooltip from "@/components/predictionPage/4-charts/bar-chart/CustomBarChartTooltip";
+import CustomBarChartTooltip from "@/components/pages/PredictionPage/4-charts/bar-chart/CustomBarChartTooltip";
+import {PredictionModel} from "@/features/prediction/types/PredictionType";
 
-const PredictionBarChart = ({models}: { models: ModelForDetailedPrediction[] }) => {
+const PredictionBarChart = ({models}: { models: PredictionModel[] }) => {
 
   const data = models.map(model => ({
-    name: model.modelTitle,
-    precision: model.historicPrecision,
-    predictionsNumber: model.predictionsNumber
+    name: model.model_title,
+    precision: model.historic_precision,
+    predictionsNumber: model.predictions_number
   }));
+
 
   return (
     <div className="w-full h-80" role="region" aria-label="Диаграмма исторической точности">
+
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={data}

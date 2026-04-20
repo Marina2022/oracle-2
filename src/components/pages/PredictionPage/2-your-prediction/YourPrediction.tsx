@@ -5,7 +5,7 @@ import {Card} from "@/components/ui/card";
 import {Badge} from "@/components/ui/badge";
 import {Button} from '@/components/ui/button';
 import {TrendingDown, TrendingUp} from "lucide-react";
-import {PredictionDetailed} from "@/types/predictionTypes";
+import {PredictionType} from "@/features/prediction/types/PredictionType";
 
 const YourPrediction = ({prediction}:{prediction: PredictionType }) => {
 
@@ -43,6 +43,7 @@ const YourPrediction = ({prediction}:{prediction: PredictionType }) => {
             setYourPrediction(true)
           }}>
             <TrendingUp/>
+            {/*<span className="text-sm sm:text-base">{prediction.consensus && prediction.consensus[0].title}</span>*/}
             <span className="text-sm sm:text-base">{prediction.home}</span>
           </Button>
           <Button className={secondBtnClass} onClick={() => {

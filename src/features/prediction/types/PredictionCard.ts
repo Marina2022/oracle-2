@@ -6,12 +6,12 @@ export type PredictionCardType = {
   category: string;
   consensus: number;
   timeline: number;
-  models: Model[];
+  models: PredictionCardModel[];
   participantsNumber: number;
   growing?: boolean;
 };
 
-type Model = {
+export type PredictionCardModel = {
   title: string;
   precision: number;
 }

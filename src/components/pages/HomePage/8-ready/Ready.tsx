@@ -23,7 +23,8 @@ const Ready = () => {
         </div>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <Button asChild className="bg-primary hover:bg-primary/90 neon-glow text-lg px-8 py-6">
-            <Link href="/hot-prediction">
+            {/*<Link href="/hot-prediction">*/}
+            <Link href="/predictions/1">
               <Sparkles className="w-5 h-5"/>
               <span>Начать прогнозировать</span>
             </Link>

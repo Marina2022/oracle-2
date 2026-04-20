@@ -1,6 +1,5 @@
-'use client'
-import React from 'react';
-import TopBar from "@/components/predictionPage/1-top-bar/TopBar";
+
+import TopBar from "@/components/pages/PredictionPage/1-top-bar/TopBar";
 
 const Loading = () => {
   return (
