@@ -2,7 +2,6 @@
 
 import React from 'react';
 import {Card} from "@/components/ui/card";
-import {PredictionType} from "@/types/predictionTypes";
 import {Badge} from "@/components/ui/badge";
 import {ChevronRight, Clock, TrendingDownIcon, TrendingUpIcon, Users} from "lucide-react";
 import {Button} from "@/components/ui/button";

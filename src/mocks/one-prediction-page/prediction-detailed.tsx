@@ -1,6 +1,4 @@
-import {PredictionDetailed} from "@/types/predictionTypes";
-
-export const predictionDetailed: PredictionDetailed = {
+export const predictionDetailed = {
   id: "e5h7c9d1f",
   result: {
     score: "4 - 0",

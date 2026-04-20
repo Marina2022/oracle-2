@@ -1,12 +1,12 @@
 import React from 'react';
-import {CommentForDetailedPrediction} from "@/types/predictionTypes";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar"
 import {getInitials} from '@/utils/common';
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {MessageCircle, ThumbsUp} from "lucide-react";
+import {PredictionCommentType} from "@/features/prediction/types/PredictionType";
 
-const PredictionComment = ({comment}:{comment: CommentForDetailedPrediction}) => {
+const PredictionComment = ({comment}:{comment: PredictionCommentType}) => {
 
   return (
     <li className="flex gap-3 p-4 bg-muted/20 rounded-lg">
