@@ -12,6 +12,7 @@ import {PredictionVoting} from "@/features/prediction/types/PredictionType";
 const PredictionPieChart = ({voting}: { voting: PredictionVoting[] }) => {
 
   const COLORS = ["var(--primary)", "#ef4444"] // Red for CSKA
+  const TEXT_COLORS = ["#0047b3", "#991b1b"] // Red for CSKA
 
   return (
     <Card className="p-4 sm:p-6 glassmorphism gap-2">
@@ -30,26 +31,28 @@ const PredictionPieChart = ({voting}: { voting: PredictionVoting[] }) => {
               nameKey="label"
               cx="50%"
               cy="50%"
-              innerRadius="45%"
-              outerRadius="90%"
+               innerRadius="45%"
+              //innerRadius="40%"
+              outerRadius="100%"
+              //outerRadius="75%"
               paddingAngle={2}
-              label={({x, y, index}) => {
-                const item = voting[index];
-                const color = COLORS[index % COLORS.length];
-                return (
-                  <text
-                    x={x}
-                    y={y}
-                    fill={color}
-                    //fill="yellow"
-                    textAnchor="middle"
-                    dominantBaseline="central"
-                    style={{fontSize: "14px", fontWeight: 500}}
-                  >
-                    {item.lable} {item.percent}%
-                  </text>
-                );
-              }}
+              // label={({x, y, index}) => {
+              //   const item = voting[index];
+              //   const color = TEXT_COLORS[index % TEXT_COLORS.length];
+              //   return (
+              //     <text
+              //       x={x}
+              //       y={y}
+              //       fill={color}
+              //       //fill="yellow"
+              //       textAnchor="middle"
+              //       dominantBaseline="central"
+              //       style={{fontSize: "14px", fontWeight: 500}}
+              //     >
+              //       {item.lable} {item.percent}%
+              //     </text>
+              //   );
+              // }}
               labelLine={false}
             >
               {voting.map((_, index) => (

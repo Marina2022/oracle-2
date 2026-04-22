@@ -11,5 +11,5 @@ export default async function Home() {
     throw new Error(errorMsg)
   }
 
-  return <HomePage predictions={predictions} />
+  return <HomePage predictions={predictions.data} />
 }

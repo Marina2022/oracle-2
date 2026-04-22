@@ -2,8 +2,13 @@ import React from 'react';
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import Link from 'next/link';
+import {PredictionCardType} from "@/features/prediction/types/PredictionCard";
 
-const FindOutYourFuture = () => {
+type Props = {
+  predictionId: number;
+}
+
+const FindOutYourFuture = ({predictionId}: Props) => {
   return (
     <div>
       <div className="space-y-6 mb-8">
@@ -22,7 +27,7 @@ const FindOutYourFuture = () => {
       </div>
       <div className="flex flex-col sm:flex-row gap-4 mb-7">
         <Button asChild variant="default" className="px-8 py-6">
-          <Link href="/predictions/1">
+          <Link href={`/predictions/${predictionId}`}>
             Начать прогнозировать
           </Link>
         </Button>

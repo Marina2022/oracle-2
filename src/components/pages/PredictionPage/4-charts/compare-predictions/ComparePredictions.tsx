@@ -4,8 +4,11 @@ import {ChartColumn} from "lucide-react";
 import {Badge} from '@/components/ui/badge';
 import {Progress} from "@/components/ui/progress";
 import {PredictionType} from "@/features/prediction/types/PredictionType";
+import OneModelPrediction from "@/components/pages/PredictionPage/4-charts/compare-predictions/OneModelPrediction";
 
 const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
+
+
   return (
     <Card className="p-4 sm:p-6 glassmorphism gap-6">
       <div className="flex items-center gap-2 mb-4 text-sm sm:text-base">
@@ -14,24 +17,7 @@ const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
       </div>
       <ul className="space-y-4" role="region" aria-label="Диаграмма сравнения уверенности моделей">
         {
-          prediction.models.map((model, i) => <li key={i} className="space-y-2">
-            <div className="flex items-center justify-between">
-              <div className="text-sm font-medium">{model.model_title}</div>
-              <div className="flex items-center gap-2">
-
-                <Badge
-                  // className={`border-transparent text-primary-foreground text-xs ${model.answerIsPositive ? "bg-primary" : "bg-destructive dark:bg-destructive/60"}`}>
-                  className={`border-transparent text-primary-foreground text-xs bg-primary max-w-[250px] `}>
-
-                  {model.prediction}++
-                </Badge>
-
-
-                <div className="text-xs text-muted-foreground">{model.confidence}%</div>
-              </div>
-            </div>
-            <Progress value={model.confidence} max={100} className="h-2 w-full rounded-full"/>
-          </li>)
+          prediction.models.map((model, i) => <OneModelPrediction model={model} prediction={prediction} key={i} />)
         }
       </ul>
       <div className="mt-6 pt-4 border-t border-border">
@@ -53,6 +39,13 @@ const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
             <div className="text-xs text-muted-foreground">{prediction.away}</div>
           </div>
 
+          <div className="text-center">
+            <div className={`text-2xl font-bold text-primary`}>
+              {Math.round(prediction.consensus.p_draw * 100)}%
+            </div>
+            <div className="text-xs text-muted-foreground">Ничья</div>
+          </div>
+
 
           <div className="text-center">
             <div className={`text-2xl font-bold text-primary`}>
@@ -67,6 +60,14 @@ const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
             </div>
             <div className="text-xs text-muted-foreground">Вероятность букмекера</div>
           </div>
+
+          <div className="text-center">
+            <div className={`text-2xl font-bold text-primary`}>
+              {Math.round(prediction.consensus.p_ai_selected * 100)}%
+            </div>
+            <div className="text-xs text-muted-foreground">Выбор нейросети</div>
+          </div>
+
 
         </div>
       </div>

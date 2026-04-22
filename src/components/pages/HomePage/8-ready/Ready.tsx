@@ -4,7 +4,11 @@ import {Button} from "@/components/ui/button";
 import {Card} from "@/components/ui/card";
 import Link from "next/link";
 
-const Ready = () => {
+type Props = {
+  predictionId: number;
+}
+
+const Ready = ({predictionId}: Props) => {
   return (
     <section className="py-20 relative overflow-hidden">
       <div
@@ -24,7 +28,7 @@ const Ready = () => {
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <Button asChild className="bg-primary hover:bg-primary/90 neon-glow text-lg px-8 py-6">
             {/*<Link href="/hot-prediction">*/}
-            <Link href="/predictions/1">
+            <Link href={`/predictions/${predictionId}`}>
               <Sparkles className="w-5 h-5"/>
               <span>Начать прогнозировать</span>
             </Link>

@@ -3,9 +3,21 @@ import {Brain, CircleCheckBig, ExternalLink} from 'lucide-react';
 import {Badge} from '@/components/ui/badge';
 import {Progress} from "@/components/ui/progress";
 import {Separator} from "@/components/ui/separator";
-import {PredictionModel} from "@/features/prediction/types/PredictionType";
+import {PredictionModel, PredictionType} from "@/features/prediction/types/PredictionType";
 
-const TabContent = ({model}: { model: PredictionModel }) => {
+type Props = {
+  prediction: PredictionType;
+  model: PredictionModel;
+}
+
+const TabContent = ({prediction, model}: Props) => {
+
+  let predictionText = ""
+  if (model.prediction === "home") predictionText = prediction.home;
+  if (model.prediction === "away") predictionText = prediction.away;
+  if (model.prediction === "dray") predictionText = "Ничья";
+
+
   return (
     <div className="flex-1 outline-none space-y-4 sm:space-y-6">
       <div
@@ -18,11 +30,8 @@ const TabContent = ({model}: { model: PredictionModel }) => {
           <div>
             <h3 className="font-medium text-sm sm:text-base">{model.model_title}</h3>
             <div className="flex items-center gap-2 mt-1">
-
-              {/*todo - посмотри потом  */}
-              {/*<Badge className="px-2 py-0.5 font-medium">{model.prediction || (model.answerIsPositive ? "ДА" : "НЕТ")}</Badge>*/}
-              <Badge className="px-2 py-0.5 font-medium">{model.prediction}</Badge>
-              <span className="text-xs sm:text-sm text-muted-foreground">Уверенность: {model.confidence}%</span>
+              <Badge className="px-2 py-0.5 font-medium">{predictionText}</Badge>
+              <span className="text-xs sm:text-sm text-muted-foreground">Уверенность: {Math.round(model.confidence * 100)}%</span>
             </div>
           </div>
         </div>
@@ -81,11 +90,11 @@ const TabContent = ({model}: { model: PredictionModel }) => {
           <h4 className="font-medium mb-3 text-sm sm:text-base">Детальный анализ</h4>
           <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground">{model.detailed_analysis}</p>
         </div>
-        {/*<Separator className="my-4"/>*/}
-        {/*<div>*/}
-        {/*  <h4 className="font-medium mb-3 text-sm sm:text-base">Заключение</h4>*/}
-        {/*  <p className="text-xs sm:text-sm leading-relaxed">{model.resume}</p>*/}
-        {/*</div>*/}
+        <Separator className="my-4"/>
+        <div>
+          <h4 className="font-medium mb-3 text-sm sm:text-base">Заключение</h4>
+          <p className="text-xs sm:text-sm leading-relaxed">{model.resume}</p>
+        </div>
       </div>
     </div>
   );

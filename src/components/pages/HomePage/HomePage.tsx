@@ -16,14 +16,14 @@ type Props = {
 const HomePage = ({predictions}: Props) => {
   return (
     <main>
-      <Hero />
+      <Hero predictionId={predictions[0].id} />
       <Models />
       <WorkingProcess prediction={predictions[0]} />
       <Predictions predictions={predictions} />
       <Trust />
       <WhyTheyChoose />
       <PricePlan  />
-      <Ready />
+      <Ready predictionId={predictions[0].id} />
     </main>
   );
 };

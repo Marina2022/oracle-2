@@ -11,7 +11,8 @@ export type PredictionType = {
   voiting: PredictionVoting[];
   comments: PredictionCommentType[];
   result?: {
-    score: string;
+    home_score: number;
+    away_score: number;
     won: string;
     source: string;
   };
@@ -37,6 +38,7 @@ export type PredictionModel = {
   historic_precision: number;
   predictions_number: number;
   data_sources: DataSource[];
+  resume: string;
 };
 
 type Reasonings = {

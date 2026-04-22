@@ -48,13 +48,16 @@ const PredictionCard = ({prediction}: Props) => {
           <div className="flex items-center space-x-2 mb-2">
             <Badge
               className="text-xs text-foreground bg-transparent border border-border ">{prediction.category}</Badge>
-            {
-              prediction.growing ? <TrendingUpIcon className="w-4 h-4 text-chart-4"/>:
-                <TrendingDownIcon className="w-4 h-4 text-chart-5"/>
-            }
+            {/*{*/}
+            {/*  prediction.growing ? <TrendingUpIcon className="w-4 h-4 text-chart-4"/>:*/}
+            {/*    <TrendingDownIcon className="w-4 h-4 text-chart-5"/>*/}
+            {/*}*/}
+
+
+            <TrendingUpIcon className="w-4 h-4 text-chart-4"/>
           </div>
           <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">{prediction.home} — {prediction.away} {formatDate(prediction.timeline)}</h3>
-          <p className="text-sm text-muted-foreground mb-5">Футбол, Чемпионат Испании (добавить в API)</p>
+          <p className="text-sm text-muted-foreground mb-5">{prediction.sport}, {prediction.competition}</p>
         </div>
         <ShareButtons url={`${BASE_URL}/predictions/${prediction.id}`}/>
       </div>

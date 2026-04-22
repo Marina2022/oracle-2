@@ -17,9 +17,11 @@ const Analysis = ({prediction}: { prediction: PredictionType }) => {
         <Brain className="h-4 w-4 sm:h-5 sm:w-5 text-primary"/>
         <span>{description}</span>
       </h2>
-      <Tabs defaultValue={prediction.models[0].model_title}>
+      <Tabs defaultValue={prediction.models[0].model_title} >
         <TabsList
-          className="bg-muted/20 dark:bg-muted text-muted-foreground w-fit items-center justify-center rounded-xl p-[3px] grid grid-cols-2 sm:grid-cols-4 mb-4 sm:mb-6 h-auto">
+          // className="bg-muted/20 dark:bg-muted text-muted-foreground w-fit items-center justify-center rounded-xl p-[3px] grid grid-cols-2 sm:grid-cols-4 mb-4 sm:mb-6 h-auto">
+          className="bg-muted/20 dark:bg-muted text-muted-foreground w-fit self-start flex flex-wrap
+          items-center justify-center rounded-xl p-[3px]  mb-4 sm:mb-6 h-auto">
           {
             prediction.models.map((model, i) => (
               <TabsTrigger
@@ -36,7 +38,7 @@ const Analysis = ({prediction}: { prediction: PredictionType }) => {
           {
             prediction.models.map((model, i) => (
               <TabsContent value={model.model_title} key={i}>
-                <TabContent model={model} key={i}/>
+                <TabContent prediction={prediction} model={model} key={i}/>
               </TabsContent>
             ))
           }

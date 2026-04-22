@@ -40,7 +40,7 @@ const TryItNow = ({prediction}: Props) => {
           </div>
           <Button asChild className="w-full">
             {/*<Link href="/hot-prediction">Посмотреть полный анализ</Link>*/}
-            <Link href="/predictions/1">Посмотреть полный анализ</Link>
+            <Link href={`/predictions/${prediction.id}`}>Посмотреть полный анализ</Link>
           </Button>
         </div>
 

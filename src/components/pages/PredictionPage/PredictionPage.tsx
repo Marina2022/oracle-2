@@ -16,7 +16,7 @@ const PredictionPage = ({prediction}: Props) => {
     <div>
       <TopBar prediction={prediction}/>
 
-      <div className="pt-36 container pb-4 sm:pb-8">
+      <div className="pt-42 sm:pt-36  container pb-4 sm:pb-8">
         <div className="py-4 sm:py-8 space-y-4 sm:space-y-8">
           <YourPrediction prediction={prediction}/>
         </div>
