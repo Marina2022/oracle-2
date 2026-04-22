@@ -76,7 +76,7 @@ const PredictionCard = ({prediction}: Props) => {
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div className="flex items-center space-x-2">
               <Users className="w-4 h-4 text-muted-foreground"/>
-              <span>{formatParticipants(prediction.participantsNumber)}</span>
+              <span className="shrink-0">{formatParticipants(prediction.participantsNumber)}</span>
             </div>
           </div>
         </div>
@@ -86,9 +86,9 @@ const PredictionCard = ({prediction}: Props) => {
             <Badge className={precisionClass}>{precisionText}</Badge>
           </div>
 
-          <div className="grid grid-cols-2 gap-x-10 gap-y-2 text-xs">
+          <div className="grid grid-cols-2 gap-x-10 gap-y-2 text-xs items-start">
             {
-              prediction.models.map((model, i) => <div key={i} className="flex justify-between items-center">
+              prediction.models.map((model, i) => <div key={i} className="flex justify-between items-start">
                 <span className="text-muted-foreground">{model.title}</span>
                 <span className="font-medium">{Math.round(model.precision *100)}%</span>
               </div>)
