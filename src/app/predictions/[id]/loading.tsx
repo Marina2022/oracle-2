@@ -1,7 +1,15 @@
+'use client'
+
 
 import TopBar from "@/components/pages/PredictionPage/1-top-bar/TopBar";
+import {useEffect} from "react";
 
 const Loading = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <TopBar prediction={null}/>
