@@ -49,7 +49,7 @@ const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
 
           <div className="text-center">
             <div className={`text-2xl font-bold text-primary`}>
-              {Math.round(prediction.consensus.oracul_score * 100)}%
+              {Math.round(prediction.consensus.oracul_score)}
             </div>
             <div className="text-xs text-muted-foreground">Oracul Score</div>
           </div>
