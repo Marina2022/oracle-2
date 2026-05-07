@@ -9,7 +9,7 @@ const PredictionBarChart = ({models}: { models: PredictionModel[] }) => {
 
   const data = models.map(model => ({
     name: model.model_title,
-    precision: model.historic_precision * 100,
+    precision: model.historic_precision,
     predictionsNumber: model.predictions_number
   }));
 
