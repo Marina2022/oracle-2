@@ -10,6 +10,10 @@ const Result = ({prediction}: { prediction: PredictionType }) => {
   // если result в API == null или дата (timeline) еще не наступила - не рисуем блок
   if (!prediction.result || !isTimestampPast(prediction.timeline) ) return null
 
+  let whoWon = "Ничья"
+  if (prediction.result.won === "HOME") whoWon = prediction.home
+  if (prediction.result.won === "AWAY") whoWon = prediction.away
+
   return (
     <Card className="p-4 sm:p-6 glassmorphism gap-6">
       <div className="flex items-center gap-2 mb-2 text-sm sm:text-base">
@@ -18,7 +22,7 @@ const Result = ({prediction}: { prediction: PredictionType }) => {
       </div>
       <div className="flex flex-col gap-3">
         <p><span className="font-medium">Счет:</span> {prediction.result.home_score} : {prediction.result.away_score}</p>
-        <p><span className="font-medium">Выиграл: </span> {prediction.result.won}</p>
+        <p><span className="font-medium">Выиграл: </span> {whoWon}</p>
         <p><span className="font-medium">Источник: </span> {prediction.result.source}</p>
       </div>
 
