@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import HomePage from "@/components/pages/HomePage/HomePage";
 import {getMatches} from "@/features/prediction/actions/getMatches";
 
