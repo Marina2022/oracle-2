@@ -13,9 +13,9 @@ type Props = {
 const TabContent = ({prediction, model}: Props) => {
 
   let predictionText = ""
-  if (model.prediction === "home") predictionText = prediction.home;
-  if (model.prediction === "away") predictionText = prediction.away;
-  if (model.prediction === "dray") predictionText = "Ничья";
+  if (model.prediction.toLowerCase() === "home") predictionText = prediction.home;
+  if (model.prediction.toLowerCase() === "away") predictionText = prediction.away;
+  if (model.prediction.toLowerCase() === "dray") predictionText = "Ничья";
 
 
   return (
