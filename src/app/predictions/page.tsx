@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import React from 'react';
 import TopBarPredictions from "@/components/pages/PredictionsPage/1-top-bar-predictions/TopBarPredictions";
 import PredictionsPage from "@/components/pages/PredictionsPage/PredictionsPage";
