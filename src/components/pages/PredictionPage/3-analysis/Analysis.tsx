@@ -13,7 +13,7 @@ const Analysis = ({prediction}: { prediction: PredictionType }) => {
 
   return (
     <Card className="border p-4 sm:p-6 glassmorphism">
-      <h2 className="flex items-start shrink-0 gap-2 mb-4 sm:mb-6 text-base sm:text-lg">
+      <h2 className="flex items-center shrink-0 gap-2 mb-4 sm:mb-6 text-base sm:text-lg">
         <Brain className="h-4 w-4 sm:h-5 sm:w-5 text-primary"/>
         <span>{description}</span>
       </h2>
