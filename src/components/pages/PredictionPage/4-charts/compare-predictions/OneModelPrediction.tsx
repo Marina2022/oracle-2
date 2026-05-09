@@ -13,17 +13,17 @@ const OneModelPrediction = ({model, prediction}: Props) => {
   let predictionText = ""
   let badgeBg = ""
 
-  if (model.prediction === "home") {
+  if (model.prediction.toLowerCase() === "home") {
     predictionText = prediction.home;
     badgeBg = "bg-primary"
   }
 
-  if (model.prediction === "away") {
+  if (model.prediction.toLowerCase() === "away") {
     predictionText = prediction.away;
     badgeBg = "bg-destructive"
   }
 
-  if (model.prediction === "dray") {
+  if (model.prediction.toLowerCase() === "draw") {
     predictionText = "Ничья"
     badgeBg = "bg-secondary"
   }
