@@ -10,7 +10,7 @@ export const getMatches = async (filters = "") => {
     let url = `${process.env.API_URL}/matches`
     if (filters) url = url + "?" +  filters
 
-    console.log("url = ", url)
+    console.log("url === ", url)
 
     const res = await fetch(url);
 
