@@ -1,3 +1,7 @@
+type PredictionQuote = {
+  selection: string,
+  odds: number
+}
 
 export type PredictionType = {
   id: number;
@@ -39,6 +43,7 @@ export type PredictionModel = {
   predictions_number: number;
   data_sources: DataSource[];
   resume: string;
+  quotes: PredictionQuote[];
 };
 
 type Reasonings = {

@@ -17,7 +17,7 @@ const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
       </div>
       <ul className="space-y-4" role="region" aria-label="Диаграмма сравнения уверенности моделей">
         {
-          prediction.models.map((model, i) => <OneModelPrediction model={model} prediction={prediction} key={i} />)
+          prediction.models.map((model, i) => <OneModelPrediction model={model} prediction={prediction} key={i}/>)
         }
       </ul>
       <div className="mt-6 pt-4 border-t border-border">
@@ -66,6 +66,29 @@ const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
               {Math.round(prediction.consensus.p_ai_selected * 100)}%
             </div>
             <div className="text-xs text-muted-foreground">Выбор нейросети</div>
+          </div>
+
+          {/******/}
+
+          <div className="text-center">
+            <div className={`text-2xl font-bold text-primary`}>
+              {prediction.models[0].quotes.find(quote=>quote.selection === 'HOME')?.odds}
+            </div>
+            <div className="text-xs text-muted-foreground">{prediction.home}</div>
+          </div>
+
+          <div className="text-center">
+            <div className={`text-2xl font-bold text-primary`}>
+              {prediction.models[0].quotes.find(quote=>quote.selection === 'AWAY')?.odds}
+            </div>
+            <div className="text-xs text-muted-foreground">{prediction.away}</div>
+          </div>
+
+          <div className="text-center">
+            <div className={`text-2xl font-bold text-primary`}>
+              {prediction.models[0].quotes.find(quote=>quote.selection === 'DRAW')?.odds}
+            </div>
+            <div className="text-xs text-muted-foreground">Ничья</div>
           </div>
 
 
