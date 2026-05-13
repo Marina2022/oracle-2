@@ -74,21 +74,23 @@ const ComparePredictions = ({prediction}: { prediction: PredictionType }) => {
             <div className={`text-2xl font-bold text-primary`}>
               {prediction.models[0].quotes.find(quote=>quote.selection === 'HOME')?.odds}
             </div>
-            <div className="text-xs text-muted-foreground">{prediction.home}</div>
+            {/*<div className="text-xs text-muted-foreground">{prediction.home}</div>*/}
+            <div className="text-xs text-muted-foreground">П1</div>
           </div>
 
           <div className="text-center">
             <div className={`text-2xl font-bold text-primary`}>
               {prediction.models[0].quotes.find(quote=>quote.selection === 'AWAY')?.odds}
             </div>
-            <div className="text-xs text-muted-foreground">{prediction.away}</div>
+            {/*<div className="text-xs text-muted-foreground">{prediction.away}</div>*/}
+            <div className="text-xs text-muted-foreground">П2</div>
           </div>
 
           <div className="text-center">
             <div className={`text-2xl font-bold text-primary`}>
               {prediction.models[0].quotes.find(quote=>quote.selection === 'DRAW')?.odds}
             </div>
-            <div className="text-xs text-muted-foreground">Ничья</div>
+            <div className="text-xs text-muted-foreground">Х</div>
           </div>
 
 
